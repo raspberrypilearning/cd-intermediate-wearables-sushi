@@ -1,11 +1,24 @@
-title: cd-intermediate-wearables-sushi
+title: Intermediate Wearables Sushi Cards
 hero_image: images/banner.png
-description: cd-intermediate-wearables-sushi description
-version: 4
+description: Learn to control LEDs with code while making a wearable project
+theme: violet
+version: 3.0.0
 listed: false
 copyedit: false
+curriculum: ''
+interests: wearable-technology
+technologies: electronic-components
+site_areas: coderdojo, projects
+hardware: electronic-components
+software: ''
 last_tested: "2018-06-12"
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Step title
+  - title: Lights, Action!
+  - title: Stitching your circuit
+  - title: Write your own code
+  - title: Colour and light
+  - title: Flashing lights
+  - title: Animate!
+  - title: Rainbow magic

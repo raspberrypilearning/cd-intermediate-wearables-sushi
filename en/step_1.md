@@ -1,25 +1,21 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+**Photosensitive Seizure Warning: This project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.**
+
+These Sushi Cards will show you how to use wearable LEDs that can be programmed and how to control them with code.
 
 ### What you will make
 
-Add something here to showcase here, for example:
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+In this project you will sew LED lights to a t-shirt and program them to flash and change colours by writing code! 
 
 ### What you will learn
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level){:target="_blank"}
-
-### Additional information for educators
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
-
-Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
++ Testing NeoPixels
++ Stitching a NeoPixel circuit with positive, negative and data flow
++ The flow of a Flora program (setup and loop functions)
++ Turning NeoPixels on and off
++ Addressing individual NeoPixels
++ RGB colour mixing
++ Functions and parameters
+for loops
++ Exploring more advanced examples
