@@ -86,8 +86,6 @@ When the Flora starts, it runs all the code in the `setup` function first and th
 
 + Do you see the difference?
 
---- challenge ---
-
 + Try designing your own sequence by changing the code in the **loop** function! You can add as many delays and as many calls to your **lightAllOneColour** function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
 
 Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
