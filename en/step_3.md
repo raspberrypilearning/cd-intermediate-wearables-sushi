@@ -6,7 +6,9 @@ Before you start, it is a good idea to test each of your NeoPixels.
 
 + Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
 
-+ A code file opens. A code file is called a **sketch** in the Arduino IDE. Find this line of code near the top:
+A code file will open. A code file is called a **sketch** in the Arduino IDE.
+
++ Find this line of code near the top:
 
 ```
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
@@ -24,7 +26,11 @@ Before you start, it is a good idea to test each of your NeoPixels.
 
 ![](images/verifyIcon.png)
 
-+ Ready to upload! Plug in your Flora. Press the **reset** button on the Flora and then _straight away_, while the red light is pulsing, click on the arrow icon next to the tick to **Upload** the code onto the board. You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.  
+Ready to upload!
+
++ Plug in your Flora. Press the **reset** button on the Flora and then **straight away**, while the red light is pulsing, click on the arrow icon next to the tick to **Upload** the code onto the board.
+
++ You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.  
    
 ![](images/upload3_120_800.png)
 
@@ -43,11 +49,11 @@ At first it can be a bit tricky to get the upload to work. Make sure the correct
 
 + Attach three crocodile clips to the **GND**, **\#6** and **VBATT** pins.  
    
-![](/images/crocsFlora_169_800.png)
+![](images/crocsFlora.png)
 
 + Take a NeoPixel and connect the **GND** wire to its **-** pin. Connect the **\#6** to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally connect the **VBATT** to the **+** pin. 
 
-![](/images/crocsPixel_169_800.png)
+![](images/crocsPixel.png)
 
 + Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
 

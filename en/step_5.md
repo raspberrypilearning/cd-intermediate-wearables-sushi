@@ -17,7 +17,7 @@
 title: Making notes in your code
 ---
 
-Any line that starts with `// ` is a **comment**. 
+Any line that starts with `//` is a **comment**. 
 
 Comments are ignored by the computer. 
 
@@ -100,6 +100,6 @@ Can you work out what some of this code is doing?
 
 + See if you can add more lines of code to make the rest of the pixels light up as well! 
 
-![](images/threeBlue_150_800.png)
+![](images/threeBlue.png)
 
 

@@ -1,24 +1,36 @@
 ## Stitching your circuit
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a t-shirt \(or whatever piece of fabric you're making the project on\) out on a flat surface. Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are
- + A straight line
- + A heart (eight NeoPixels is perfect for this)
- + Pretend "buttons" down the front of a t-shirt
++ Gather all your NeoPixels and some chalk or a pencil. Lay a t-shirt \(or whatever piece of fabric you're making the project on\) out on a flat surface.
 
-+ Decide roughly where you plan to have the Flora and choose one NeoPixel for it to be connected to: this will be the first one you start sewing on. The rest will be connected to each other one by one in a chain. You should be able to trace a continuous line along the chain with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\)
++ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are
+  + A straight line
+  + A heart (eight NeoPixels is perfect for this)
+  + Pretend "buttons" down the front of a t-shirt
+  + A random pattern
 
-+ Draw around the outside and the inside of the shape with the pencil or chalk, marking the spot where each NeoPixel is.
++ Decide roughly where you plan to have the Flora and choose one NeoPixel for it to be connected to: this will be the first one you start sewing on. The rest will be connected to each other one by one in a chain.
 
-![](images/drawAroundShape_178_800.png)
++ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
 
-+ Ready to start sewing? Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are quite close together. If you have an embroidery hoop, it can make the stitching a lot easier.
++ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
 
-+ You will sew the **data** line first. Take your first pixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **output** pin. 
- * Be sure to make a secure connection by sewing three or four stitches tightly through the pin.
+![](images/drawAroundShape.png)
+
+Ready to start sewing?
+
++ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are quite close together. If you have an embroidery hoop, it can make the stitching a lot easier.
+
+You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
+
++ Take your first pixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **output** pin. 
+
++ Be sure to make a secure connection by sewing two or three stitches tightly through the pin.
  
-+ Sew a running stitch to the spot where the next pixel will go. Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. 
++ Sew a running stitch to the spot where the next pixel will go. 
 
-+ Attach it by sewing through the **input** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre\). Secure the thread with a few stitches at the back of the fabric and cut it short.
++ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre\).
+
++ Secure the thread with a few stitches at the back of the fabric and cut it short.
 
 --- collapse ---
 ---
@@ -31,9 +43,11 @@ It's a good idea to coat the ends of the thread with clear nail polish after cut
 
 + Using a **new piece of conductive thread**, connect the **output** pin of the second pixel to the **input** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread running in between each pair. The chain ends with the last pixel: you don't attach anything to its **ouptut** pin.
  
-![](/images/pixelSewing3_136_800.png)
+![](images/pixelSewing3_136_800.png)
  
-+ Next you will connect up all the **negative** pins in the chain, this time using one long piece of conductive thread, about 50-100cm. Sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
+Next you will connect up all the **negative** pins in the chain, and then the **positive** ones.
+
++ Using one long piece of conductive thread, about 50-100cm, sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
 Note: Make sure the thread does not touch or cross any of the thread in the **data** line!
 
 + With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
@@ -42,7 +56,7 @@ Note: Make sure the thread does not touch or cross any of the thread in the **da
 
 + If you like, you can stitch some of the unused pins of the Flora to the t-shirt with some plain thread to keep it more securely in place.
 
-![](/images/stitchedCircuit_200_800.png)
+![](images/stitchedCircuit.png)
 
 + It's the moment of truth... plug in your Flora! 
 

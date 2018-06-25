@@ -58,11 +58,20 @@ to
     strip.setPixelColor(1, strip.Color(255, 0, 0));
 ``` 
 
-Verify and upload the code to the Flora. Can you spot the difference?
++ Verify and upload the code to the Flora. Can you spot the difference?
 
-On a computer, colours are made by mixing the three **primary colours of light**, **red**, **green**, and **blue**. You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both zero. 
+--- collapse ---
+---
+title: How do colours work in code?
+---
+
+On a computer, colours are made by mixing the three **primary colours of light**, **red**, **green**, and **blue**.
+
+You use numbers from `0` to `255` to say how much of each colour to mix. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both zero. 
 
 + What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+
+--- /collapse ---
 
 Here are a few more colours that are good to know
 

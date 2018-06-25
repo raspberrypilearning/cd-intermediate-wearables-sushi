@@ -36,13 +36,20 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
     }
 ```
 
+--- collapse ---
+---
+title: How the parameter works
+---
+
 See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` on each line of your function `lightAllOneColour`. It means you can use the same function to make the pixels any colour, even to turn them all off!
+
+--- /collapse ---
 
 + Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
 
 --- collapse ---
 ---
-title: setup and loop
+title: About the setup and loop functins
 ---
 
 When the Flora starts, it runs all the code in the `setup` function first and then it runs the `loop` function over and over again forever!
@@ -81,10 +88,6 @@ When the Flora starts, it runs all the code in the `setup` function first and th
 
 --- challenge ---
 
-## Challenge: design your own sequence
-
 + Try designing your own sequence by changing the code in the **loop** function! You can add as many delays and as many calls to your **lightAllOneColour** function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
 
-Remember, the whole sequence will keep repeating over and over. 
-
---- /challenge ---
+Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 

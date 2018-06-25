@@ -1,4 +1,4 @@
-## Rainbow magic
+## Rainbow fun
 
 + Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier. 
 
@@ -74,7 +74,7 @@ Try it out on the Flora!
 
 + You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
 
-![](images/rainbowSmile_200_800.png)
+![](images/rainbowSmile.png)
 
 --- /challenge ---
 

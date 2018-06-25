@@ -13,7 +13,7 @@
 
 Can you see that this function takes **two parameters**? You'll use the second one later on.
 
-+ Delete \(or **comment out**!\) the code in the `loop` function and write a call to your new function:
++ Delete the code in the `loop` function and write a call to your new function:
 
 ```
     void loop() {

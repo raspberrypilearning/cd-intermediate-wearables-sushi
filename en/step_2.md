@@ -5,7 +5,7 @@
 + Adafruit Flora or Gemma and a USB cable
 + Around eight NeoPixels
 + Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips are easier to test with\)
++ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
 + Optional: a battery pack will allow you to wear your finished project without being attached to the computer!
 
 The LEDs will be controlled by the Adafruit Flora. You may also use an Adafruit Gemma, LilyPad Arduino or LilyPad Arduino USB; some small code changes will be needed such as the number of the output pin and the board setup in the Arduino IDE.
