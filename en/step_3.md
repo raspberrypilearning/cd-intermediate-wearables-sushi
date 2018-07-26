@@ -1,4 +1,4 @@
-## Lights, action!
+## Test your LEDs
 
 Before you start, it is a good idea to test each of your NeoPixels. 
 
