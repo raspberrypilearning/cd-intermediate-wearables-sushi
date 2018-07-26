@@ -18,7 +18,7 @@
     }
 ```
 
-This function lets you choose any numer from 0 to 255 and it mixes a colour for you.
+This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
 
 + Now add another new function. See if you can spot the **for loop** in it!
 
@@ -31,9 +31,9 @@ This function lets you choose any numer from 0 to 255 and it mixes a colour for 
     }
 ```
 
-There's a bit of math in here too! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
 
-+ All that's left is to **call** the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here too! It's there to pick a nice selection of colour
     }
 ``` 
 
-You don't need to pass any **parameters** this time because the new function figures out the colours for you! 
+You don't need to pass any parameters this time, because the new function figures out the colours for you! 
 
-+ How about adding a delay? Let's write a new function, that's similar to the one above but with a delay added to the loop so it animates:
++ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any **parameters** this time because the new function fig
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other animate function too:
++ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
 
 ```
     void loop() {
@@ -72,7 +72,7 @@ Try it out on the Flora!
 
 + Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit! 
 
-+ You can do loads of cool things using the tricks you've learned with colours, loops and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
++ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
 
 ![](images/rainbowSmile.png)
 
@@ -83,10 +83,10 @@ Try it out on the Flora!
 title: Portable power
 ---
 
-+ If you plan on wearing your project, you will probably want to make it more portable with battery power. A 3xAA or 3xAAA battery pack will do just fine for the Flora. 
+If you plan on wearing your project, you will probably want to make it more portable using battery power.
 
-+ See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information. 
++ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information. 
 
-+ For other boards you should double check the requirements for the board you are using.
++ If you're using a different board, you should double-check the power requirements it has.
 
 --- /collapse ---
