@@ -1,14 +1,14 @@
 ## Stitching your circuit
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a t-shirt \(or whatever piece of fabric you're making the project on\) out on a flat surface.
++ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
 
-+ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are
++ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
   + A straight line
-  + A heart (eight NeoPixels is perfect for this)
-  + Pretend "buttons" down the front of a t-shirt
+  + A heart (eight NeoPixels are perfect for this)
+  + Pretend "buttons" down the front of the T-shirt
   + A random pattern
 
-+ Decide roughly where you plan to have the Flora and choose one NeoPixel for it to be connected to: this will be the first one you start sewing on. The rest will be connected to each other one by one in a chain.
++ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
 
 + Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
 
@@ -16,21 +16,21 @@
 
 ![](images/drawAroundShape.png)
 
-Ready to start sewing?
+### Let's start sewing!
 
-+ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are quite close together. If you have an embroidery hoop, it can make the stitching a lot easier.
++ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
 
 You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
 
-+ Take your first pixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the pin with the arrow that points **away** from the LED in the centre. This is the **output** pin. 
++ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This is the **output** hole. 
 
-+ Be sure to make a secure connection by sewing two or three stitches tightly through the pin.
++ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
  
-+ Sew a running stitch to the spot where the next pixel will go. 
++ Sew a running stitch to the spot where the next NeoPixel will go. 
 
-+ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** pin \(remember, this is the pin with the arrow pointing **in towards** the LED in the centre\).
++ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
 
-+ Secure the thread with a few stitches at the back of the fabric and cut it short.
++ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
 
 --- collapse ---
 ---
@@ -41,39 +41,41 @@ It's a good idea to coat the ends of the thread with clear nail polish after cut
 
 --- /collapse ---
 
-+ Using a **new piece of conductive thread**, connect the **output** pin of the second pixel to the **input** pin of the third pixel. Continue in this way until all the pixels are chained together along their **data** pins, with a separate piece of thread running in between each pair. The chain ends with the last pixel: you don't attach anything to its **ouptut** pin.
++ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
  
 ![](images/pixelSewing3_136_800.png)
  
-Next you will connect up all the **negative** pins in the chain, and then the **positive** ones.
+Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
 
-+ Using one long piece of conductive thread, about 50-100cm, sew a few tight stitches through the **-** pin of each pixel starting with the first one and ending with the last. As usual sew with a running stitch in between pixels. 
-Note: Make sure the thread does not touch or cross any of the thread in the **data** line!
++ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
 
-+ With one more long piece of conductive thread, connect all the **+** pins of the pixels in the same way you just connected the **-** pins.
+**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
 
-+ Finally, place the Flora on the t-shirt \(make sure it is **not plugged in**!\). Using three separate pieces of conductive thread, connect the **#6** pin to the **input**, the **GND** pin to the **-**, and the **VBATT** pin to the **+** pin of that first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other. 
++ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
 
-+ If you like, you can stitch some of the unused pins of the Flora to the t-shirt with some plain thread to keep it more securely in place.
++ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
+
++ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other. 
+
++ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
 
 ![](images/stitchedCircuit.png)
 
-+ It's the moment of truth... plug in your Flora! 
++ Now, the moment of truth: plug in your Flora.
+
+You should see all your NeoPixels light up!
 
 --- collapse ---
 ---
 title: Something's not right
 ---
 
-If your pixels didn't all light up, don't panic. Some causes could be: 
+If some of your NeoPixels didn't light up, don't panic. Some causes could be: 
 
 + A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
 
-+ Loose connections: The stitches at every pin should be good and tight for a secure connection
++ Loose connections: The stitches in every hole should be good and tight for a secure connection.
 
-+ Correct code uploaded: Does your code have the right number of pixels defined? Did it compile and upload without errors?
++ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
 
 --- /collapse --- 
-
-
-
