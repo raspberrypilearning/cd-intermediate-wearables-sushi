@@ -22,7 +22,18 @@
 
 You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
 
-+ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This is the **output** hole. 
++ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
+
+--- collapse ---
+---
+title: Holes or pins?
+---
+
+On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
+
+In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
+
+--- /collapse ---
 
 + Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
  
