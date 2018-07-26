@@ -18,7 +18,7 @@
 
 --- collapse ---
 ---
-title: What's inside the brackets?
+title: What's inside the round brackets?
 ---
 
 This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
@@ -41,7 +41,7 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 title: How the parameter works
 ---
 
-See how you're passing in a colour as a **parameter** to your function? This is the colour that gets used in place of `c` on each line of your function `lightAllOneColour`. It means you can use the same function to make the pixels any colour, even to turn them all off!
+See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
 
 --- /collapse ---
 
@@ -49,14 +49,14 @@ See how you're passing in a colour as a **parameter** to your function? This is 
 
 --- collapse ---
 ---
-title: About the setup and loop functins
+title: About the setup and loop functions
 ---
 
-When the Flora starts, it runs all the code in the `setup` function first and then it runs the `loop` function over and over again forever!
+When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
 
 --- /collapse ---
 
-+ What do you think the **delay** function does? Try putting in different values for it's **parameter**. For example, `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
 
 + Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
 
@@ -86,6 +86,6 @@ When the Flora starts, it runs all the code in the `setup` function first and th
 
 + Do you see the difference?
 
-+ Try designing your own sequence by changing the code in the **loop** function! You can add as many delays and as many calls to your **lightAllOneColour** function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
 
 Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
