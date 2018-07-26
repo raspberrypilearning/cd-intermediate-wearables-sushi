@@ -1,6 +1,6 @@
 ## Write your own code
 
-+ In Arduino IDE, click **File** &gt; **New**. You will get a blank **sketch** that looks like this 
++ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
 ```
     void setup() {
         // put your setup code here, to run once:
@@ -17,17 +17,19 @@
 title: Making notes in your code
 ---
 
-Any line that starts with `//` is a **comment**. 
+Any line that starts with `//` is a **comment**. Comments are ignored by the computer. 
 
-Comments are ignored by the computer. 
-
-They're useful for making notes for yourself or other people reading the code.
+They're useful for making notes for yourself, or for other people who want to your code!
 
 --- /collapse ---
 
-+ Go to **Sketch** &gt; **Include Library** and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`. Click at the end of the line and hit Return a few times to add some blank lines underneath.
++ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
 
-+ Underneath the new line of code, type the following: `#define PIXELS_PIN 6` You are setting which pin of the Flora to use for **data** \(instructions\). That's the pin you connect the **data** pins of the pixels to, pin number 6.
++ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
+
++ Below the new line of code, type the following: `#define PIXELS_PIN 6` 
+
+With this code you are setting which pin of the Flora to use for **data** \(instructions\). That's the hole you connect the **data** holes of the NeoPixels to, number **6**.
 
 + Underneath that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than 8, type that number instead of 8.
 
