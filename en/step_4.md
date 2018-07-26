@@ -1,4 +1,4 @@
-## Stitching your circuit
+## Stitch your circuit
 
 + Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
 
