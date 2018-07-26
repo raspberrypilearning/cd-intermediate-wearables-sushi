@@ -15,8 +15,8 @@ last_tested: "2018-06-12"
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Lights, Action!
-  - title: Stitching your circuit
+  - title: Test your LEDs
+  - title: Stitch your circuit
   - title: Write your own code
   - title: Colour and light
   - title: Flashing lights
