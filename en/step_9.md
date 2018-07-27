@@ -74,8 +74,6 @@ Try it out on the Flora!
 
 + You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels. 
 
-![](images/rainbowSmile.png)
-
 --- /challenge ---
 
 --- collapse ---

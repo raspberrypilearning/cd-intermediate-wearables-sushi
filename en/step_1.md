@@ -8,6 +8,8 @@ These Sushi Cards will show you how to use wearable, programmable LEDs and how t
 
 In this project, you will sew LED lights to a T-shirt and write code to make them flash and change colour! 
 
+![A colourful smiley face made from LEDs sewn on a tshirt](images/rainbowSmile.png)
+
 ### What you will learn
 
 + Testing NeoPixels
