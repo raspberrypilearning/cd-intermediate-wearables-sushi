@@ -3,9 +3,9 @@ hero_image: images/banner.png
 description: Learn to control LEDs with code while making a wearable project
 theme: violet
 version: 3.0.0
-listed: false
-copyedit: false
-curriculum: ''
+listed: true
+copyedit: true
+curriculum: 1, design-0, programming-1, phys-comp-1, manufacture-1, community-0
 interests: wearable-technology
 technologies: electronic-components
 site_areas: coderdojo, projects
