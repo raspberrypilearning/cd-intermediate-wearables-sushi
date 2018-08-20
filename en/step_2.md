@@ -1,49 +1,68 @@
-## What you will need
+## Test your LEDs
 
-### Hardware
+Before you start, it is a good idea to test each of your NeoPixels. 
 
-+ Adafruit Flora or Gemma 
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora, so for me it's **Adafruit Flora**.
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
++ Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+A code file will open. A code file is called a **sketch** in the Arduino IDE.
 
-### Software
++ Find this line of code near the top:
 
-+ The Arduino IDE
+```
+  Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
+```
+
++ Change the first number to `1`. The line should look like this now:
+
+  ```
+    Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
+  ```
+
++ Click **File** and then **Save As...**. Type in a name for your sketch and click **Save**.
+
++ At the top of your sketch, click on the tick (the check mark) icon to **verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these, you will need to do some debugging and change your code!\). 
+
+![](images/verifyIcon.png)
+
+Ready to upload!
+
++ Plug in your Flora. Press the **reset** button on the Flora and then **straight away**, while the red light is pulsing, click on the arrow icon next to the tick/check mark to **upload** the code onto the board.
+
++ You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.  
+   
+![](images/upload3_120_800.png)
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+title: Problems with uploading
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it. 
-
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
-
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
-
-```
-    https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
-```
-
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
-
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
-
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
+At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
 
 --- /collapse ---
 
-### Additional materials
++ Unplug the Flora from your computer \(You can use the power switch on a Flora to turn it off when you're using a battery pack, but it does not work when the board is plugged into a computer via USB\).
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
+**It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!**
 
++ Attach three crocodile clips to the board's **GND**, **\#6**, and **VBATT** pins.  
+   
+![](images/crocsFlora.png)
+
++ Take a NeoPixel and connect the board's **GND** wire to its **-** pin. Connect the board's **\#6** pin to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally, connect the board's **VBATT** to the **+** pin. 
+
+![](images/crocsPixel.png)
+
++ Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
+
++ Test each of your other NeoPixels one by one by connecting them up to the Flora as you've just done with your first one. Remember to **unplug the Flora** before connecting or disconnecting any wires!
+
++ Once you're done with testing the NeoPixels, change the code again to the total number of NeoPixels you'll be using. Mine is eight:
+
+```
+  Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
+```
+
++ Click **Verify**, and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
