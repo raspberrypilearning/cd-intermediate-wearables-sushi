@@ -49,10 +49,7 @@ Note: the Gemma does not work with the Linux operating system. It also won't wor
 
 + The Arduino IDE
 
---- collapse ---
----
-title: Installing and setting up the Arduino IDE
----
+###Installing and setting up the Arduino IDE
 
 + Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it. 
 
@@ -69,8 +66,6 @@ title: Installing and setting up the Arduino IDE
 + Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
 
 + In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
-
---- /collapse ---
 
 ### Additional materials
 
