@@ -5,12 +5,12 @@ theme: violet
 version: 3.0.0
 listed: true
 copyedit: true
-curriculum: 1, design-0, programming-1, phys-comp-1, manufacture-1, community-0
-interests: wearable-technology
-technologies: electronic-components
-site_areas: coderdojo, projects
-hardware: electronic-components
-software: ''
+interests: "wearable-technology"
+curriculum: "1, design-0, programming-1, phys-comp-1, manufacture-1, community-0"
+technologies: "electronic-components"
+site_areas: "coderdojo, projects"
+hardware: "electronic-components"
+software: ""
 last_tested: "2018-06-12"
 steps:
   - title: Introduction
