@@ -1,91 +1,90 @@
-## Flashing lights
+## Animate!
 
-+ Create the following new function after your first one:
++ Create the following new function at the bottom of your sketch:
 
 ``` 
-    void lightAllOneColour(uint32_t c) {
-        strip.setPixelColor(0, c);
-        strip.setPixelColor(1, c);
-        strip.setPixelColor(2, c);
-        strip.setPixelColor(3, c);
-        strip.setPixelColor(4, c);
-        strip.setPixelColor(5, c);
-        strip.setPixelColor(6, c);
-        strip.setPixelColor(7, c);
-        strip.show();
+    void animateOneColour(uint32_t c, uint8_t wait) {
+        for(uint16_t i=0; i<strip.numPixels(); i++) {
+            strip.setPixelColor(i, c);
+            strip.show();
+        }
+    }
+```
+
+Can you see that this function takes **two** parameters in the round braces? Later on, you'll change the function's code so it uses the second one.
+
++ Delete the code in the `loop` function and add in a call to your new function:
+
+```
+    void loop() {
+        animateOneColour(strip.Color(0, 0, 255), 100);
+    }
+``` 
+
+Notice how you're passing the `animateOneColour` function two parameters in the brackets? Even though the function doesn't use the second one just yet, but the code won't compile if you don't pass in values for all the parameters when you call the function.
+
++ Verify and upload your code. What do you notice?
+
+This time you only needed to write **one line** of code that calls `strip.setPixelColor`, and all of the pixels turned on. 
+
++ Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\). It looks like this:
+
+``` 
+    for(uint16_t i=0; i<strip.numPixels(); i++) {
+        
     }
 ```
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: How does the code work?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+The above code checks how many NeoPixels are in your chain and then runs the code inside the curly braces that many times. 
+
+**Here's the clever bit:** The value of `i` starts off as `0` and changes by `1` each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the **next** pixel!
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ Time to do somthing with that second parameter! In your `animateOneColour` function, add the following line below the line `strip.show();`:
 
 ```
-    void loop() {
-        lightAllOneColour(strip.Color(0, 0, 255));
-        delay(200);
-        lightAllOneColour(strip.Color(0, 0, 0));
-        delay(200);
+    delay(wait);
+```
+
+Make sure the new line is **above** the first `}`, so that it's inside the for loop. Your function should look like this now:
+
+``` 
+    void animateOneColour(uint32_t c, uint8_t wait) {
+        for(uint16_t i=0; i<strip.numPixels(); i++) {
+            strip.setPixelColor(i, c);
+            strip.show();
+            delay(wait);
+        }
     }
 ```
 
---- collapse ---
----
-title: How the parameter works
----
+Instead of using a particular number for the `delay`, you are using the second parameter of your function. This means you can choose a different value for the `delay` each time you call the function. 
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
++ Add another call to your function inside `loop` to turn the NeoPixels off as well as on:
 
---- /collapse ---
+    ```
+        void loop() {
+            animateOneColour(strip.Color(0, 0, 255), 100);
+            animateOneColour(strip.Color(0, 0, 0), 100);
+        }
+    ``` 
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ Verify your code again and upload the sketch to the Flora. Now you have a cool animated sequence!
 
---- collapse ---
----
-title: About the setup and loop functions
----
-
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
-
---- /collapse ---
-
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
-
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
+Of course, you don't have to turn the NeoPixels off. How about making them all light up in a bunch of colours one after the other?
 
 ```
     void loop() {
-        lightAllOneColour(strip.Color(255, 0, 255));
-        delay(500);
-        lightAllOneColour(strip.Color(0, 0, 0));
-        delay(500);
-        lightAllOneColour(strip.Color(255, 127, 0));
-        delay(500);
-        lightAllOneColour(strip.Color(0, 0, 0));
-        delay(500);
+        animateOneColour(strip.Color(255, 127, 0), 100);
+        animateOneColour(strip.Color(255, 0, 255), 100);
+        animateOneColour(strip.Color(0, 255, 255), 100);
     }
-```
+``` 
 
-+ Now run the same code without the "off" colour:
-
-```
-    void loop() {
-        lightAllOneColour(strip.Color(255, 0, 255));
-        delay(500);
-        lightAllOneColour(strip.Color(255, 127, 0));
-        delay(500);
-    }
-```
-
-+ Do you see the difference?
-
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
-
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
++ Add as many colours as you like. Try passing in different values other than `100` for the second parameter as well, and watch your animation speed up or slow down!

@@ -1,107 +1,91 @@
-## Colour and light
+## Flashing lights
 
-You're going to write your own **function** now. Functions keep your code tidy. 
-
-+ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
++ Create the following new function after your first one:
 
 ``` 
-    void lightAll() {
-        strip.setPixelColor(0, strip.Color(0, 0, 255));
-        strip.setPixelColor(1, strip.Color(0, 0, 255));
-        strip.setPixelColor(2, strip.Color(0, 0, 255));
-        strip.setPixelColor(3, strip.Color(0, 0, 255));
-        strip.setPixelColor(4, strip.Color(0, 0, 255));
-        strip.setPixelColor(5, strip.Color(0, 0, 255));
-        strip.setPixelColor(6, strip.Color(0, 0, 255));
-        strip.setPixelColor(7, strip.Color(0, 0, 255));
+    void lightAllOneColour(uint32_t c) {
+        strip.setPixelColor(0, c);
+        strip.setPixelColor(1, c);
+        strip.setPixelColor(2, c);
+        strip.setPixelColor(3, c);
+        strip.setPixelColor(4, c);
+        strip.setPixelColor(5, c);
+        strip.setPixelColor(6, c);
+        strip.setPixelColor(7, c);
         strip.show();
     }
 ```
 
-Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
+--- collapse ---
+---
+title: What's inside the round brackets?
+---
 
-+ Now change your `setup` code so that it looks like this:
+This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
 
-``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-        lightAll();
+--- /collapse ---
+
++ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
+
+```
+    void loop() {
+        lightAllOneColour(strip.Color(0, 0, 255));
+        delay(200);
+        lightAllOneColour(strip.Color(0, 0, 0));
+        delay(200);
     }
 ```
 
-The last line of code **calls** the function you made. That means it tells the function to run.
-
-+ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
-
 --- collapse ---
 ---
-title: Counting out the pixels
+title: How the parameter works
 ---
 
-You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up. 
-
-Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
 
 --- /collapse ---
 
-+ Change the second line of the `lightAll` function from:
-
-```
-    strip.setPixelColor(1, strip.Color(0, 0, 255));
-``` 
-
-to:
-
-```
-    strip.setPixelColor(1, strip.Color(255, 0, 0));
-``` 
-
-+ Verify and upload the code to the Flora. Can you spot the difference?
++ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
 
 --- collapse ---
 ---
-title: How do colours work in code?
+title: About the setup and loop functions
 ---
 
-On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
-
-You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`. 
-
-+ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
 
 --- /collapse ---
 
-Here are a few more colours that are good to know:
++ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
+
++ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
 
 ```
-    void lightAll() {
-        strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
-        strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
-        strip.setPixelColor(2, strip.Color(0, 255, 0)); // green
-        strip.setPixelColor(3, strip.Color(255, 0, 255)); // magenta
-        strip.setPixelColor(4, strip.Color(255, 255, 255)); // white
-        strip.setPixelColor(5, strip.Color(255, 255, 0)); // yellow
-        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
-        strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
-        strip.show();
+    void loop() {
+        lightAllOneColour(strip.Color(255, 0, 255));
+        delay(500);
+        lightAllOneColour(strip.Color(0, 0, 0));
+        delay(500);
+        lightAllOneColour(strip.Color(255, 127, 0));
+        delay(500);
+        lightAllOneColour(strip.Color(0, 0, 0));
+        delay(500);
     }
-``` 
-    
-+ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
+```
 
-Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! 
++ Now run the same code without the "off" colour:
 
-+ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
+```
+    void loop() {
+        lightAllOneColour(strip.Color(255, 0, 255));
+        delay(500);
+        lightAllOneColour(strip.Color(255, 127, 0));
+        delay(500);
+    }
+```
 
---- collapse ---
----
-title: Powering lots of NeoPixels
----
++ Do you see the difference?
 
-You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread. 
++ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
 
-+ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
-
---- /collapse ---
+Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 

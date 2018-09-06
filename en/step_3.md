@@ -1,68 +1,92 @@
-## Test your LEDs
+## Stitch your circuit
 
-Before you start, it is a good idea to test each of your NeoPixels. 
++ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
 
-+ Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora, so for me it's **Adafruit Flora**.
++ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
+  + A straight line
+  + A heart (eight NeoPixels are perfect for this)
+  + Pretend "buttons" down the front of the T-shirt
+  + A random pattern
 
-+ Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
++ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
 
-A code file will open. A code file is called a **sketch** in the Arduino IDE.
++ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
 
-+ Find this line of code near the top:
++ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
 
-```
-  Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
-```
+![](images/drawAroundShape.png)
 
-+ Change the first number to `1`. The line should look like this now:
+### Let's start sewing!
 
-  ```
-    Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
-  ```
++ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
 
-+ Click **File** and then **Save As...**. Type in a name for your sketch and click **Save**.
+You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
 
-+ At the top of your sketch, click on the tick (the check mark) icon to **verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these, you will need to do some debugging and change your code!\). 
-
-![](images/verifyIcon.png)
-
-Ready to upload!
-
-+ Plug in your Flora. Press the **reset** button on the Flora and then **straight away**, while the red light is pulsing, click on the arrow icon next to the tick/check mark to **upload** the code onto the board.
-
-+ You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.  
-   
-![](images/upload3_120_800.png)
++ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
 
 --- collapse ---
 ---
-title: Problems with uploading
+title: Holes or pins?
 ---
 
-At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
+On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
+
+In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
 
 --- /collapse ---
 
-+ Unplug the Flora from your computer \(You can use the power switch on a Flora to turn it off when you're using a battery pack, but it does not work when the board is plugged into a computer via USB\).
++ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
+ 
++ Sew a running stitch to the spot where the next NeoPixel will go. 
 
-**It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!**
++ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
 
-+ Attach three crocodile clips to the board's **GND**, **\#6**, and **VBATT** pins.  
-   
-![](images/crocsFlora.png)
++ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
 
-+ Take a NeoPixel and connect the board's **GND** wire to its **-** pin. Connect the board's **\#6** pin to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally, connect the board's **VBATT** to the **+** pin. 
+--- collapse ---
+---
+title: Protecting the ends
+---
 
-![](images/crocsPixel.png)
+It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
 
-+ Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
+--- /collapse ---
 
-+ Test each of your other NeoPixels one by one by connecting them up to the Flora as you've just done with your first one. Remember to **unplug the Flora** before connecting or disconnecting any wires!
++ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
+ 
+![](images/pixelSewing3_136_800.png)
+ 
+Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
 
-+ Once you're done with testing the NeoPixels, change the code again to the total number of NeoPixels you'll be using. Mine is eight:
++ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
 
-```
-  Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
-```
+**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
 
-+ Click **Verify**, and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
++ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
+
++ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
+
++ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other. 
+
++ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
+
+![](images/stitchedCircuit.png)
+
++ Now, the moment of truth: plug in your Flora.
+
+You should see all your NeoPixels light up!
+
+--- collapse ---
+---
+title: Something's not right
+---
+
+If some of your NeoPixels didn't light up, don't panic. Some causes could be: 
+
++ A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
+
++ Loose connections: The stitches in every hole should be good and tight for a secure connection.
+
++ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
+
+--- /collapse --- 

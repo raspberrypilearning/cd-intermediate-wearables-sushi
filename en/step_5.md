@@ -1,105 +1,107 @@
-## Write your own code
+## Colour and light
 
-+ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
-```
-    void setup() {
-        // put your setup code here, to run once:
+You're going to write your own **function** now. Functions keep your code tidy. 
 
-    }
-    void loop() {
-        // put your main code here, to run repeatedly:
-
-    }
-```
-
---- collapse ---
----
-title: Making notes in your code
----
-
-Any line that starts with `//` is a **comment**. Comments are ignored by the computer. 
-
-They're useful for making notes for yourself, or for other people who want to your code!
-
---- /collapse ---
-
-+ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
-
-+ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
-
-+ Below the new line of code, type the following: `#define PIXELS_PIN 6` 
-
-With this code you are setting which pin (the same as a hole here, remember) of the Flora to use for **data** \(instructions\). So the pin you connect the **data** holes of the NeoPixels to is number **6**.
-
-+ Below that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than eight, type that number instead of `8`.
-
-+ Finally, below that, type: 
++ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
 
 ``` 
-    Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
-```
-
-+ Inside the `setup` function, add the following two lines:
-
-``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-    }
-```
-
---- collapse ---
----
-title: What is the setup function?
----
-
-The code `void setup ()` defines the `setup` function. This is a block of code that runs when the Flora is turned on.
-
-All the code in between the curly braces `{` and `}` is in the function and so will run when the Flora turns on.
-
---- /collapse ---
-
-+ After `strip.show();`, press <kbd>Return</kbd> and type these two lines below:
-
-``` 
-    strip.setPixelColor(0, strip.Color(0, 0, 255));
-    strip.show();
-```
-
-+ Click **Verify** to compile your code and check for errors. If there are any mistakes, you will need to fix the code and check it again. Usually the error messages tell you which line of code needs fixing. Check that you typed it exactly as shown!
-
-+ Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then press the **Upload** button. When it's done, what happens?
-
-You should see the first NeoPixel light up blue. 
-
-+ Let's do another! **Above** the second `strip.show();`, type two more lines:
-
-```
-    strip.setPixelColor(1, strip.Color(0, 0, 255));
-    strip.setPixelColor(2, strip.Color(0, 0, 255));
-``` 
-
-The `setup` function should look like this now:
-
-``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
+    void lightAll() {
         strip.setPixelColor(0, strip.Color(0, 0, 255));
         strip.setPixelColor(1, strip.Color(0, 0, 255));
         strip.setPixelColor(2, strip.Color(0, 0, 255));
+        strip.setPixelColor(3, strip.Color(0, 0, 255));
+        strip.setPixelColor(4, strip.Color(0, 0, 255));
+        strip.setPixelColor(5, strip.Color(0, 0, 255));
+        strip.setPixelColor(6, strip.Color(0, 0, 255));
+        strip.setPixelColor(7, strip.Color(0, 0, 255));
         strip.show();
     }
 ```
 
-Can you work out what some of this code is doing?
+Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
 
-+ Verify and upload your code once more. This time you should see the first three NeoPixels light up blue. 
++ Now change your `setup` code so that it looks like this:
 
-+ See if you can add more lines of code to make the rest of the pixels light up as well! 
+``` 
+    void setup() {
+        // put your setup code here, to run once:
+        strip.begin();
+        strip.show();
+        lightAll();
+    }
+```
 
-![](images/threeBlue.png)
+The last line of code **calls** the function you made. That means it tells the function to run.
 
++ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
 
+--- collapse ---
+---
+title: Counting out the pixels
+---
+
+You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up. 
+
+Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+
+--- /collapse ---
+
++ Change the second line of the `lightAll` function from:
+
+```
+    strip.setPixelColor(1, strip.Color(0, 0, 255));
+``` 
+
+to:
+
+```
+    strip.setPixelColor(1, strip.Color(255, 0, 0));
+``` 
+
++ Verify and upload the code to the Flora. Can you spot the difference?
+
+--- collapse ---
+---
+title: How do colours work in code?
+---
+
+On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
+
+You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`. 
+
++ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
+
+--- /collapse ---
+
+Here are a few more colours that are good to know:
+
+```
+    void lightAll() {
+        strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
+        strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
+        strip.setPixelColor(2, strip.Color(0, 255, 0)); // green
+        strip.setPixelColor(3, strip.Color(255, 0, 255)); // magenta
+        strip.setPixelColor(4, strip.Color(255, 255, 255)); // white
+        strip.setPixelColor(5, strip.Color(255, 255, 0)); // yellow
+        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
+        strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
+        strip.show();
+    }
+``` 
+    
++ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`? 
+
+Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they! 
+
++ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
+
+--- collapse ---
+---
+title: Powering lots of NeoPixels
+---
+
+You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread. 
+
++ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
+
+--- /collapse ---
