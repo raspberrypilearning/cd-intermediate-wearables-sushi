@@ -1,4 +1,4 @@
-title: Intermediate Wearables Sushi Cards
+title: Techno-shirt
 hero_image: images/banner.png
 description: Learn to control LEDs with code while making a wearable project
 theme: violet
@@ -14,7 +14,6 @@ software: ""
 last_tested: "2018-06-12"
 steps:
   - title: Introduction
-  - title: What you will need
   - title: Test your LEDs
   - title: Stitch your circuit
   - title: Write your own code
