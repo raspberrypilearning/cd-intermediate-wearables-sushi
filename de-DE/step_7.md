@@ -1,6 +1,6 @@
-## Animate!
+## Animieren!
 
-+ Create the following new function at the bottom of your sketch:
++ Erstelle die folgende neue Funktion im unteren Teil deines Sketch:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -11,9 +11,9 @@
     }
 ```
 
-Can you see that this function takes **two** parameters in the round braces? Later on, you'll change the function's code so it uses the second one.
+Kannst du sehen, dass diese Funktion **zwei** Parameter in den runden Klammern benötigt? Später ändere den Code der Funktion so, dass nur zweite verwendet wird.
 
-+ Delete the code in the `loop` function and add in a call to your new function:
++ Lösche den Code in der `loop` -Funktion und füge einen Aufruf zu deiner neuen Funktion hinzu:
 
 ```
     void loop() {
@@ -21,13 +21,13 @@ Can you see that this function takes **two** parameters in the round braces? Lat
     }
 ```
 
-Notice how you're passing the `animateOneColour` function two parameters in the brackets? Even though the function doesn't use the second one just yet, but the code won't compile if you don't pass in values for all the parameters when you call the function.
+Bemerkst du, wie du zur `animateOneColour` -Funktion zwei Parameter in den Klammern hinzufügst? Obwohl die Funktion die zweite noch nicht verwendet, wird der Code nicht kompiliert, wenn du beim Aufrufen der Funktion nicht für alle Parameter Werte eingegeben hast.
 
-+ Verify and upload your code. What do you notice?
++ Überprüfe deinen Code und lade ihn hoch. Was fällt dir auf?
 
-This time you only needed to write **one line** of code that calls `strip.setPixelColor`, and all of the pixels turned on.
+Diesmal musste nur **eine Zeile** vom Code geschrieben werden, der `strip.setPixelColor` aufruft und alle Pixel einschaltet.
 
-+ Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\). It looks like this:
++ Kannst du in deiner neuen Funktion sehen, dass es ein weiteres Paar ** geschweifte Klammern** mit einen Code dazwischen gibt? Dieses Paar gehört zu einer sogenannten **for loop** \(aber nicht die `loop` -Funktion!\). Es sieht so aus:
 
 ``` 
     for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -37,22 +37,22 @@ This time you only needed to write **one line** of code that calls `strip.setPix
 
 --- collapse ---
 ---
-title: How does the code work?
+title: Wie funktioniert der Code?
 ---
 
-The above code checks how many NeoPixels are in your chain and then runs the code inside the curly braces that many times.
+Der obige Code überprüft, wie viele NeoPixel sich in deiner Kette befinden, und führt den Code dann so oft in geschweiften Klammern aus.
 
-**Here's the clever bit:** The value of `i` starts off as `0` and changes by `1` each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the **next** pixel!
+**Hier das Schlaue:** Der Wert von `i` beginnt als `0` und ändert sich um `1` jedes Mal, also jedes Mal, wenn die Zeile `strip.setPixelColor(i, c);` startet, setzt es die Farbe des **nächsten** Pixels!
 
 --- /collapse ---
 
-+ Time to do somthing with that second parameter! In your `animateOneColour` function, add the following line below the line `strip.show();`:
++ Zeit, etwas mit diesem zweiten Parameter zu tun! In deiner `animateOneColour` -Funktion, füge die folgende Zeile unter der Zeile `strip.show();` hinzu:
 
 ```
     delay(wait);
 ```
 
-Make sure the new line is **above** the first `}`, so that it's inside the for loop. Your function should look like this now:
+Stelle sicher, dass die neue Zeile **über** der ersten `}` ist, sodass es innerhalb der For-Schleife ist. Dein Text sollte jetzt so aussehen:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -64,9 +64,9 @@ Make sure the new line is **above** the first `}`, so that it's inside the for l
     }
 ```
 
-Instead of using a particular number for the `delay`, you are using the second parameter of your function. This means you can choose a different value for the `delay` each time you call the function.
+Anstatt eine bestimmte Nummer für das `delay `zu verwenden, benutze den zweiten Parameter deiner Funktion. Dies bedeutet, dass du einen anderen Wert für das `delay` jedes Mal auswählen kannst, wenn du die Funktion aufrufst.
 
-+ Add another call to your function inside `loop` to turn the NeoPixels off as well as on:
++ Füge deiner Funktion innerhalb des `loop` einen weiteren Aufruf hinzu, damit sich die NeoPixel aus und wieder ein schalten:
 
     ```
         void loop() {
@@ -75,9 +75,9 @@ Instead of using a particular number for the `delay`, you are using the second p
         }
     ```
 
-+ Verify your code again and upload the sketch to the Flora. Now you have a cool animated sequence!
++ Überprüfe deinen Code erneut und laden ihn ins Sketch zur Flora hoch. Jetzt hast du eine coole animierte Sequenz!
 
-Of course, you don't have to turn the NeoPixels off. How about making them all light up in a bunch of colours one after the other?
+Natürlich musst du die NeoPixel nicht ausschalten. Wie wäre es, wenn sie alle nacheinander in einer Reihe von Farben leuchten würden?
 
 ```
     void loop() {
@@ -87,4 +87,4 @@ Of course, you don't have to turn the NeoPixels off. How about making them all l
     }
 ```
 
-+ Add as many colours as you like. Try passing in different values other than `100` for the second parameter as well, and watch your animation speed up or slow down!
++ Füge so viele Farben hinzu, wie du möchtest. Versuche, andere Werte als `100` für den zweiten Parameter zu verwenden, und beobachte, wie deine Animation beschleunigt oder verlangsamt wird!
