@@ -1,6 +1,6 @@
-## Rainbow fun
+## متعة قوس قزح
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ أضف الدالة البرمجية الجديدة التالية إلى نهاية الرسم التخطيطي. لا تقلق ، ليس عليك أن تفهم ذلك الآن! لقد تم استعارته من مثال الرسم الذي قمت بتشغيله في وقت سابق.
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+تتيح لك هذه الوظيفة اختيار أي رقم من ` 0 ` إلى ` 255 ` ، ويمزج لونًا لك.
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ أضف الآن وظيفة(داله) جديدة أخرى. تحقق مما إذا كان يمكنك اكتشاف ** للحلقة التكراريه ** فيها!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+هناك القليل من الرياضيات هنا! إنه موجود لاختيار مجموعة رائعة من الألوان بالتساوي من خلال قوس قزح بأكمله.
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ كل ما تبقى هو استدعاء الدالة البرمجية. قم بتغيير `حلقة تكراريه ` الدالة البرمجية بحيث تحتوي فقط على هذا السطر من التعليمات البرمجية. ثم تحقق وتحميل الرسم الخاص بك لرؤية قوس قزح جميل من الألوان.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+لست بحاجة إلى تمرير أي معلمات هذه المرة ، لأن الدالة البرمجية الجديدة تحدد الألوان لك!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ ماذا عن إضافة تأخير؟ دعنا نكتب دالة برمجية جديدة تشبه تلك المذكورة أعلاه ، ولكن مع فتره زمنيه يضاف إلى الحلقة التكراريه بحيث تعمل على تحريك NeoPixels:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ قم بتغيير استدعاء الوظيفة او الداله البرمجية في `حلقة تكراريه ` داله وإضافة سطر ثانٍ من التعليمات البرمجية لاستدعاء الرسوم المتحركة ` الأخرى ` الدالة البرمجية أيضًا:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+جربها على فلورا!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## التحدي: حاول إنشاء التسلسلات الخاصة بك
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ ابدأ في الجمع بين استدعائات متعدده مختلفة الدوال البرمجية ` animateRainbow ` و الدوال البرمجية الأخرى الخاصة بك. خيالك هو الحد!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ يمكنك القيام بالكثير من الأشياء الرائعة باستخدام الحيل التي تعلمتها باستخدام الألوان ، للحلقات ، والتأخير. إذا كنت تريد رؤية المزيد من الأمثلة ، فاطلع على ** strandtest ** رسم استخدمته لاختبار NeoPixels.
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+العنوان: الطاقة المحمولة
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+إذا كنت تخطط لارتداء مشروعك ، فربما ترغب في جعله أكثر سهولة باستخدام طاقة البطارية.
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ بالنسبة إلى Flora ، ستعمل حزمة بطارية 3 × AA أو 3 × AAA فهي تعمل وتؤدي المطلوب لا بأس بها. انظر [ dojo.soy/wear2-flora-power ](http://dojo.soy/wear2-flora-power) {: target = "_ blank"} لمزيد من المعلومات.
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ إذا كنت تستخدم متحكم مختلف ، فيجب عليك التحقق جيدًا من متطلبات الطاقة لديه.
 
 --- /collapse ---
