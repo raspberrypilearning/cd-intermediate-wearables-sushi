@@ -1,19 +1,20 @@
-## Animate!
+## تحريك (حركة حيوية)!
 
-+ Create the following new function at the bottom of your sketch:
++ قم بإنشاء الدالة البرمجية الجديدة التالية في أسفل رسمك التخطيطي:
 
 ``` 
-    void animateOneColour(uint32_t c, uint8_t wait) {
+        void animateOneColour(uint32_t c, uint8_t wait) {
         for(uint16_t i=0; i<strip.numPixels(); i++) {
             strip.setPixelColor(i, c);
             strip.show();
         }
     }
+Can you see that this function takes two parameters in the rou
 ```
 
-Can you see that this function takes **two** parameters in the round braces? Later on, you'll change the function's code so it uses the second one.
+يمكنك أن ترى أن هذه الدالة البرمجية تستغرق ** اثنين ** المعلمات في الأقواس المستديرة؟ في وقت لاحق ، ستقوم بتغيير كود الدالة البرمجية بحيث تستخدم كود الثاني.
 
-+ Delete the code in the `loop` function and add in a call to your new function:
++ حذف الكود في `حلقة التكرار ` الداله وإضافة استدعاء إلى الداله الجديدة:
 
 ```
     void loop() {
@@ -21,13 +22,16 @@ Can you see that this function takes **two** parameters in the round braces? Lat
     }
 ```
 
-Notice how you're passing the `animateOneColour` function two parameters in the brackets? Even though the function doesn't use the second one just yet, but the code won't compile if you don't pass in values for all the parameters when you call the function.
+لاحظ كيف تمرر` animateOneColour
+ ` الدالة البرمجية معلمتين في الأقواس؟ على الرغم من أن الداله لا تستخدم الداله الثانية حتى الآن ، ولكن لن يتم تجميع الكود إذا لم تقم بتمرير القيم لجميع المعلمات عند استدعاء الداله.
 
-+ Verify and upload your code. What do you notice?
++ تحقق وتحميل الكود. ماذا تلاحظ؟
 
-This time you only needed to write **one line** of code that calls `strip.setPixelColor`, and all of the pixels turned on.
+هذه المرة تحتاج فقط إلى كتابة ** سطر واحد ** من التعليمات البرمجية التي تستدعي ` 
+strip.setPixelColor 
+` ، و تشغيل جميع وحدات البكسل.
 
-+ Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\). It looks like this:
++ داخل وظيفتك(الداله) الجديدة ، هل يمكنك أن ترى أن هناك زوجًا آخر من ** أقواس متعرجة ** مع الكود بينهما؟ ينتمي هذا الزوج إلى شيء يسمى ** للحلقة التكراريه ** \ (لكن ليس حلقة تكراريه ` ` الدالة البرمجية!\). وهو يبدو بهذا الشكل:
 
 ``` 
     for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -37,22 +41,22 @@ This time you only needed to write **one line** of code that calls `strip.setPix
 
 --- collapse ---
 ---
-title: How does the code work?
+العنوان: كيف يعمل الكود البرمجي؟
 ---
 
-The above code checks how many NeoPixels are in your chain and then runs the code inside the curly braces that many times.
+يتحقق الكود(التعليمات البرمجية) أعلاه من عدد NeoPixels في سلسلتك ثم يقوم بتشغيل الكود داخل الأقواس المتعرجة مرات عديدة.
 
-**Here's the clever bit:** The value of `i` starts off as `0` and changes by `1` each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the **next** pixel!
+** إليك الجزء الذكي: ** قيمة ` i` يبدأ بـ ` 0 ` والتغييرات بواسطة ` 1 ` في كل مرة ، لذلك في كل مرة يكون فيها الخط ` strip.setPixelColor (i، c) ؛ ` يعمل ، يتم تعيين لون ** التالي ** بكسل!
 
 --- /collapse ---
 
-+ Time to do somthing with that second parameter! In your `animateOneColour` function, add the following line below the line `strip.show();`:
++ حان الوقت للقيام بشيء ما مع تلك المعلمة الثانية! في ` animateOneColour الخاص بك ` دالة برمجية ، أضف السطر التالي أسفل الخط ` strip.show () ؛ `:
 
 ```
-    delay(wait);
+    التأخير (الانتظار) ؛;
 ```
 
-Make sure the new line is **above** the first `}`, so that it's inside the for loop. Your function should look like this now:
+تأكد من أن السطر الجديد هو ** أعلاه ** أول `} ` ، بحيث يكون داخل حلقة for التكراريه. يجب أن تبدو التعليمات البرمجية والدوال بالشكل التالي:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -64,9 +68,9 @@ Make sure the new line is **above** the first `}`, so that it's inside the for l
     }
 ```
 
-Instead of using a particular number for the `delay`, you are using the second parameter of your function. This means you can choose a different value for the `delay` each time you call the function.
+بدلاً من استخدام رقم معين ` للتأخير ` ، أنت تستخدم المعلمة الثانية من وظيفتك(الداله). هذا يعني أنه يمكنك اختيار قيمة مختلفة ` للتأخير` في كل مرة تستدعي الوظيفة.
 
-+ Add another call to your function inside `loop` to turn the NeoPixels off as well as on:
++ أضف استدعاء أخر إلى دالتك البرمجية داخل `حلقة تكراريه ` لإيقاف تشغيل NeoPixels وكذلك تشغيله:
 
     ```
         void loop() {
@@ -75,9 +79,9 @@ Instead of using a particular number for the `delay`, you are using the second p
         }
     ```
 
-+ Verify your code again and upload the sketch to the Flora. Now you have a cool animated sequence!
++ تحقق من الكود الخاص بك مرة أخرى وقم بتحميل الرسم إلى Flora. الآن لديك تسلسل متحرك رائع!
 
-Of course, you don't have to turn the NeoPixels off. How about making them all light up in a bunch of colours one after the other?
+بالطبع ، ليس عليك إيقاف تشغيل NeoPixels. ماذا عن جعلها كلها تضيء في مجموعة من الألوان واحدة تلو الأخرى؟
 
 ```
     void loop() {
@@ -87,4 +91,4 @@ Of course, you don't have to turn the NeoPixels off. How about making them all l
     }
 ```
 
-+ Add as many colours as you like. Try passing in different values other than `100` for the second parameter as well, and watch your animation speed up or slow down!
++ أضف العديد من الألوان كما تريد. حاول تمرير قيم مختلفة غير ` 100 ` للمعلمة الثانية أيضًا ، وشاهد الرسوم المتحركة تسرع أو تبطئ!
