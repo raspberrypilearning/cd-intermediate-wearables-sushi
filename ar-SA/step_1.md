@@ -1,77 +1,77 @@
-## Introduction
+## المقدمة
 
-These Sushi Cards will show you how to use wearable, programmable LEDs and how to control them with code.
+ستوضح لك بطاقات السوشي هذه كيفية استخدام مصابيح LED القابلة للارتداء ، وكيفية التحكم بها باستخدام التعليمات البرمجية.
 
-**WARNING**: this project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.
+** تحذير **: يتضمن هذا المشروع الأضواء الساطعة المشرقة! قد لا يكون مناسبًا إذا كان هناك من يعانون من الصرع.
 
-### What you will make
+### ما الذي ستصنعه
 
-In this project, you will sew LED lights to a T-shirt and write code to make them flash and change colour!
+في هذا المشروع ، ستقوم بخياطة أضواء LED على قميص وكتابة كود لجعلها تومض وتغير اللون!
 
-![A colourful smiley face made from LEDs sewn on a tshirt](images/rainbowSmile.png)
+![وجه مبتسم ملون مصنوع من مصابيح LED مخيط على تيشيرت](images/rainbowSmile.png)
 
 --- collapse ---
 ---
-title: What you will learn
+العنوان: ما الذي ستتعلمه
 ---
 
-+ Testing NeoPixels
-+ Stitching a NeoPixel circuit with positive, negative, and data flow
-+ The flow of a Flora program (setup and loop functions)
-+ Turning NeoPixels on and off
-+ Addressing individual NeoPixels
-+ RGB colour mixing
-+ Functions and parameters
-+ Using for loops
-+ Exploring more advanced examples
++ اختبار NeoPixels
++ خياطة دائرة NeoPixel بتدفق إيجابي وسالب وتدفق البيانات
++ تدفق برنامج Flora (وظائف الإعداد والتكرار)
++ تشغيل NeoPixels وإيقاف تشغيله
++ معالجة NeoPixels الفردية
++ خلط لون RGB
++ الدوال والمعلمات
++ استخدام حلقات 'for' التكرارية
++ استكشاف المزيد من الأمثلة المتقدمة
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+العنوان: ما الذي سوف تحتاجه إليه
 ---
 
-### Hardware
+### الأجهزة (المعدات)
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora أو Gemma
++ سلك USB
++ حوالي ثمانية وحدات NeoPixels
++ سلك موصل
++ ثلاثة أزواج من مقاطع التمساح \ (يمكنك أيضًا استخدام قطع خيط موصل بدلاً من ذلك ، ولكن قد يكون اختبار مقاطع التمساح أسهل مع \)
++ اختياري: حزمة بطارية تسمح لك بارتداء مشروعك النهائي دون توصيله بالكمبيوتر!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+سيتم التحكم في مصابيح LED بواسطة Adafruit Flora. يمكنك أيضًا استخدام Adafruit Gemma أو LilyPad Arduino أو LilyPad Arduino USB ؛ إذا قمت بذلك ، فستكون هناك حاجة إلى بعض التغييرات الصغيرة في الرمز ، مثل رقم دبوس الإخراج وإعداد اللوحة في Arduino IDE.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+ملاحظة: لا تعمل Gemma مع نظام التشغيل Linux. لن يعمل أيضًا مع منفذ USB 3.0 ، لذلك يجب أن يكون لديك منفذ USB 2.0 أو لوحة وصل لتوصيل Gemma بالكمبيوتر.
 
-### Software
+### البرمجة
 
-+ The Arduino IDE
++ اردوينو IDE
 
-### Installing and setting up the Arduino IDE
+### العنوان: تثبيت وإعداد Arduino IDE
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ قم بتنزيل Arduino IDE من [ dojo.soy/wear2-arduino-ide ](http://dojo.soy/wear2-arduino-ide) {: target = "_ blank"} وتثبيته.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ افتح التطبيق بعد تثبيته. هناك بعض الأشياء الإضافية اللازمة لجعلها تعمل لهذا المشروع.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ افتح ** التفضيلات ** من ** اردوينو ** قائمة. في ** عناوين URL الإضافية لوح الإدارة ** المربع ، قم بلصق التالي وانقر فوق موافق.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ في أدوات ** ** القائمة ، انتقل إلى ** الالواح ** وحدد ** ادارة الالواح... **. اختر ** مساهمة ** من القائمة المنسدلة. قم بتثبيت ** لوحات Adafruit AVR من Adafruit **. ثم انقر فوق ** إغلاق **.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ قم بالانهاء و إعد تشغيل Arduino IDE. انتقل إلى ** اللوح ** مرة أخرى ويجب أن تشاهد ** Adafruit Flora ** ، ** Adafruit Gemma ** ، ** LilyPad Arduino ** و ** LilyPad Arduino USB ** المدرجة. حدد اللوحة التي ستستخدمها.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ في أدوات ** ** القائمة ، انتقل إلى ** تضمين مكتبة ** وحدد ** ادارة المكتبات... **. اكتب ` neopixel ` في مربع البحث. قم بتثبيت ** لوحات Adafruit Avr من Adafruit **. ثم انقر فوق ** إغلاق **.
 
-### Additional materials
+### مواد إضافية
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ إبرة تطريز ومقص
++ تي شيرت (القميص)
++ طلاء أظافر شفاف
++ اختياري: طوق تطريز (يُوصى به لجعل خياطة دائرتك أسهل)
 
 --- /collapse ---
