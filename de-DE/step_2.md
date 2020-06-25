@@ -1,68 +1,68 @@
-## Test your LEDs
+## Teste deine LED's
 
-Before you start, it is a good idea to test each of your NeoPixels.
+Bevor du beginnst, solltest du alle deine NeoPixel testen.
 
-+ Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora, so for me it's **Adafruit Flora**.
++ Öffne die Arduino IDE. Stelle sicher, dass du im Menü **Werkzeuge** das richtige Gerät ausgewählt hast. Ich benutze die Flora, also ist es für mich **Adafruit Flora**.
 
-+ Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
++ Gehe zum Menü **Datei**, wähle **Beispiele** aus, finde dann **Adafruit NeoPixel** \(es kann ganz sehr weit unten sein!\) und wähle **strandtest**.
 
-A code file will open. A code file is called a **sketch** in the Arduino IDE.
+Eine Codedatei wird geöffnet. Eine Codedatei wird in der Arduino IDE als **Sketch** (auf Deutsch: Skizze) bezeichnet.
 
-+ Find this line of code near the top:
++ Suche diese Codezeile weit oben:
 
 ```
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Change the first number to `1`. The line should look like this now:
++ Ändere die erste Zahl auf `1`. Dein Code sollte so aussehen:
 
   ```
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
   ```
 
-+ Click **File** and then **Save As...**. Type in a name for your sketch and click **Save**.
++ Klicke auf **Datei** und dann auf **Speichern unter...** oder verwende die Tastenkombination Strg+Umschalt+S. Gebe einen Namen für deine Skizze ein und klicke dann auf **Speichern**.
 
-+ At the top of your sketch, click on the tick (the check mark) icon to **verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these, you will need to do some debugging and change your code!\).
++ Klicke oben in deiner Skizze auf das Häkchen, um den Code zu **Überprüfen**. Am unteren Rand des Fensters sollten die Wörter "Kompilieren abgeschlossen" angezeigt werden, was bedeutet, dass der Code erfolgreich **kompiliert** wurde \(wenn nicht, werden hier Fehler angezeigt. Um dies zu beheben, musst du einige Fehler beheben und deinen Code verändern! \).
 
 ![](images/verifyIcon.png)
 
-Ready to upload!
+Bereit zum Hochladen!
 
-+ Plug in your Flora. Press the **reset** button on the Flora and then **straight away**, while the red light is pulsing, click on the arrow icon next to the tick/check mark to **upload** the code onto the board.
++ Schließe deine Flora an. Drücke den **Reset** -Knopf auf der Flora und dann **sofort**, während das rote Licht pulsiert, auf das Pfeilsymbol neben dem Häkchen, um den Code auf das Board **hochzuladen/zu uploaden**.
 
-+ You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.
++ Du solltest das rote Licht blinken sehen, gefolgt von zwei orangefarbenen Lichtern auf dem Board. Wenn es fertig ist, solltest du am Ende deiner Skizze die Worte "Upload abgeschlossen" sehen.
 
 ![](images/upload3_120_800.png)
 
 --- collapse ---
 ---
-title: Problems with uploading
+title: Probleme beim Hochladen
 ---
 
-At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
+Anfangs kann es etwas schwierig sein, den Upload zum Laufen zu bringen. Stelle sicher, dass das richtige Board ausgewählt ist und dass du ein funktionierendes USB-Kabel hast, das an beiden Enden richtig angeschlossen ist. Danach dreht sich alles um das Timing! Du wirst den Dreh raus bekommen.
 
 --- /collapse ---
 
-+ Unplug the Flora from your computer \(You can use the power switch on a Flora to turn it off when you're using a battery pack, but it does not work when the board is plugged into a computer via USB\).
++ Trenne die Flora von deinem Computer \(Du kannst den Netzschalter auf der Flora verwenden, um sie auszuschalten, wenn du einen Akku verwendest. Dies funktioniert jedoch nicht, wenn das Board über USB an einen Computer angeschlossen ist\).
 
-**It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!**
+**Es ist wichtig, das Board immer vom Stromnetz zu trennen oder auszuschalten, bevor du andere Komponenten anschließt oder trennst, damit du sie nicht beschädigst!**
 
-+ Attach three crocodile clips to the board's **GND**, **\#6**, and **VBATT** pins.
++ Befestige drei Krokodilklemmen an den **GND**, **\#6** und **VBATT** Pins des Boards.
 
 ![](images/crocsFlora.png)
 
-+ Take a NeoPixel and connect the board's **GND** wire to its **-** pin. Connect the board's **\#6** pin to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally, connect the board's **VBATT** to the **+** pin.
++ Nehme einen NeoPixel und schließe das **GND** (Masse) Kabel des Boards an den entsprechenden **-** Pin an. Verbinde den Pin **\#6** des Boards an den **data in** Pin an: Dies ist der Pin mit einem Pfeil, der **nach innen** zeigt in Richtung der LED in der Mitte. Zum Schluss, verbinde den **VBATT** mit dem **+** Pin des Boards.
 
 ![](images/crocsPixel.png)
 
-+ Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
++ Bereit? Schließe die Flora noch einmal an und beobachte, wie deine LED aufleuchtet und eine mehrfarbige Sequenz blinkt!
 
-+ Test each of your other NeoPixels one by one by connecting them up to the Flora as you've just done with your first one. Remember to **unplug the Flora** before connecting or disconnecting any wires!
++ Teste jedes deiner anderen NeoPixel einzeln, indem du sie wie gerade bei deinem Ersten mit der Flora verbindest. Denke daran, **die Flora vom Stromnetz zu trennen** vor dem Anschließen oder Trennen von Leitungen!
 
-+ Once you're done with testing the NeoPixels, change the code again to the total number of NeoPixels you'll be using. Mine is eight:
++ Wenn du mit dem Testen der NeoPixel fertig bist, ändere den Code erneut in der Gesamtzahl der verwendeten NeoPixel. Meine ist acht:
 
 ```
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Click **Verify**, and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
++ Klicke auf **Überprüfen** und mache dann einen **Upload** des neuen Codes auf die Flora. Als nächstes machst du deine NeoPixel-Schaltung!
