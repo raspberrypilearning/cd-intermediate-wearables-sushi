@@ -1,104 +1,104 @@
-## Write your own code
+## اكتب الكود(التعليمات البرمجية) الخاص بك
 
-+ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
++ في Arduino IDE ، انقر فوق ملف ** ** ثم ** جديد **. ستحصل على رسم ** فارغ ** يشبه هذا:
 ```
     void setup() {
-        // put your setup code here, to run once:
+        // وضع التعليمات البرمجية الإعداد هنا، لتشغيل مرة واحدة:
 
     }
-    void loop() {
-        // put your main code here, to run repeatedly:
+   void loop() {
+        // وضع التعليمات البرمجية الرئيسي هنا، لتشغيل مرارا وتكرارا:
 
-    }
+}
 ```
 
 --- collapse ---
 ---
-title: Making notes in your code
+العنوان: تدوين الملاحظات في التعليمات البرمجية الخاصة بك
 ---
 
-Any line that starts with `//` is a **comment**. Comments are ignored by the computer.
+أي سطر يبدأ بـ ` // ` تعليق ** **. يتم تجاهل التعليقات من قبل الكمبيوتر.
 
-They're useful for making notes for yourself, or for other people who want to your code!
+إنها مفيدة لتدوين الملاحظات لنفسك ، أو للأشخاص الآخرين الذين يريدون تعليماتك البرمجية!
 
 --- /collapse ---
 
-+ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
++ في أدوات ** ** القائمة ، انتقل إلى ** تضمين مكتبة ** وحدد **Adafruit NeoPixe... **. من المفترض أن ترى هذا الرمز يضاف إلى أعلى رسمك: ` # تتضمن <Adafruit_NeoPixel.h> `.
 
-+ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
++ انقر في نهاية السطر واضغط على <kbd> رجوع </kbd> المفتاح عدة مرات لإضافة بعض الأسطر الفارغة تحته.
 
-+ Below the new line of code, type the following: `#define PIXELS_PIN 6`
++ أسفل سطر التعليمات البرمجية الجديد ، اكتب ما يلي: ` #define PIXELS_PIN 6 `
 
-With this code you are setting which pin (the same as a hole here, remember) of the Flora to use for **data** \(instructions\). So the pin you connect the **data** holes of the NeoPixels to is number **6**.
+باستخدام هذا الكود ، تقوم بتعيين أي دبوس (مثل الثقب هنا ، تذكر) فلورا لاستخدامه في ** بيانات ** \(تعليمات\). حتى دبوس توصيل البيانات ** ** ثقوب NeoPixels إلى رقم ** 6 **.
 
-+ Below that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than eight, type that number instead of `8`.
++ أسفل ذلك ، اكتب ` #define NUM_PIXELS 8 `. هذا هو عدد NeoPixels لديك. إذا كان لديك رقم مختلف عن ثمانية ، فاكتب هذا الرقم بدلاً من ` 8 `.
 
-+ Finally, below that, type:
++ أخيرًا ، اكتب أدناه:
 
 ``` 
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Inside the `setup` function, add the following two lines:
++ داخل الإعداد ` ` الدالة البرمجية ، أضف السطرين التاليين:
 
 ``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-    }
+    void setup () {
+        // ضع كود الإعداد هنا ، للتشغيل مرة واحدة:
+        strip.begin ()؛
+       strip.show();
+}
 ```
 
 --- collapse ---
 ---
-title: What is the setup function?
+العنوان: ما هي الدالة البرمجية (الإعداد)؟
 ---
 
-The code `void setup ()` defines the `setup` function. This is a block of code that runs when the Flora is turned on.
+الكود ` void setup () ` يحدد الإعداد ` ` الدالة. هذه كتلة من التعليمات البرمجية يتم تشغيلها عند تشغيل فلورا.
 
-All the code in between the curly braces `{` and `}` is in the function and so will run when the Flora turns on.
+كل الكود(التعليمات البرمجية) بين الأقواس المتعرجة ` { ` و `} ` في الدالة ، وبالتالي سيتم تشغيلها عند تشغيل فلورا.
 
 --- /collapse ---
 
-+ After `strip.show();`, press <kbd>Return</kbd> and type these two lines below:
++ بعد ` strip.show () ؛ ` ، اضغط على <kbd> رجوع </kbd> واكتب هذين الخطين أدناه:
 
 ``` 
     strip.setPixelColor(0, strip.Color(0, 0, 255));
     strip.show();
 ```
 
-+ Click **Verify** to compile your code and check for errors. If there are any mistakes, you will need to fix the code and check it again. Usually the error messages tell you which line of code needs fixing. Check that you typed it exactly as shown!
++ انقر فوق ** تحقق ** لتجميع التعليمات البرمجية الخاصة بك والتحقق من الأخطاء. إذا كانت هناك أي أخطاء ، فستحتاج إلى إصلاح الكود والتحقق منه مرة أخرى. عادةً ما تخبرك رسائل الخطأ بأي سطر من التعليمات البرمجية يحتاج إلى إصلاح. تحقق من أنك كتبته بالضبط كما هو موضح!
 
-+ Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then press the **Upload** button. When it's done, what happens?
++ دعونا توصيل فلورا وتشغيل التعليمات البرمجية الخاصة بك! اضغط على إعادة ضبط ** ** على فلورا ، ثم اضغط على ** تحميل ** زر. عندما يتم ذلك ، ماذا يحدث؟
 
-You should see the first NeoPixel light up blue.
+يجب أن ترى كل NeoPixels تضيء.
 
-+ Let's do another! **Above** the second `strip.show();`, type two more lines:
++ دعونا نفعل آخر! ** أعلاه ** الشريط ` الثاني. show () ؛ ` ، اكتب سطرين إضافيين:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
     strip.setPixelColor(2, strip.Color(0, 0, 255));
 ```
 
-The `setup` function should look like this now:
+يجب أن تكون التعليمات البرمجية الخاصة بـ `GotValue` كما يلي الآن:
 
 ``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-        strip.setPixelColor(0, strip.Color(0, 0, 255));
-        strip.setPixelColor(1, strip.Color(0, 0, 255));
-        strip.setPixelColor(2, strip.Color(0, 0, 255));
-        strip.show();
-    }
+    void setup () {
+        // ضع كود الإعداد هنا ، للتشغيل مرة واحدة:
+        strip.begin ()؛
+        قطاع. عرض () ؛
+        strip.setPixelColor (0، strip.Color (0، 0، 255)) ؛
+        strip.setPixelColor (1، strip.Color (0، 0، 255)) ؛
+        strip.setPixelColor (2، strip.Color (0، 0، 255)) ؛
+        قطاع. عرض () ؛
+}
 ```
 
-Can you work out what some of this code is doing?
+هل يمكنك معرفة ما يفعله كل جزء من هذا الكود؟
 
-+ Verify and upload your code once more. This time you should see the first three NeoPixels light up blue.
++ تحقق وتحميل البرمجه الخاصه بك( الكود البرمجي) مرة أخرى. يجب أن ترى كل NeoPixels تضيء.
 
-+ See if you can add more lines of code to make the rest of the pixels light up as well!
++ انظر ما إذا كان بإمكانك إضافة المزيد من أسطر التعليمات البرمجية لجعل باقي وحدات البكسل تضيء أيضًا!
 
 ![](images/threeBlue.png)
 
