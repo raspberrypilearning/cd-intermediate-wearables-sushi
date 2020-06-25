@@ -1,0 +1,24 @@
+---
+title: قميص - تيكنو (تقني)
+hero_image: images/banner.png
+description: تعلم كيفية التحكم في مصابيح LED باستخدام التعليمات البرمجية وصنع مشروع قابل للارتداء
+theme: violet
+version: 3.0.0
+listed: true
+copyedit: true
+interests: "wearable-technology"
+curriculum: "1, design-0, programming-1, phys-comp-1, manufacture-1, community-0"
+technologies: "electronic-components"
+site_areas: "coderdojo, projects"
+hardware: "electronic-components"
+software: ""
+last_tested: "2018-06-12"
+steps:
+  - title: المقدمة
+  - title: فحص مصابيح LED الخاصة بك
+  - title: خياطة دائرتك
+  - title: اكتب التعليمات البرمجية الخاصة بك
+  - title: اللون والضوء
+  - title: الأضواء الساطعة
+  - title: تحريك (حركة حيوية)!
+  - title: قوس قزح مضاء
