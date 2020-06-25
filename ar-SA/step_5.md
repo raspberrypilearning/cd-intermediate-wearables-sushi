@@ -1,8 +1,8 @@
-## Colour and light
+## اللون والضوء
 
-You're going to write your own **function** now. Functions keep your code tidy.
+ستقوم بكتابة دالة ** الخاصة بك ** الآن. الدالة تبقي التعليمات البرمجية الخاصة بك مرتبة.
 
-+ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
++ في الجزء السفلي من الرسم ، انقر فوق ** بعد ** `} ` \ (لذا ، خارج الحلقة ` `الدالة البرمجية\) واضغط على <kbd> رجوع </kbd> مرتين. أضف الكود التالي:
 
 ``` 
     void lightAll() {
@@ -18,9 +18,9 @@ You're going to write your own **function** now. Functions keep your code tidy.
     }
 ```
 
-Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
+ملاحظة: كل التعليمات البرمجية في **دالة ** بين زوج من الأقواس المتعرجة ** ** `{ }` .
 
-+ Now change your `setup` code so that it looks like this:
++ الآن قم بتغيير إعداد ` الخاص بك ` التعليمات البرمجية بحيث تبدو مثل هذا:
 
 ``` 
     void setup() {
@@ -31,49 +31,49 @@ Note: All the code in a **function** goes in between a pair of **curly braces** 
     }
 ```
 
-The last line of code **calls** the function you made. That means it tells the function to run.
+السطر الأخير من م الكود**استدعاء ** الدالة البرمجية التي قمت بها. هذا يعني أنه يخبر (الدالة البرمجية) بالتشغيل.
 
-+ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
++ تحقق وتحميل الرسم الخاص بك إلى فلورا. هل أضاءت جميع وحدات البكسل باللون الأزرق؟
 
 --- collapse ---
 ---
-title: Counting out the pixels
+العنوان: عد البكسلات
 ---
 
-You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up.
+ربما كنت قد اكتشفت أن الرقم الأول في السطر ` strip.setPixelColor (0 ، strip.Color (0 ، 0 ، 255)) ؛ ` يقرر أي بكسل يضيء.
 
-Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+هل لاحظت أن البكسل الأول هو ` 0 ` بدلاً من ` 1 ` ؟ لذلك إذا كان لديك ثماني وحدات بكسل ، فإن الأخير هو الرقم ` 7 `.
 
 --- /collapse ---
 
-+ Change the second line of the `lightAll` function from:
++ تغيير السطر الثاني من ` light All ` من الدالة البرمجية:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
 ```
 
-to:
+الى:
 
 ```
     strip.setPixelColor(1, strip.Color(255, 0, 0));
 ```
 
-+ Verify and upload the code to the Flora. Can you spot the difference?
++ تحقق وتحميل البرمجه الخاصه بك( الكود البرمجي) الى فلورا. هل تستطيع ملاحظة الفرق؟
 
 --- collapse ---
 ---
-title: How do colours work in code?
+العنوان: كيف تعمل الألوان في التعليمات البرمجية؟
 ---
 
-On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
+على جهاز الكمبيوتر ، يتم إنشاء الألوان عن طريق خلط ** الألوان الأساسية الثلاثة **: ** أحمر ** ، ** أخضر ** و ** أزرق **.
 
-You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`.
+يمكنك استخدام أرقام من ` 0 ` إلى ` 255 ` لإخبار الكمبيوتر بكمية كل لون يمكن مزجه. لذلك فإن الكود ` قطاع. اللون (0 ، 0 ، 255) ` يجعل ** أزرق ** لأن قيمة اللونين الأحمر والأخضر كلاهما ` 0 `.
 
-+ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
++ ما هو اللون حسب رأيك؟ `strip.Color(0, 255, 0)` سوف أعطيك؟ حاول!
 
 --- /collapse ---
 
-Here are a few more colours that are good to know:
+فيما يلي بعض الألوان الأخرى التي من المفيد معرفتها:
 
 ```
     void lightAll() {
@@ -86,22 +86,22 @@ Here are a few more colours that are good to know:
         strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
         strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
         strip.show();
-    }
+  {
 ```
 
-+ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`?
++ حاول تجربة الأرقام للحصول على ظلال مختلفة. ما الذي تعتقد أنك ستحصل عليه إذا قمت بتعيين قيمة ` 0 ` لجميع الألوان الثلاثة ، ` شريط اللون (0 ، 0 ، 0) ` ؟
 
-Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they!
+هل ترى النجوم الان؟! من المؤكد أن تلك NeoPixels مضيئه، أليس كذلك!
 
-+ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
++ لحسن الحظ ، إذا كنت ترغب في ذلك ، يمكنك تغيير سطوعها باستخدام التعليمات `strip.setBrightness(10);`. أضفه إلى`setup`دالة ، بين السطور `strip.begin();` and `strip.show();`. تمامًا مثل الألوان ، يمكن أن يكون الرقم أي شيء من ` 0 ` إلى ` 255 `.
 
 --- collapse ---
 ---
-title: Powering lots of NeoPixels
+العنوان: تشغيل الكثير من وحدات NeoPixels
 ---
 
-You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread.
+قد تجد أن الألوان لا تظهر بشكل صحيح في نهاية السلسلة. وذلك لأن الدائرة تفقد الطاقة بسبب مقاومة ** ** في الخيط.
 
-+ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
++ يمكنك فرز هذا عن طريق خياطة خيط إضافي على طول ** السالب ** والإيجابية ** ** المسارات في دائرتك.
 
 --- /collapse ---
