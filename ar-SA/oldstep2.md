@@ -1,49 +1,49 @@
-## What you will need
+## ما ستحتاج اليه
 
-### Hardware
+### الأجهزة
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora أو Gemma
++ سلك USB
++ حوالي ثمانية وحدات NeoPixels
++ سلك موصل
++ ثلاثة أزواج من مقاطع التمساح \ (يمكنك أيضًا استخدام قطع خيط موصل بدلاً من ذلك ، ولكن قد يكون اختبار مقاطع التمساح أسهل مع \)
++ اختياري: حزمة بطارية تسمح لك بارتداء مشروعك النهائي دون توصيله بالكمبيوتر!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+سيتم التحكم في مصابيح LED بواسطة Adafruit Flora. يمكنك أيضًا استخدام Adafruit Gemma أو LilyPad Arduino أو LilyPad Arduino USB ؛ إذا قمت بذلك ، فستكون هناك حاجة إلى بعض التغييرات الصغيرة في الكود البرمجي ، مثل رقم دبوس الإخراج وإعداد اللوحة في Arduino IDE.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+ملاحظة: لا تعمل Gemma مع نظام التشغيل Linux. لن يعمل أيضًا مع منفذ USB 3.0 ، لذلك يجب أن يكون لديك منفذ USB 2.0 أو لوحة وصل لتوصيل Gemma بالكمبيوتر.
 
-### Software
+### البرمجيات
 
-+ The Arduino IDE
++ اردوينو IDE
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+العنوان: تثبيت وإعداد Arduino IDE
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ قم بتنزيل Arduino IDE من [ dojo.soy/wear2-arduino-ide ](http://dojo.soy/wear2-arduino-ide) {: target = "_ blank"} وتثبيته.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ افتح التطبيق بعد تثبيته. هناك بعض الأشياء الإضافية اللازمة لجعلها تعمل لهذا المشروع.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ افتح ** التفضيلات ** من ** اردوينو ** قائمة. في ** عناوين URL الإضافية لادارة الالواح ** المربع ، قم بلصق التالي وانقر فوق موافق.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ في أدوات ** ** القائمة ، انتقل إلى ** الالواح ** وحدد ** ادارة الالواح... **. اختر ** مساهمة ** من القائمة المنسدلة. قم بتثبيت ** لوحات Adafruit AVR من Adafruit **. ثم انقر فوق ** إغلاق **.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ قم بالانهاء و إعد تشغيل Arduino IDE. انتقل إلى ** الالواح ** مرة أخرى ويجب أن تشاهد ** Adafruit Flora ** ، ** Adafruit Gemma ** ، ** LilyPad Arduino ** و ** LilyPad Arduino USB ** المدرجة. حدد اللوحة التي ستستخدمها.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ في أدوات ** ** القائمة ، انتقل إلى ** الالواح ** وحدد ** ادارة الالواح... **. اكتب ` neopixel ` في مربع البحث. قم بتثبيت ** لوحات Adafruit Avr من Adafruit **. ثم انقر فوق ** إغلاق **.
 
 --- /collapse ---
 
-### Additional materials
+### مواد إضافية
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ إبرة تطريز ومقص
++ تي شيرت (القميص)
++ طلاء أظافر شفاف
++ اختياري: طوق تطريز (يُوصى به لجعل خياطة دائرتك أسهل)
 
