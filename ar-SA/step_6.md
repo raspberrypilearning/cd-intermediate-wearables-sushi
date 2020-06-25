@@ -1,6 +1,6 @@
-## Flashing lights
+## وميض الاضواء
 
-+ Create the following new function after your first one:
++ قم بإنشاء الدالة البرمجية الجديدة التالية بعد الأولى:
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+العنوان: ماذا يوجد داخل الأقواس المستديرة؟
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+تأخذ هذه الدالة البرمجية **معلمة:<0/> هذا هو الشيء داخل الأقواس المستديرة. إنها بعض المعلومات الإضافية التي تعطيها الدالة البرمجية عند استدعائها.</p>
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ هذه المرة ستكتب استدعاءات دالتك البرمجية في حلقة ` ` بدلاً من إعداد ` `. انقر داخل حلقة ` ` دالتك وإضافة التعليمات البرمجية بحيث يبدو مثل هذا:
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+العنوان: كيف تعمل المعلمات
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+انظر كيف تمرر اللون كمعلمة ** ** إلى ` lightAllOneColour ` دالة برمجية؟ هذا هو اللون الذي يتم استخدامه بدلاً من ` ج ` على كل سطر داخل تلك الدالة. هذا يعني أنه يمكنك استخدام نفس الدالة لجعل NeoPixels أي لون ، ويمكنك حتى إيقاف تشغيلها جميعًا!
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ حذف الخط ` كل الاضواء () ؛ ` من داخل ` الإعداد ` دالة. تحقق وتحميل الكود.
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+العنوان: حول وظائف الإعداد والتكرار
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+عندما يتم تشغيل Flora ، فإنه يقوم بتشغيل كافة التعليمات البرمجية في الإعداد ` ` تعمل أولاً ، ثم تقوم بتشغيل حلقة ` ` دالة مرارا وتكرارا إلى الأبد!
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ ماذا تعتقد في وظيفه ` التأخير ` ؟ حاول وضع قيم مختلفة ** لمعلمة ** ، على سبيل المثال ` تأخير (50) ؛ ` أو ` تأخير (1000) ؛ `. لا تنس التحقق من تحميل الكود لأختبار التغييرات الخاصة بك!
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ هل لاحظت أن اللون ` (0 ، 0 ، 0) ` يطفئ بكسل؟ حاول تشغيل الكود التالي على فلورا:
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ الآن قم بتشغيل نفس الكود بدون لون "إيقاف":
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ هل تستطيع ملاحظة الفرق؟
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ حاول تصميم تسلسلك عن طريق تغيير الكود في ` حلقة ` دالة! يمكنك إضافة العديد من التأخيرات والعديد من الاستدعائات إلى ` lightAllOneColour ` والدالة البرمجية التي ترغب بها. جرب زياده وتقليل الوقت و قيم مختلفة لمعلمة اللون.
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+تذكر أن التسلسل بأكمله سيستمر في التكرار مرارًا وتكرارًا إذا وضعت الكود داخل `حلقة التكرار ` دالة برمجية. 
