@@ -1,8 +1,8 @@
 ## Farbe und Licht
 
-Du wirst deine eigene **Funktion** jetzt schreiben. Funktionen halten deinen Code aufgeräumt.
+Du wirst jetzt deine eigene **Funktion** schreiben. Funktionen halten deinen Code aufgeräumt.
 
-+ Klicke im unteren Teil im Sketch **hinter** dem `}` \(also außerhalb der `loop` -Funktion\) und drücke <kbd>Eingabe</kbd> ein paar Mal. Geben den folgenden Code ein:
++ Klicke im unteren Teil im Sketch **hinter** dem `}` \(also außerhalb der `loop` -Funktion\) und drücke <kbd>Eingabe</kbd> ein paar Mal. Gib den folgenden Code ein:
 
 ``` 
     void lightAll() {
@@ -18,9 +18,9 @@ Du wirst deine eigene **Funktion** jetzt schreiben. Funktionen halten deinen Cod
     }
 ```
 
-Hinweis: Der gesamte Code in einer **Funktion** befindet sich zwischen ein Paar **geschweifte Klammern** `{ }`.
+Hinweis: Der gesamte Code in einer **Funktion** befindet sich zwischen ein Paar **geschweiften Klammern** `{ }`.
 
-+ Ändere nun deinen `setup` -Code, damit es so aussieht:
++ Ändere nun deinen `setup`-Code, damit es so aussieht:
 
 ``` 
     void setup () {
@@ -42,7 +42,7 @@ title: Pixel zählen
 
 Möglicherweise hast du herausgefunden, dass die erste Zahl in der Zeile `strip.setPixelColor(0, strip.Color(0, 0, 255)); ` entscheidet, welches Pixel aufleuchtet.
 
-Hast du bemerkt, dass das erste Pixel `0 ` anstelle von `1` ist? Wenn du also acht Pixel hast, ist das letzte die Nummer `7`.
+Hast du bemerkt, dass das erste Pixel `0` anstelle von `1` ist? Wenn du also acht Pixel hast, ist das letzte die Nummer `7`.
 
 --- /collapse ---
 
@@ -93,7 +93,7 @@ Hier sind einige weitere Farben, die gut zu merken sind:
 
 Siehst du schon Sterne?! Diese NeoPixel sind sicher HELL, nicht wahr?
 
-+ Glücklicherweise kannst du die Helligkeit mit der Anweisung `strip.setBrightness(10);` ändern, wenn du möchtest. Füge es zu der `setup` -Funktion hinzu, zwischen den Zeilen `strip.begin();` und `strip.show();`. Genau wie bei Farben kann die Zahl zwischen `0` bis `255` liegen.
++ Glücklicherweise kannst du die Helligkeit mit der Anweisung `strip.setBrightness(10);` ändern, wenn du möchtest. Füge es zu der `setup` -Funktion zwischen den Zeilen `strip.begin();` und `strip.show();` hinzu. Genau wie bei Farben kann die Zahl zwischen `0` und `255` liegen.
 
 --- collapse ---
 ---
@@ -102,6 +102,6 @@ title: Stromversorgung vieler NeoPixel
 
 Möglicherweise werden die Farben gegen Ende der Kette nicht richtig angezeigt. Dies liegt daran, dass die Schaltung aufgrund des **Widerstands** in den Fäden an Leistung verliert.
 
-+ Du kannst dies beheben, indem du einen zusätzlichen Faden entlang der **negativen** und dem **positiven** Wegen in deiner Schaltung nähst.
++ Du kannst dies beheben, indem du einen zusätzlichen Faden entlang der **negativen** und der **positiven** Wege in deiner Schaltung nähst.
 
 --- /collapse ---
