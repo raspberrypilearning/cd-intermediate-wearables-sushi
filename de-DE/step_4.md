@@ -3,11 +3,11 @@
 + Klicke in der Arduino IDE auf **Datei** und dann **Neu**. Du erhälst eine leere **Sketch**, die so aussieht:
 ```
     void setup() {
-        // put your setup code here, to run once:
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
 
     }
     void loop() {
-        // put your main code here, to run repeatedly:
+        // Gib deinen Hauptcode hier ein, um ihn wiederholt auszuführen:
 
     }
 ```
@@ -43,7 +43,7 @@ Mit diesem Code legst du fest, welcher Pin (das Gleiche hier wie ein Loch, denke
 
 ``` 
     void setup() {
-        // put your setup code here, to run once:
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
         strip.begin();
         strip.show();
     }
@@ -84,7 +84,7 @@ Die `setup`-Funktion sollte jetzt so aussehen:
 
 ``` 
     void setup() {
-        // put your setup code here, to run once:
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
         strip.begin();
         strip.show();
         strip.setPixelColor(0, strip.Color(0, 0, 255));

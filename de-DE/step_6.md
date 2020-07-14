@@ -18,7 +18,7 @@
 
 --- collapse ---
 ---
-Titel: Was ist in den runden Klammern?
+title: Was ist in den runden Klammern?
 ---
 
 Diese Funktion enthält einen **Parameter**: das ist das Stück in den runden Klammern. Das sind einige zusätzliche Informationen, die du der Funktion gibst, wenn du sie aufrufst.
