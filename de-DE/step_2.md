@@ -20,7 +20,7 @@ Eine Codedatei wird geöffnet. Eine Codedatei wird in der Arduino IDE als **Sket
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
   ```
 
-+ Klicke auf **Datei** und dann auf **Speichern unter...** oder verwende die Tastenkombination Strg+Umschalt+S. Gebe einen Namen für deine Skizze ein und klicke dann auf **Speichern**.
++ Klicke auf **Datei** und dann auf **Speichern unter...** oder verwende die Tastenkombination Strg+Umschalt+S. Gib einen Namen für deine Skizze ein und klicke dann auf **Speichern**.
 
 + Klicke oben in deiner Skizze auf das Häkchen, um den Code zu **Überprüfen**. Am unteren Rand des Fensters sollten die Wörter "Kompilieren abgeschlossen" angezeigt werden, was bedeutet, dass der Code erfolgreich **kompiliert** wurde \(wenn nicht, werden hier Fehler angezeigt. Um dies zu beheben, musst du einige Fehler beheben und deinen Code verändern! \).
 
@@ -51,13 +51,13 @@ Anfangs kann es etwas schwierig sein, den Upload zum Laufen zu bringen. Stelle s
 
 ![](images/crocsFlora.png)
 
-+ Nehme einen NeoPixel und schließe das **GND** (Masse) Kabel des Boards an den entsprechenden **-** Pin an. Verbinde den Pin **\#6** des Boards an den **data in** Pin an: Dies ist der Pin mit einem Pfeil, der **nach innen** zeigt in Richtung der LED in der Mitte. Zum Schluss, verbinde den **VBATT** mit dem **+** Pin des Boards.
++ Nimm einen NeoPixel und schließe das **GND** (Masse) Kabel des Boards an den entsprechenden **-** Pin an. Verbinde den Pin **\#6** des Boards an den **data in** Pin: Dies ist der Pin mit einem Pfeil, der **nach innen** zeigt in Richtung der LED in der Mitte. Zum Schluss verbinde den **VBATT** mit dem **+** Pin des Boards.
 
 ![](images/crocsPixel.png)
 
 + Bereit? Schließe die Flora noch einmal an und beobachte, wie deine LED aufleuchtet und eine mehrfarbige Sequenz blinkt!
 
-+ Teste jedes deiner anderen NeoPixel einzeln, indem du sie wie gerade bei deinem Ersten mit der Flora verbindest. Denke daran, **die Flora vom Stromnetz zu trennen** vor dem Anschließen oder Trennen von Leitungen!
++ Teste jedes deiner anderen NeoPixel einzeln, indem du sie wie gerade bei deinem Ersten mit der Flora verbindest. Denke daran, vor dem Anschließen oder Trennen von Leitungen, **die Flora vom Stromnetz zu trennen**!
 
 + Wenn du mit dem Testen der NeoPixel fertig bist, ändere den Code erneut in der Gesamtzahl der verwendeten NeoPixel. Meine ist acht:
 
