@@ -2,7 +2,7 @@
 
 Diese Sushi-Karten zeigen Dir, wie du tragbare, programmierbare LEDs verwendest und wie du sie mit einem Code steuern kannst.
 
-** WARNUNG ** : Dieses Projekt beinhaltet helle Blinklichter! Es ist möglicherweise nicht geeignet, für Epilepsiepatienten.
+** WARNUNG ** : Dieses Projekt beinhaltet helle Blinklichter! Es ist möglicherweise nicht geeignet für Epilepsiepatienten.
 
 ### Was du machen wirst
 
@@ -65,7 +65,7 @@ Hinweis: Gemma funktioniert nicht mit Linux-Betriebssystem. Es funktioniert auch
 
 + Beende die Arduino IDE und starte sie neu. Gehe zum Menü ** Board:** und du solltest die **Adafruit Flora**, **Adafruit Gemma**,**LilyPad Arduino** und **LilyPad Arduino USB** aufgeführt sehen. Wähle die Karte aus, die du verwenden möchtst.
 
-+ Gehe im Menü **Sketch** zu **Bibliothek einbinden** und wähle **Bibliotheken verwalten**. Gebe `Neopixel` in das Suchfeld ein. Installiere **Adafruit NeoPixel by Adafruit**. Klicke dann auf **Schließen**.
++ Gehe im Menü **Sketch** zu **Bibliothek einbinden** und wähle **Bibliotheken verwalten**. Gib `Neopixel` in das Suchfeld ein. Installiere **Adafruit NeoPixel by Adafruit**. Klicke dann auf **Schließen**.
 
 ### Zusätzliche Materialien
 
