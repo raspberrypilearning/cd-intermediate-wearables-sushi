@@ -2,14 +2,14 @@
 
 + Klicke in der Arduino IDE auf **Datei** und dann **Neu**. Du erhälst eine leere ** Sketch**, die so aussieht:
 ```
-    void setup() {
-        // put your setup code here, to run once:
+    void setup () {
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
 
     }
-    void loop() {
-        // put your main code here, to run repeatedly:
+    void loop () {
+        // Gib deinen Hauptcode hier ein, um ihn wiederholt auszuführen:
 
-    }
+}
 ```
 
 --- collapse ---
@@ -42,11 +42,11 @@ Mit diesem Code legst du fest, welcher Pin (das Gleiche hier wie ein Loch, denke
 + Innerhalb der `setup`-Funktion, füge die folgenden zwei Zeilen hinzu:
 
 ``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-    }
+    void setup () {
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
+        strip.begin ();
+        strip.show ();
+}
 ```
 
 --- collapse ---
@@ -83,15 +83,15 @@ Du solltest das erste Pixel blau aufleuchten sehen.
 Die `setup`-Funktion sollte jetzt so aussehen:
 
 ``` 
-    void setup() {
-        // put your setup code here, to run once:
-        strip.begin();
-        strip.show();
-        strip.setPixelColor(0, strip.Color(0, 0, 255));
-        strip.setPixelColor(1, strip.Color(0, 0, 255));
-        strip.setPixelColor(2, strip.Color(0, 0, 255));
-        strip.show();
-    }
+    void setup () {
+        // Gib deinen Setup-Code hier ein, um ihn einmal auszuführen:
+        strip.begin ();
+        strip.show ();
+        strip.setPixelColor (0, strip.Color (0, 0, 255));
+        strip.setPixelColor (1, strip.Color (0, 0, 255));
+        strip.setPixelColor (2, strip.Color (0, 0, 255));
+        strip.show ();
+}
 ```
 
 Kannst du herausfinden, was einiges von diesen Code macht?
