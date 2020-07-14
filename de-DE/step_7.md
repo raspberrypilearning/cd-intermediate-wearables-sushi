@@ -11,9 +11,9 @@
     }
 ```
 
-Kannst du sehen, dass diese Funktion **zwei** Parameter in den runden Klammern benötigt? Später ändere den Code der Funktion so, dass nur zweite verwendet wird.
+Kannst du sehen, dass diese Funktion **zwei** Parameter in den runden Klammern benötigt? Später ändere den Code der Funktion so, dass nur der zweite verwendet wird.
 
-+ Lösche den Code in der `loop` -Funktion und füge einen Aufruf zu deiner neuen Funktion hinzu:
++ Lösche den Code in der `loop`-Funktion und füge einen Aufruf zu deiner neuen Funktion hinzu:
 
 ```
     void loop() {
@@ -21,13 +21,13 @@ Kannst du sehen, dass diese Funktion **zwei** Parameter in den runden Klammern b
     }
 ```
 
-Bemerkst du, wie du zur `animateOneColour` -Funktion zwei Parameter in den Klammern hinzufügst? Obwohl die Funktion die zweite noch nicht verwendet, wird der Code nicht kompiliert, wenn du beim Aufrufen der Funktion nicht für alle Parameter Werte eingegeben hast.
+Bemerkst du, wie du zur `animateOneColour` -Funktion zwei Parameter in den Klammern hinzufügst? Obwohl die Funktion den zweiten noch nicht verwendet, wird der Code nicht kompiliert, wenn du beim Aufrufen der Funktion nicht für alle Parameter Werte eingegeben hast.
 
 + Überprüfe deinen Code und lade ihn hoch. Was fällt dir auf?
 
 Diesmal musste nur **eine Zeile** vom Code geschrieben werden, der `strip.setPixelColor` aufruft und alle Pixel einschaltet.
 
-+ Kannst du in deiner neuen Funktion sehen, dass es ein weiteres Paar ** geschweifte Klammern** mit einen Code dazwischen gibt? Dieses Paar gehört zu einer sogenannten **for loop** \(aber nicht die `loop` -Funktion!\). Es sieht so aus:
++ Kannst du in deiner neuen Funktion sehen, dass es ein weiteres Paar ** geschweifte Klammern** mit einem Code dazwischen gibt? Dieses Paar gehört zu einer sogenannten **for loop** \(aber nicht die `loop` -Funktion!\). Es sieht so aus:
 
 ``` 
     for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -40,7 +40,7 @@ Diesmal musste nur **eine Zeile** vom Code geschrieben werden, der `strip.setPix
 title: Wie funktioniert der Code?
 ---
 
-Der obige Code überprüft, wie viele NeoPixel sich in deiner Kette befinden, und führt den Code dann so oft in geschweiften Klammern aus.
+Der obige Code überprüft, wie viele NeoPixel sich in deiner Kette befinden und führt den Code dann so oft in geschweiften Klammern aus.
 
 **Hier das Schlaue:** Der Wert von `i` beginnt als `0` und ändert sich um `1` jedes Mal, also jedes Mal, wenn die Zeile `strip.setPixelColor(i, c);` startet, setzt es die Farbe des **nächsten** Pixels!
 
@@ -66,7 +66,7 @@ Stelle sicher, dass die neue Zeile **über** der ersten `}` ist, sodass es inner
 
 Anstatt eine bestimmte Nummer für das `delay `zu verwenden, benutze den zweiten Parameter deiner Funktion. Dies bedeutet, dass du einen anderen Wert für das `delay` jedes Mal auswählen kannst, wenn du die Funktion aufrufst.
 
-+ Füge deiner Funktion innerhalb des `loop` einen weiteren Aufruf hinzu, damit sich die NeoPixel aus und wieder ein schalten:
++ Füge deiner Funktion innerhalb des `loop` einen weiteren Aufruf hinzu, damit sich die NeoPixel aus- und wieder einschalten:
 
     ```
         void loop() {
@@ -75,7 +75,7 @@ Anstatt eine bestimmte Nummer für das `delay `zu verwenden, benutze den zweiten
         }
     ```
 
-+ Überprüfe deinen Code erneut und laden ihn ins Sketch zur Flora hoch. Jetzt hast du eine coole animierte Sequenz!
++ Überprüfe deinen Code erneut und lade ihn ins Sketch zur Flora hoch. Jetzt hast du eine coole animierte Sequenz!
 
 Natürlich musst du die NeoPixel nicht ausschalten. Wie wäre es, wenn sie alle nacheinander in einer Reihe von Farben leuchten würden?
 
