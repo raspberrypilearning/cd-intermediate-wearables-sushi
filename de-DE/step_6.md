@@ -21,11 +21,11 @@
 Titel: Was ist in den runden Klammern?
 ---
 
-Diese Funktion erhält einen **Parameter**: das ist das Stück in den runden Klammern. Es sind einige zusätzliche Informationen, die du der Funktion gibst, wenn du sie aufrufst.
+Diese Funktion enthält einen **Parameter**: das ist das Stück in den runden Klammern. Das sind einige zusätzliche Informationen, die du der Funktion gibst, wenn du sie aufrufst.
 
 --- /collapse ---
 
-+ Dieses Mal schreibst du deine Funktionsaufrufe in einem `loop` (Schleife) anstatt im `setup`. Klicke in die `loop` -Funktion und füge einen Code hinzu, so dass es so aussieht:
++ Dieses Mal schreibst du deine Funktionsaufrufe in einem `loop` (Schleife) anstatt im `setup`. Klicke in die `loop`-Funktion und füge einen Code hinzu, so dass es so aussieht:
 
 ```
     void loop() {
@@ -41,22 +41,22 @@ Diese Funktion erhält einen **Parameter**: das ist das Stück in den runden Kla
 title: Wie der Parameter funktioniert
 ---
 
-Erkennst du, wie du eine Farbe als **Parameter** zu deiner `lightAllOneColour` Funktion hinzufügen kannst? Dies ist die Farbe, die anstelle von ` c verwendet wird ` in jeder Zeile innerhalb dieser Funktion. Dies bedeutet, dass du dieselbe Funktion verwenden kannst, um die NeoPixel in einer beliebigen Farbe zu gestalten, und du kannst sie sogar alle ausschalten!
+Erkennst du, wie du eine Farbe als **Parameter** zu deiner `lightAllOneColour` Funktion hinzufügen kannst? Dies ist die Farbe, die anstelle von `c` in jeder Zeile innerhalb dieser Funktion verwendet wird. Dies bedeutet, dass du dieselbe Funktion verwenden kannst, um die NeoPixel in einer beliebigen Farbe zu gestalten, und du kannst sie sogar alle ausschalten!
 
 --- /collapse ---
 
-+ Lösche die Zeile `lightAll();` aus der `setup` -Funktion. Überprüfe den Code und lade ihn hoch.
++ Lösche die Zeile `lightAll();` aus der `setup`-Funktion. Überprüfe den Code und lade ihn hoch.
 
 --- collapse ---
 ---
 title: Über die Setup- und Loop-Funktionen
 ---
 
-Wenn die Flora eingeschaltet wird, wird der gesamte Code in der `setup` -Funktion zuerst ausgeführt und dann die `loop` -Funktion immer und immer wieder!
+Wenn die Flora eingeschaltet wird, wird der gesamte Code in der `setup`-Funktion zuerst und dann die `loop`-Funktion immer und immer wieder ausgeführt!
 
 --- /collapse ---
 
-+ Was denkst du tut die `delay` (Verzögerungs) -Funktion? Versuche, verschiedene Werte für den **Parameter** einzugeben, zum Beispiel `delay(50);` oder `delay(1000);`. Vergesse nicht, den Code zu überprüfen und hochzuladen, um deine Änderungen zu testen!
++ Was denkst du, tut die `delay` (Verzögerungs) -Funktion? Versuche, verschiedene Werte für den **Parameter** einzugeben, zum Beispiel `delay(50);` oder `delay(1000);`. Vergesse nicht, den Code zu überprüfen und hochzuladen, um deine Änderungen zu testen!
 
 + Hast du bemerkt, dass die Farbe `(0, 0, 0)` die Pixel ausschaltet? Versuche, den folgenden Code auf der Flora auszuführen:
 
@@ -86,6 +86,6 @@ Wenn die Flora eingeschaltet wird, wird der gesamte Code in der `setup` -Funktio
 
 + Erkennst du den Unterschied?
 
-+ Versuche, deine eigene Sequenz zu entwerfen, indem du den Code in der `loop` -Funktion änderst! Du kannst deiner ` lightAllOneColour` Funktion so viele Verzögerungen und Aufrufe hinzufügen, wie du möchtest. Experimentiere mit längeren und kürzeren Verzögerungen und unterschiedlichen Werten für den Farbparameter.
++ Versuche, deine eigene Sequenz zu entwerfen, indem du den Code in der `loop`-Funktion änderst! Du kannst deiner `lightAllOneColour` Funktion so viele Verzögerungen und Aufrufe hinzufügen, wie du möchtest. Experimentiere mit längeren und kürzeren Verzögerungen und unterschiedlichen Werten für den Farbparameter.
 
-Denke daran, dass sich die gesamte Sequenz immer wieder wiederholt, wenn du deinem Code in die `loop` -Funktion einfügst. 
+Denke daran, dass sich die gesamte Sequenz immer wieder wiederholt, wenn du deinen Code in die `loop` -Funktion einfügst. 
