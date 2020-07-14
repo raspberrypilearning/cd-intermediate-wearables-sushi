@@ -18,11 +18,11 @@
 
 ### Los geht's mit dem Nähen!
 
-+ Wenn du alles markiert hast, lege alle Teile beiseite und nehme eine Nadel und einen leitfähigen Faden. Etwa 20 cm sollten zunächst ausreichen, wenn deine Pixel ziemlich nahe beieinander liegen. Wenn du einen Stickrahmen hast, kann die Verwendung das Nähen erheblich erleichtern.
++ Wenn du alles markiert hast, lege alle Teile beiseite und nimm eine Nadel und einen leitfähigen Faden. Etwa 20 cm sollten zunächst ausreichen, wenn deine Pixel ziemlich nahe beieinander liegen. Wenn du einen Stickrahmen hast, kann die Verwendung das Nähen erheblich erleichtern.
 
 Du wirst die **Daten** -Linie als Erstes nähen. Dies ist der Faden, der die Anweisungen (deinen Code!) übermittelt, welcher den NeoPixeln mitteilt, was zu tun ist, zum Beispiel wann sie aufleuchten sollen.
 
-+ Nehme dein erstes NeoPixel und setze es ein. Die kleinen Pfeile zeigen darauf, wo sich das Nächste befinden wird. Befestige es am Stoff, indem du es mit dem Pfeil, der von der LED in der Mitte **weg** zeigt, durch das Loch nähst. Dieses Loch ist der ** Ausgangspin**.
++ Nimm dein erstes NeoPixel und setze es ein. Die kleinen Pfeile zeigen darauf, wo sich das Nächste befinden wird. Befestige es am Stoff, indem du es mit dem Pfeil, der von der LED in der Mitte **weg** zeigt, durch das Loch nähst. Dieses Loch ist der ** Ausgangspin**.
 
 --- collapse ---
 ---
@@ -31,7 +31,7 @@ title: Löcher oder Pins?
 
 Auf Platinen, wie Adafruit Flora, Arduino oder Raspberry Pi, werden die kleinen Metallteile, mit denen du sie am Stromkreis anschließt, als ** Pins** bezeichnet.
 
-Im Falle von **tragbarer** Elektronik, sind die Pins jedoch nicht wie Pins geformt: sie haben eine Lochform, so dass du sie mit leitendem Fäden verbinden können. Dies bedeutet, dass in tragbaren Projekten die Wörter "Pin" und "Loch" dasselbe bedeuten können.
+Im Falle von **tragbarer** Elektronik, sind die Pins jedoch nicht wie Pins geformt: sie haben eine Lochform, so dass du sie mit leitenden Fäden verbinden kannst. Dies bedeutet, dass in tragbaren Projekten die Wörter "Pin" und "Loch" dasselbe bedeuten können.
 
 --- /collapse ---
 
@@ -39,7 +39,7 @@ Im Falle von **tragbarer** Elektronik, sind die Pins jedoch nicht wie Pins gefor
 
 + Nähe einen Laufstich an die Stelle, an der sich das nächste NeoPixel befindet.
 
-+ Nehme dann das nächste Pixel und platziere es auf seine Stelle, wobei die Pfeile weg vom ersten und hin zum nächsten Punkt zeigen. Befestige es, indem du das **Eingangs-** Loch durchnähst \(Denke daran, dies ist das Loch, in das der Pfeil **in Richtung** der LED in der Mitte zeigt\).
++ Nimm dann das nächste Pixel und platziere es auf seine Stelle, wobei die Pfeile weg vom ersten und hin zum nächsten Punkt zeigen. Befestige es, indem du das **Eingangs-** Loch durchnähst \(Denke daran, dies ist das Loch, in das der Pfeil **in Richtung** der LED in der Mitte zeigt\).
 
 + Sichere den Faden mit ein paar Stichen auf der Rückseite des Stoffes und schneide den Reste kurz ab.
 
@@ -58,13 +58,13 @@ Es ist eine gute Idee, die Enden des Fadens nach dem Schneiden mit klarem Nagell
 
 Als nächstes verbinde alle ** negativen** Löcher in der Kette und dann alle ** positiven**.
 
-+ Benutze ein langes Stück des leitfähigen Fadens, ungefähr 50–100 cm lang, nähe ein paar enge Stiche durch die ** - ** Löcher jedes Pixels, beginnend mit dem ersten und endend mit dem letzten, und nähe eines laufenden Stich zwischen den NeoPixeln.
++ Benutze ein langes Stück des leitfähigen Fadens, ungefähr 50–100 cm lang, nähe ein paar enge Stiche durch die ** - ** Löcher jedes Pixels, beginnend mit dem ersten und endend mit dem letzten, und nähe einen laufenden Stich zwischen den NeoPixeln.
 
-**Hinweis**: Stelle sicher, dass der Faden keinen der anderen Fäden in de **Daten** -Linie berührt oder kreuzt!
+**Hinweis**: Stelle sicher, dass der Faden keinen der anderen Fäden in der **Daten** -Linie berührt oder kreuzt!
 
 + Verbinde mit einem weiteren langen Stück des leitenden Fadens alle **+** Löcher der NeoPixel auf die gleiche Weise, wie du gerade die **-** Löcher verbunden hast.
 
-+ Lege zum Schluss das Flora-Board auf das T-Shirt (stelle sicher, dass es **nicht in der Steckdose eingesteckt** ist! \).
++ Lege zum Schluss das Flora-Board auf das T-Shirt (Stelle sicher, dass es **nicht in der Steckdose eingesteckt** ist! \).
 
 + Verwende drei **separate** Stücke des leitfähigen Fadens, verbinde den **\#6** Pin der Platine mit dem **Eingangs-** Loch des ersten NeoPixels, den **GND**Pin der Platine mit dem **-** Loch des ersten NeoPixels und den ** VBATT ** Pin der Platine mit dem **+** Loch des ersten NeoPixel, nähe einen Laufstich entlang des Stoffes. Stelle sicher, dass sich keiner der Fäden berührt.
 
@@ -72,9 +72,9 @@ Als nächstes verbinde alle ** negativen** Löcher in der Kette und dann alle **
 
 ![](images/stitchedCircuit.png)
 
-+ Nun, der Moment der Wahrheit: Stecke deine Flora in die Steckdose.
++ Jetzt, der Moment der Wahrheit: Stecke deine Flora in die Steckdose.
 
-Du solltest alle deiner Pixel aufleuchten sehen!
+Du solltest alle deine Pixel aufleuchten sehen!
 
 --- collapse ---
 ---
@@ -87,6 +87,6 @@ Wenn einige deiner NeoPixel nicht aufgeleuchtet sind, gerate nicht in Panik. Ein
 
 + Lose Verbindungen: Die Stiche in jedem Loch sollten für eine sichere Verbindung gut und fest sein.
 
-+ Richtiger Code hochgeladen: Hat dein Code die richtige Anzahl von NeoPixeln definiert? Wurde es fehlerfrei kompiliert und hochgeladen?
++ Richtiger Code hochgeladen: Hat dein Code die richtige Anzahl von NeoPixeln definiert? Wurde er fehlerfrei kompiliert und hochgeladen?
 
 --- /collapse --- 
