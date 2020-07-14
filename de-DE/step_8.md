@@ -18,9 +18,9 @@
     }
 ```
 
-Mit dieser Funktion kannst du eine beliebige Zahl aus `0` bis `255` auswählen und es mischt dir eine Farbe.
+Mit dieser Funktion kannst du eine beliebige Zahl von `0` bis `255` auswählen und es mischt dir eine Farbe.
 
-+ Füge nun eine weitere neue Funktion hinzu. Überprüfe, ob du die ** for-Schleife** drin erkennen kannst!
++ Füge nun eine weitere neue Funktion hinzu. Überprüfe, ob du die **for-Schleife** darin erkennen kannst!
 
 ```
     void lightAllRainbow() {
@@ -33,7 +33,7 @@ Mit dieser Funktion kannst du eine beliebige Zahl aus `0` bis `255` auswählen u
 
 Hier drin steckt  ein bisschen Mathe! Es ist da, um eine schöne Auswahl an Farben gleichmäßig über den gesamten Regenbogen auszuwählen.
 
-+ Du musst nur noch die Funktion aufrufen. Ändere die `loop` -Funktion so, dass nur diese Codezeile enthalten ist. Überprüfe dann dein Sketch und lade ihn hoch, um einen schönen Regenbogen von Farben zu sehen.
++ Du musst nur noch die Funktion aufrufen. Ändere die `loop`-Funktion so, dass nur diese Codezeile enthalten ist. Überprüfe dann dein Sketch und lade ihn hoch, um einen schönen Regenbogen von Farben zu sehen.
 
 ```
     void loop() {
@@ -55,7 +55,7 @@ Du musst diesmal keine Parameter verwenden, da die neue Funktion die Farben für
     }
 ```
 
-+ Ändere den Funktionsaufruf in der `loop` -Funktion und füge eine zweite Codezeile hinzu, um deine andere `animate` -Funktion auch aufzurufen:
++ Ändere den Funktionsaufruf in der `loop`-Funktion und füge eine zweite Codezeile hinzu, um deine andere `animate`-Funktion auch aufzurufen:
 
 ```
     void loop() {
@@ -70,9 +70,9 @@ Probiere es auf der Flora aus!
 
 ## Herausforderung: Versuche, deine eigene Sequenzen zu erstellen
 
-+ Versuche, verschiedene Aufrufe der `animateRainbow` -Funktion und deine anderen Funktionen zu kombinieren. Deiner Fantasie sind keine Grenzen gesetzt!
++ Versuche, verschiedene Aufrufe der `animateRainbow`-Funktion und deine anderen Funktionen zu kombinieren. Deiner Fantasie sind keine Grenzen gesetzt!
 
-+ Mit den Tricks, die du mit Farben, For-Schleifen und Verzögerungen gelernt hast, kannst du viele coole Dinge tun. Wenn du weitere Beispiele sehen möchtest, lese den Sketch **strandtest**, mit dem du die NeoPixel getestet hast.
++ Mit den Tricks, die du mit Farben, For-Schleifen und Verzögerungen gelernt hast, kannst du viele coole Dinge tun. Wenn du weitere Beispiele sehen möchtest, lies den Sketch **strandtest**, mit dem du die NeoPixel getestet hast.
 
 --- /challenge ---
 
@@ -83,8 +83,8 @@ title: Tragbare Stromversorgung
 
 Wenn du dein Projekt tragen möchtest, wirst es es wahrscheinlich mit Batteriestrom tragbarer machen wollen.
 
-+ Für die Flora reicht ein 3×AA oder 3×AAA Bateriepack aus. Siehe [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} für weitere Informationen.
++ Für die Flora reicht ein 3×AA oder 3×AAA Bateriepack aus. Siehe dazu [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} für weitere Informationen.
 
-+ Wenn du eine anderes Board verwendest, solltest du den Strombedarf überprüfen.
++ Wenn du ein anderes Board verwendest, solltest du den Strombedarf überprüfen.
 
 --- /collapse ---
