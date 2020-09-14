@@ -2,7 +2,7 @@
 
 These Sushi Cards will show you how to use wearable, programmable LEDs and how to control them with code.
 
-**WARNING**: this project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.
+**WARNING**: this project involves bright flashing lights! It may not be suitable if there are people who have epilepsy present.
 
 ### What you will make
 
