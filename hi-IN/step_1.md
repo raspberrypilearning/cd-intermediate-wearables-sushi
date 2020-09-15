@@ -1,77 +1,77 @@
-## Introduction
+## परिचय
 
-These Sushi Cards will show you how to use wearable, programmable LEDs and how to control them with code.
+ये सुशी कार्ड आपको दिखाएंगे कि पहनने योग्य, प्रोग्राम योग्य LED का उपयोग कैसे करें और कोड के साथ उन्हें कैसे नियंत्रित करें।
 
-**WARNING**: this project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.
+**चेतावनी**: इस परियोजना में चमकती रोशनी शामिल है! It may not be suitable if there are people who have epilepsy present.
 
-### What you will make
+### आप क्या बनाएँगे
 
-In this project, you will sew LED lights to a T-shirt and write code to make them flash and change colour!
+इस परियोजना में, आप LED रोशनी को एक टी-शर्ट में सीवे करेंगे और उन्हें फ्लैश और रंग बदलने के लिए Code लिखेंगे!
 
-![A colourful smiley face made from LEDs sewn on a tshirt](images/rainbowSmile.png)
+![एक टीशर्ट पर LEDs से बना एक रंगीन हस्ता हुआ चेहरा](images/rainbowSmile.png)
 
 --- collapse ---
 ---
-title: What you will learn
+title: आप क्या सीखेंगे
 ---
 
-+ Testing NeoPixels
-+ Stitching a NeoPixel circuit with positive, negative, and data flow
-+ The flow of a Flora program (setup and loop functions)
-+ Turning NeoPixels on and off
-+ Addressing individual NeoPixels
-+ RGB colour mixing
-+ Functions and parameters
-+ Using for loops
-+ Exploring more advanced examples
++ NeoPixels का परीक्षण
++ सकारात्मक (positive), नकारात्मक (negative) और डेटा प्रवाह (data flow) के साथ एक NeoPixel सर्किट की सिलाई
++ फ्लोरा प्रोग्राम का प्रवाह (सेटअप और लूप फ़ंक्शन)
++ NeoPixels चालू और बंद करना
++ व्यक्तिगत NeoPixels को संबोधित करना
++ RGB रंग मिश्रण
++ फूकंशन्स और पैरामीटर्स
++ लूप्स के लिए उपयोग करना
++ अधिक उन्नत उदाहरण तलाशना
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: आपको किन चीजों की आवश्यकता होगी
 ---
 
-### Hardware
+### हार्डवेयर
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora या Gemma
++ एक USB केबल
++ लगभग 8 NeoPixels
++ प्रवाहकीय धागा
++ मगरमच्छ क्लिप के तीन चिमटा (आप इसके बजाय प्रवाहकीय धागे के टुकड़ों का भी उपयोग कर सकते हैं, लेकिन मगरमच्छ क्लिप के साथ परीक्षण करना आसान हो सकता है)
++ वैकल्पिक: एक बैटरी पैक, जो आपको कंप्यूटर के साथ संलग्न किए बिना अपनी तैयार परियोजना को पहनने की अनुमति देगा!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+LED को Adafruit Flora द्वारा नियंत्रित किया जाएगा। आप एक Adafruit Gemma, LilyPad Arduino या LilyPad Arduino USB का भी उपयोग कर सकते हैं; यदि आप करते हैं, तो कुछ छोटे कोड परिवर्तनों की आवश्यकता होगी, जैसे आउटपुट पिन की संख्या और Arduino IDE में बोर्ड सेटअप।
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+ध्यान देना: Gemma Linux ऑपरेटिंग सिस्टम (Os) के साथ काम नहीं करता है। यह USB 3.0 पोर्ट के साथ भी काम नहीं करेगा, इसलिए कंप्यूटर से Gemma को जोड़ने के लिए आपके पास USB 2.0 पोर्ट या हब होना चाहिए।
 
-### Software
+### सॉफ्टवेयर
 
-+ The Arduino IDE
++ Arduino IDE
 
-### Installing and setting up the Arduino IDE
+### शीर्षक: Arduino IDE को स्थापित करना और स्थापित करना
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ Arduino को डाउनलोड करें [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} और स्थापित करें
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ इंस्टॉल हो जाने के बाद, आवेदन खोलें। इस परियोजना के लिए इसे बनाने के लिए कुछ अतिरिक्त चीजों की आवश्यकता है।
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ **Preferences** खोलें **Arduino** मेन्यू से I **Additional Board Manager URLs** के बॉक्स में, निम्नलिखित पेस्ट करें और OK पर क्लिक करें।
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ **Tools** मेन्यू में, **Boards** पर जाएं और **Boards Manager... ** चुनें । **Contributed** ड्रॉप-डाउन मेनू से चुनें । स्थापित करें **Adafruit AVR Boards by Adafruit** फिर, **Close** पर क्लिक करें ।
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Arduino IDE को छोड़ें और पुनः आरंभ करें। **Boards** मेन्यू पर जाएं फिर से और आपको **Adafruit Flora** **Adafruit Gemma **, **LilyPad Arduino**, और **LilyPad Arduino USB** सूचीबद्ध दिखना चाहिए। उस बोर्ड को चुनना जिसका आप उपयोग कर रहे हैं।
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ **Sketch** मेन्यू में, **Include Library** पर जाएं </strong>और **Manage Libraries...</0> को चुनें। टाइप करें ` neopixel ` खोज बॉक्स में। स्थापित करें **Adafruit Avr Boards by Adafruit** फिर, **Close** पर क्लिक करें ।</p></li> </ul>
 
-### Additional materials
+### अतिरिक्त सामग्री
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ एक कढ़ाई सुई और कैंची
++ एक टी शर्ट
++ साफ नेल पॉलिश
++ वैकल्पिक: एक कढ़ाई घेरा (सिलाई को आसान बनाने के लिए अनुशंसित)
 
 --- /collapse ---
