@@ -1,6 +1,6 @@
-## Rainbow fun
+## Regenboogplezier
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ Voeg de volgende nieuwe functie toe aan het einde van de schets. Maak je geen zorgen, je hoeft het nu niet te begrijpen! Het is ontleend aan de voorbeeldschets die je eerder hebt uitgevoerd.
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+Met deze functie kun je elk getal kiezen van `0` tot `255`, en een kleur voor je mengen.
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ Voeg nu nog een nieuwe functie toe. Kijk of je de **for-lus** erin kunt zien!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+Hier zit een beetje wiskunde! Het is er om een mooie selectie van kleuren gelijkmatig uit de hele regenboog te kiezen.
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ Het enige wat over is, is de functie aan te roepen. Wijzig de `loop` functie zodat deze alleen deze regel code bevat. Controleer en upload je schets om een mooie regenboog aan kleuren te zien.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+Je hoeft deze keer geen parameters door te geven, omdat de nieuwe functie de kleuren voor je uitrekent!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ Hoe zit het met het toevoegen van een vertraging? Laten we een nieuwe functie schrijven die lijkt op de functie hierboven, maar met een vertraging die wordt toegevoegd aan de lus zodat deze je NeoPixels animeert:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ Wijzig de functie-aanroep in de `loop` functie en voeg een tweede regel code toe om ook je andere `animatie` functie aan te roepen:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+Probeer het uit op de Flora!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## Uitdaging: probeer je eigen reeksen te maken
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ Probeer verschillende aanroepen van de `animateRainbow` functie en je andere functies te combineren. Je fantasie is de limiet!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ Je kunt veel coole dingen doen met de trucs die je hebt geleerd met kleuren, for-lussen en vertragingen. Als je nog meer voorbeelden wilt zien, bekijk dan de **strandtest** schets die je hebt gebruikt om de NeoPixels te testen.
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+title: Draagbare voeding
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+Als je van plan bent om je project te dragen, zul je het waarschijnlijk met behulp van batterijvoeding meer draagbaar willen maken.
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ Voor de Flora is een 3×AA of 3×AAA batterij prima. Zie [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} voor meer informatie.
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ Als je een ander bord gebruikt, moet je de stroomvereisten controleren.
 
 --- /collapse ---
