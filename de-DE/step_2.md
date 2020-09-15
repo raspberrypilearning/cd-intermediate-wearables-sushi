@@ -4,7 +4,7 @@ Bevor du beginnst, solltest du alle deine NeoPixel testen.
 
 + Öffne die Arduino IDE. Stelle sicher, dass du im Menü **Werkzeuge** das richtige Gerät ausgewählt hast. Ich benutze die Flora, also ist es für mich **Adafruit Flora**.
 
-+ Gehe zum Menü **Datei**, wähle **Beispiele** aus, finde dann **Adafruit NeoPixel** \(es kann ganz sehr weit unten sein!\) und wähle **strandtest**.
++ Gehe zum Menü **Datei**, wähle **Beispiele** aus, finde dann **Adafruit NeoPixel** \(es kann sehr weit unten sein!\) und wähle **strandtest**.
 
 Eine Codedatei wird geöffnet. Eine Codedatei wird in der Arduino IDE als **Sketch** (auf Deutsch: Skizze) bezeichnet.
 
