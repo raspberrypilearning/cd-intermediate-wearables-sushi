@@ -1,6 +1,6 @@
-## Animate!
+## एनिमेट !
 
-+ Create the following new function at the bottom of your sketch:
++ आपल्या स्केत्च च्या तळाशी खालील नवीन फंक्शन तयार करा:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -11,9 +11,9 @@
     }
 ```
 
-Can you see that this function takes **two** parameters in the round braces? Later on, you'll change the function's code so it uses the second one.
+आपण पाहू शकता की हे फंक्शन **दोन**पॅरामीटर गोल कंसात घेते? नंतर, आपण फंक्शनचा कोड बदलू जेणेकरून तो दुसरा कोड वापरेल.
 
-+ Delete the code in the `loop` function and add in a call to your new function:
++ ` लूप` फंक्शनमध्ये कोड हटवा आणि आपल्या नवीन फंक्शनमध्ये कॉल जोडा:
 
 ```
     void loop() {
@@ -21,13 +21,13 @@ Can you see that this function takes **two** parameters in the round braces? Lat
     }
 ```
 
-Notice how you're passing the `animateOneColour` function two parameters in the brackets? Even though the function doesn't use the second one just yet, but the code won't compile if you don't pass in values for all the parameters when you call the function.
+आपण कंसात `animateOneColour ` फंक्शन्सचे दोन पॅरामीटर्स कसे पास करता ते पहा? तरीही फंक्शन आता द्वितीय पॅरामीटर वापरत नाही, परंतु आपण फंक्शन जेव्हा कॉल करता तेव्हा सर्व पॅरामीटर्ससाठी मूल्ये पास न केल्यास कोड कंपाईल होणार नाही.
 
-+ Verify and upload your code. What do you notice?
++ कोड व्हेरिफाय करा आणि अपलोड करा. तुम्हाला काय लक्षात आले?
 
-This time you only needed to write **one line** of code that calls `strip.setPixelColor`, and all of the pixels turned on.
+यावेळी आपल्याला केवळ कोडची **एक ओळ** लिहिण्याची आवश्यकता आहे त्या `strip.setPixelColor` कॉल करते आणि सर्व पिक्सेल चालू झाले.
 
-+ Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\). It looks like this:
++ आपल्या नवीन फंक्शनमधे **कर्ली ब्रेसेसची** आणखी एक जोडी असल्याचे आपण बघू शकता दरम्यान काही कोडसह? ही जोडी **फॉर लूपची** आहे \(परंतु `लूप` फंक्शनची नाही !\). हे असे दिसते:
 
 ``` 
     for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -37,22 +37,22 @@ This time you only needed to write **one line** of code that calls `strip.setPix
 
 --- collapse ---
 ---
-title: How does the code work?
+title: कोड कसा काम करतो?
 ---
 
-The above code checks how many NeoPixels are in your chain and then runs the code inside the curly braces that many times.
+वरील कोड आपल्या साखळीत किती निओपिक्सल आहेत याची तपासणी करते आणि अनेक वेळा कर्ली ब्रेसेसमध्ये कोड run करते.
 
-**Here's the clever bit:** The value of `i` starts off as `0` and changes by `1` each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the **next** pixel!
+** येथे बुद्धिमान बिट आहे: ** `i`चे मूल्य `0`पासून सुरू होते आणि प्रत्येक वेळी ` 1` ने बदलते, तर प्रत्येक वेळी ` strip.setPixelColor(i, c);` चालू असताना, **पुढील ** पिक्सेलचा रंग सेट करीत आहे!
 
 --- /collapse ---
 
-+ Time to do somthing with that second parameter! In your `animateOneColour` function, add the following line below the line `strip.show();`:
++ त्या दुसरा पॅरामीटरसह काही करण्याची वेळ! आपल्या ` animateOneColour` फंक्शनमध्ये, `strip.show();` ओळीच्या खालील ओळ जोडा:
 
 ```
     delay(wait);
 ```
 
-Make sure the new line is **above** the first `}`, so that it's inside the for loop. Your function should look like this now:
+पहिल्या `}` कंसच्या **वर** नवीन ओळ याची खात्री करा जेणेकरून ते लूपच्या आत असेल. आपला फंक्शन आता यासारखा दिसला पाहिजे:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -64,9 +64,9 @@ Make sure the new line is **above** the first `}`, so that it's inside the for l
     }
 ```
 
-Instead of using a particular number for the `delay`, you are using the second parameter of your function. This means you can choose a different value for the `delay` each time you call the function.
+` delay`साठी विशिष्ट क्रमांक वापरण्याऐवजी, आपण आपल्या फंक्शनचा दुसरा पॅरामीटर वापरत आहात. याचा अर्थ आपण प्रत्येक वेळी फंक्शन कॉल करण्यासाठी `delay`च्या भिन्न मूल्य निवडू शकता.
 
-+ Add another call to your function inside `loop` to turn the NeoPixels off as well as on:
++ निओपिक्सल्स बंद आणि चालू करण्यासाठी `loop` फंक्शनमध्ये दुसरा कॉल जोडा:
 
     ```
         void loop() {
@@ -75,9 +75,9 @@ Instead of using a particular number for the `delay`, you are using the second p
         }
     ```
 
-+ Verify your code again and upload the sketch to the Flora. Now you have a cool animated sequence!
++ आपला कोड पुन्हा व्हेरिफाय करा आणि स्केच फ्लोरामध्ये अपलोड करा. आता आपल्याकडे मस्त अ‍ॅनिमेटेड अनुक्रम आहे!
 
-Of course, you don't have to turn the NeoPixels off. How about making them all light up in a bunch of colours one after the other?
+नक्कीच, आपल्याला निओपिक्सल बंद करण्याची आवश्यकता नाही. एकामागून एक रंगात त्या सर्वांना प्रकाश देण्याबद्दल काय?
 
 ```
     void loop() {
@@ -87,4 +87,4 @@ Of course, you don't have to turn the NeoPixels off. How about making them all l
     }
 ```
 
-+ Add as many colours as you like. Try passing in different values other than `100` for the second parameter as well, and watch your animation speed up or slow down!
++ आपल्याला पाहिजे तितके रंग जोडा. `100` व्यतिरिक्त भिन्न मूल्यांमध्ये जाण्याचा प्रयत्न करा दुसर्‍या पॅरामीटरसाठी देखील, आणि आपल्या अ‍ॅनिमेशनची गती वेगवान किंवा खाली पहा!
