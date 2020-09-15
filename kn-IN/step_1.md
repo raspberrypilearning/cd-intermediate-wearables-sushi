@@ -1,77 +1,77 @@
-## Introduction
+## ಪರಿಚಯ
 
-These Sushi Cards will show you how to use wearable, programmable LEDs and how to control them with code.
+ಈ ಸುಶಿ ಕಾರ್ಡ್‌ಗಳು ಧರಿಸಬಹುದಾದ, ಪ್ರೊಗ್ರಾಮೆಬಲ್ ಎಲ್‌ಇಡಿಗಳನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಮತ್ತು ಅವುಗಳನ್ನು ಕೋಡ್‌ನೊಂದಿಗೆ ಹೇಗೆ ನಿಯಂತ್ರಿಸುವುದು ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತದೆ.
 
-**WARNING**: this project involves bright flashing lights! It may not be suitable if there are sufferers of epilepsy present.
+**WARNING**: ಈ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಕಾಶಮಾನವಾದ ಮಿನುಗುವ ದೀಪಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ! It may not be suitable if there are people who have epilepsy present.
 
-### What you will make
+### ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ
 
-In this project, you will sew LED lights to a T-shirt and write code to make them flash and change colour!
+ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ, ನೀವು ಎಲ್ಇಡಿ ದೀಪಗಳನ್ನು ಟಿ-ಶರ್ಟ್‌ಗೆ ಹೊಲಿಯುತ್ತೀರಿ ಮತ್ತು ಅವುಗಳನ್ನು ಫ್ಲ್ಯಾಷ್ ಮಾಡಲು ಮತ್ತು ಬಣ್ಣವನ್ನು ಬದಲಾಯಿಸಲು ಕೋಡ್ ಬರೆಯಿರಿ!
 
-![A colourful smiley face made from LEDs sewn on a tshirt](images/rainbowSmile.png)
+![ಟಿಶರ್ಟ್‌ನಲ್ಲಿ ಹೊಲಿದ ಎಲ್‌ಇಡಿಗಳಿಂದ ಮಾಡಿದ ವರ್ಣರಂಜಿತ ನಗು ಮುಖ](images/rainbowSmile.png)
 
 --- collapse ---
 ---
-title: What you will learn
+title: ನೀವು ಏನನ್ನು ಕಲಿಯುತ್ತೀರಿ
 ---
 
-+ Testing NeoPixels
-+ Stitching a NeoPixel circuit with positive, negative, and data flow
-+ The flow of a Flora program (setup and loop functions)
-+ Turning NeoPixels on and off
-+ Addressing individual NeoPixels
-+ RGB colour mixing
-+ Functions and parameters
-+ Using for loops
-+ Exploring more advanced examples
++ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಪರೀಕ್ಷಿಸುವುದು
++ ಧನಾತ್ಮಕ, ಋಣಾತ್ಮಕ ಮತ್ತು ಡೇಟಾ ಹರಿವಿನೊಂದಿಗೆ ನಿಯೋಪಿಕ್ಸೆಲ್ ಸರ್ಕ್ಯೂಟ್ ಅನ್ನು ಹೊಲಿಸುವುದು
++ ಫ್ಲೋರಾ ಪ್ರೋಗ್ರಾಂನ ಹರಿವು (ಸೆಟಪ್ ಮತ್ತು ಲೂಪ್ ಫಂಕ್ಷನ್ ಗಳು)
++ ನಿಯೋಪಿಕ್ಸೆಲ್ ಗಳನ್ನು ಆನ್ ಮತ್ತು ಆಫ್ ಮಾಡುವುದು
++ ವೈಯಕ್ತಿಕ ನಿಯೋಪಿಕ್ಸೆಲ್ ಗಳನ್ನು ಉದ್ದೇಶಿಸುವುದು
++ ಆರ್‌ಜಿ‌ಬಿ (RGB) ಬಣ್ಣ ಮಿಶ್ರಣ
++ ಫಂಕ್ಷನ್ ಗಳು ಮತ್ತು ನಿಯತಾಂಕಗಳು
++ ಫಾರ್ ಲೂಪ್‌ಗಳನ್ನು (for loops) ಉಪಯೋಗಿಸಿವುದು
++ ಹೆಚ್ಚು ಸುಧಾರಿತ ಉದಾಹರಣೆಗಳನ್ನು ಅನ್ವೇಷಿಸುವುದು
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: ನಿಮಗೆ ಏನು ಬೇಕಾಗುತ್ತದೆ
 ---
 
-### Hardware
+### ಯಂತ್ರಾಂಶ (ಹಾರ್ಡ್ವೇರ್)
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora ಅಥವಾ Gemma
++ ಒಂದು ಯು‌ಎಸ್‌ಬಿ (USB) ಕೇಬಲ್
++ ಸುಮಾರು ಎಂಟು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು
++ ವಾಹಕ ದಾರ
++ ಮೂರು ಜೋಡಿ ಕ್ರೊಕೊಡೈಲ್ ಕ್ಲಿಪ್‌ಗಳು (crocodile clips) \ (ನೀವು ಬದಲಿಗೆ ವಾಹಕ ದಾರದ ತುಣುಕುಗಳನ್ನು ಸಹ ಬಳಸಬಹುದು, ಆದರೆ ಕ್ರೊಕೊಡೈಲ್ ಕ್ಲಿಪ್‌ಗಳೊಂದಿಗೆ ಪರೀಕ್ಷಿಸಲು ಸುಲಭವಾಗಬಹುದು\)
++ ಐಚ್ಛಿಕ: ಒಂದು ಬ್ಯಾಟರಿ ಪ್ಯಾಕ್, ಇದು ಕಂಪ್ಯೂಟರ್‌ಗೆ ಲಗತ್ತಿಸದೆ ನಿಮ್ಮ ಸಿದ್ಧಪಡಿಸಿದ ಪ್ರಾಜೆಕ್ಟನ್ನು ಧರಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+ಎಲ್ಇಡಿಗಳನ್ನು Adafruit Flora ನಿಯಂತ್ರಿಸುತ್ತದೆ. ನೀವು Adafruit Gemma, LilyPad Arduino, ಅಥವಾ LilyPad Arduino ಯು‌ಎಸ್‌ಬಿ ಸಹ ಬಳಸಬಹುದು; ನೀವು ಬಳಸಿದರೆ, ಔಟ್‌ಪುಟ್ ಪಿನ್‌ನ ಸಂಖ್ಯೆ ಮತ್ತು Arduino ಐಡಿಇನಲ್ಲಿನ ಬೋರ್ಡ್ ಸೆಟಪ್‌ನಂತಹ ಕೆಲವು ಸಣ್ಣ ಕೋಡ್ ಬದಲಾವಣೆಗಳು ಬೇಕಾಗುತ್ತವೆ.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+ಗಮನಿಸಿ: Gemma ಲಿನಕ್ಸ್ ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಮ್‌ನೊಂದಿಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ. ಇದು ಯುಎಸ್‌ಬಿ 3.0 ಪೋರ್ಟ್‌ನೊಂದಿಗೆ ಸಹ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ Gemma ವನ್ನು ಕಂಪ್ಯೂಟರ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು ನೀವು ಯುಎಸ್‌ಬಿ 2.0 ಪೋರ್ಟ್ ಅಥವಾ ಹಬ್ ಹೊಂದಿರಬೇಕು.
 
-### Software
+### ಸಾಫ್ಟ್ವೇರ್ (Software)
 
-+ The Arduino IDE
++ Arduino IDE
 
-### Installing and setting up the Arduino IDE
+### Arduino IDE ಅನ್ನು ಸ್ಥಾಪಿಸುವುದು ಮತ್ತು ಹೊಂದಿಸುವುದು
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ [ dojo.soy/wear2-arduino-ide ](http://dojo.soy/wear2-arduino-ide) {: target = "_blank"} ನಿಂದ Arduino IDE ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಸ್ಥಾಪಿಸಿ.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ ಅದನ್ನು ಸ್ಥಾಪಿಸಿದ ನಂತರ, ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಿರಿ. ಅದು ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಕೆಲವು ಹೆಚ್ಚುವರಿ ವಿಷಯಗಳು ಬೇಕಾಗುತ್ತವೆ.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ **Arduino** ಮೆನು ದಿಂದ **Preferences** ತೆರೆಯಿರಿ. **Additional Board Manager URLs** ಬಾಕ್ಸ್, ಕೆಳಗಿನವುಗಳನ್ನು ಅಂಟಿಸಿ ಮತ್ತು ಓಕೆ (OK) ಕ್ಲಿಕ್ ಮಾಡಿ.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ **Tools** ಮೆನು ನಲ್ಲಿ, **Boards**‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು **Boards Manager...** ಆಯ್ಕೆ ಮಾಡಿ. ಡ್ರಾಪ್-ಡೌನ್ ಮೆನುವಿನಿಂದ **Contributed** ಆಯ್ಕೆಮಾಡಿ. **Adafruit AVR Boards by Adafruit** ಸ್ಥಾಪಿಸಿ. ನಂತರ **Close** ಕ್ಲಿಕ್ ಮಾಡಿ.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Arduino IDE ಅನ್ನು ಬಿಟ್ಟು ಮರುಪ್ರಾರಂಭಿಸಿ. **Boards** ಮೆನು ‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು ನೀವು **Adafruit Flora** ನೋಡಬೇಕು **Adafruit Gemma**,**LilyPad Arduino**, ಮತ್ತು **LilyPad Arduino USB** ಪಟ್ಟಿ ಮಾಡಲಾಗಿದೆ. ನೀವು ಬಳಸುತ್ತಿರುವ ಬೋರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ **Sketch** ಮೆನು ನಲ್ಲಿ, **Include Library**‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು **Manage Libraries...** ಆಯ್ಕೆ ಮಾಡಿ. `neopixel` ಶೋಧ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ. **Adafruit NeoPixel by Adafruit** ಸ್ಥಾಪಿಸಿ. ನಂತರ **Close** ಕ್ಲಿಕ್ ಮಾಡಿ.
 
-### Additional materials
+### ಹೆಚ್ಚುವರಿ ವಸ್ತುಗಳು
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ ಕಸೂತಿ ಸೂಜಿ ಮತ್ತು ಕತ್ತರಿ
++ ಒಂದು ಟಿ ಶರ್ಟ್
++ ಸ್ಪಷ್ಟ ಉಗುರು ಬಣ್ಣ
++ ಐಚ್ಛಿಕ: ಕಸೂತಿ ಹೂಪ್ (ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಅನ್ನು ಸುಲಭವಾಗಿ ಹೊಲಿಯಲು ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ)
 
 --- /collapse ---
