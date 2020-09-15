@@ -1,6 +1,6 @@
-## Rainbow fun
+## इन्द्रधनुष मनोरंजन
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ अपने स्केच (sketch) के नीचे निम्नलिखित नया फंक्शन बनाएँ: चिंता न करें, आपको इसे अभी समझने की ज़रूरत नहीं है! यह आपके द्वारा पहले चलाए गए उदाहरण स्केच से उधार लिया गया है।
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+यह फ़ंक्शन आपको `0` से `255` के बीच किसी भी संख्या को चुनने देता है, और यह आपके लिए एक रंग मिलाता है।
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ अब एक और नया फ़ंक्शन जोड़ें। देखें कि क्या आप इस में **for loop** को ढूंढ पाते हैं की नहीं!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+यहाँ थोड़ा गणित करना पड़ेगा! यह पूरे इंद्रधनुष में समान रूप से रंगों का एक अच्छा चयन करने के लिए है।
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ अब सिर्फ फ़ंक्शन को कॉल करना बचा है। `loop` फंक्शन बदलें ताकि इसमें कोड की बस यह पंक्ति हो। फिर रंगों का एक सुंदर इंद्रधनुष देखने के लिए अपना स्केच सत्यापित (verify) करें और अपलोड (upload) करें।
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+आपको इस समय किसी भी पैरामीटर को पारित करने की आवश्यकता नहीं है, क्योंकि नए फ़ंक्शन आपके लिए रंगों का पता लगाते हैं!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ विलंब (delay) को जोड़ने के बारे में क्या ख़याल है? चलो एक नया फ़ंक्शन लिखें जो ऊपर दिए गए के समान है, लेकिन लूप में जोड़े गए विलंब के साथ यह आपके NeoPixels को एनिमेट करता है:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ ` लूप में फ़ंक्शन कॉल बदलें ` फ़ंक्शन करें और अपने दूसरे को कॉल करने के लिए कोड की दूसरी पंक्ति जोड़ें ` चेतन ` कार्य भी:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+फ्लोरा पर कोशिश करो!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## चुनौती: अपने खुद के sequence बनाने की कोशिश करें
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ `animateRainbow` फंक्शन में विभिन्न विभिन्न कॉलों को जोड़ें और और भी फ़ंक्शन्स को भी मिलाने की कोशिश करें सीमा सिर्फ आपका कल्पना तय कर सकता है!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ आप रंग, लूप और देरी (delay) के साथ सीखी गई ट्रिक या नुस्खे का उपयोग करके आप अनोखे चीज़ें कर सकते है। यदि आप कुछ और उदाहरण देखना चाहते हैं, तो **strandtest** स्केच देखें जो आपने NeoPixels का परीक्षण करने के लिए उपयोग किया था।
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+title: पोर्टेबल शक्ति
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+यदि आप अपने प्रोजेक्ट को पहनने की योजना बनाते हैं, तो आप संभवतः बैटरी पावर का उपयोग करके इसे अधिक पोर्टेबल बनाना चाहेंगे।
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ फ्लोरा के लिए, 3 × AA या 3 × AAA बैटरी पैक ठीक काम करेगा। देखें [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} अधिक जानकारी के लिए।
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ यदि आप एक अलग बोर्ड का उपयोग कर रहे हैं, तो आपको अपने पास मौजूदा बिजली की आवश्यकताओं को दोबारा जांचना चाहिए।
 
 --- /collapse ---
