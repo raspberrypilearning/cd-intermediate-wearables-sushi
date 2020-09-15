@@ -1,6 +1,6 @@
-## Write your own code
+## ನಿಮ್ಮದೇ ಕೋಡ್ ಬರೆಯಿರಿ
 
-+ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
++ Arduino IDE ನಲ್ಲಿ, **File** ಕ್ಲಿಕ್ ಮಾಡಿ ತದನಂತರ **New** ಕ್ಲಿಕ್ ಮಾಡಿ. ನೀವು ಖಾಲಿ **sketch** ಪಡೆಯುತ್ತೀರಿ ಅದು ಈ ರೀತಿ ಕಾಣುತ್ತದೆ:
 ```
     void setup() {
         // put your setup code here, to run once:
@@ -14,32 +14,32 @@
 
 --- collapse ---
 ---
-title: Making notes in your code
+title: ನಿಮ್ಮ ಕೋಡ್‌ನಲ್ಲಿ ಟಿಪ್ಪಣಿಗಳನ್ನು ಮಾಡುವುದು
 ---
 
-Any line that starts with `//` is a **comment**. Comments are ignored by the computer.
+`//` ನೊಂದಿಗೆ ಪ್ರಾರಂಭವಾಗುವ ಯಾವುದೇ ಸಾಲು **ಟಿಪ್ಪಣಿ** (comment) ಆಗಿದೆ. ಟಿಪ್ಪಣಿಗಳನ್ನು(Comments) ಕಂಪ್ಯೂಟರ್ ನಿಂದ ಕಡೆಗಣಿಸಲಾಗುತ್ತದೆ.
 
-They're useful for making notes for yourself, or for other people who want to your code!
+ನಿಮಗಾಗಿ ಅಥವಾ ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಬಯಸುವ ಇತರ ಜನರಿಗೆ ಟಿಪ್ಪಣಿಗಳನ್ನು ತಯಾರಿಸಲು ಅವು ಉಪಯುಕ್ತವಾಗಿವೆ!
 
 --- /collapse ---
 
-+ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
++ **Sketch** ಮೆನು ನಲ್ಲಿ, **Include Library**‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು ****Adafruit NeoPixel</0> ಆಯ್ಕೆ ಮಾಡಿ. ಈ ಕೋಡ್ ನಿಮ್ಮ ಸ್ಕೆಚ್‌ನ ಮೇಲ್ಭಾಗಕ್ಕೆ ಸೇರುವುದನ್ನು ನೀವು ನೋಡುವಿರಿ: ` #include`.
 
-+ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
++ ಸಾಲಿನ ಕೊನೆಯಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಅದರ ಕೆಳಗೆ ಕೆಲವು ಖಾಲಿ ಸಾಲುಗಳನ್ನು ಸೇರಿಸಲು <kbd>Return</kbd> ಕೀಲಿಯನ್ನು ಕೆಲವು ಬಾರಿ ಹಿಟ್ ಮಾಡಿ.
 
-+ Below the new line of code, type the following: `#define PIXELS_PIN 6`
++ ಕೋಡ್‌ನ ಹೊಸ ಸಾಲಿನ ಕೆಳಗೆ, ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಟೈಪ್ ಮಾಡಿ: `#define PIXELS_PIN 6`
 
-With this code you are setting which pin (the same as a hole here, remember) of the Flora to use for **data** \(instructions\). So the pin you connect the **data** holes of the NeoPixels to is number **6**.
+ಈ ಕೋಡ್‌ನಲ್ಲಿ ನೀವು ಫ್ಲೋರಾದ ಯಾವ ಪಿನ್ (ಪಿನ್ ಎಂಬುದು ಇಲ್ಲಿ ರಂಧ್ರಕ್ಕೆ ಸಮಾನ, ನೆನಪಿಡಿ) ಅನ್ನು **ಡಾಟಾ** \(ಸೂಚನೆಗಳು\) ಕ್ಕಾಗಿ ಉಪಯೋಗಿಸುವುದು ಎಂದು ಸ್ಥಾಪಿಸುತ್ತೀರಿ. ಆದ್ದರಿಂದ ನೀವು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳ **ಡಾಟಾ** ರಂಧ್ರಗಳನ್ನು ಸಂಪರ್ಕಿಸುವ ಪಿನ್ ಸಂಖ್ಯೆಯು **6** ಆಗಿದೆ.
 
-+ Below that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than eight, type that number instead of `8`.
++ ಅದರ ಕೆಳಗೆ, `#define NUM_PIXELS 8` ಎಂದು ಬೆರಳಚ್ಚಿಸಿ. ಇದು ನಿಮ್ಮಲ್ಲಿರುವ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳ ಸಂಖ್ಯೆ. ನೀವು ಎಂಟಕ್ಕಿಂತ ಭಿನ್ನ ಸಂಖ್ಯೆಯನ್ನು ಹೊಂದಿದ್ದರೆ, `8` ಬದಲಿಗೆ ಆ ಸಂಖ್ಯೆಯನ್ನು ಬೆರಳಚ್ಚಿಸಿ.
 
-+ Finally, below that, type:
++ ಅಂತಿಮವಾಗಿ, ಅದರ ಕೆಳಗೆ, ಟೈಪ್ ಮಾಡಿ:
 
 ``` 
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Inside the `setup` function, add the following two lines:
++ `setup` ಫಂಕ್ಷನ್ ಒಳಗೆ, ಕೆಳಕಂಡ ಎರಡು ಸಾಲುಗಳನ್ನು ಸೇರಿಸಿ:
 
 ``` 
     void setup() {
@@ -51,36 +51,36 @@ With this code you are setting which pin (the same as a hole here, remember) of 
 
 --- collapse ---
 ---
-title: What is the setup function?
+title: ಸೆಟಪ್ ಫಂಕ್ಷನ್ ಎಂದರೇನು?
 ---
 
-The code `void setup ()` defines the `setup` function. This is a block of code that runs when the Flora is turned on.
+`void setup ()` ಕೋಡ್ `setup` ಫಂಕ್ಷನ್ ಅನ್ನು ವ್ಯಾಖ್ಯಾನಿಸುತ್ತದೆ. ಇದು Flora ಆನ್ ಮಾಡಿದಾಗ ಚಾಲಿತವಾಗುವ ಒಂದು ಕೋಡ್‌ ಬ್ಲಾಕ್ ಆಗಿದೆ.
 
-All the code in between the curly braces `{` and `}` is in the function and so will run when the Flora turns on.
+ಫಂಕ್ಷನ್‌ನ ಒಳಗೆ ಗುಂಗುರು ಆವರಣಗಳ `{` ಮತ್ತು `}` ನಡುವೆ ಇರುವ ಎಲ್ಲಾ ಕೋಡ್ ಇದೆ; ಆದ್ದರಿಂದ ಅದು ಫ್ಲೋರಾವನ್ನು ಆನ್ ಮಾಡಿದಾಗ ಓಡುತ್ತದೆ.
 
 --- /collapse ---
 
-+ After `strip.show();`, press <kbd>Return</kbd> and type these two lines below:
++ `strip.show();`ನ ನಂತರ, <kbd>Return</kbd> ಒತ್ತಿ ಮತ್ತು ಈ ಕೆಳಗಿನ ಎರಡು ಸಾಲುಗಳನ್ನು ಬೆರಳಚ್ಚಿಸಿ:
 
 ``` 
     strip.setPixelColor(0, strip.Color(0, 0, 255));
     strip.show();
 ```
 
-+ Click **Verify** to compile your code and check for errors. If there are any mistakes, you will need to fix the code and check it again. Usually the error messages tell you which line of code needs fixing. Check that you typed it exactly as shown!
++ ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಕಂಪೈಲ್ ಮಾಡಲು ಮತ್ತು ದೋಷಗಳನ್ನು ಪರಿಶೀಲಿಸಲು **Verify** ಕ್ಲಿಕ್ ಮಾಡಿ. ಯಾವುದೇ ತಪ್ಪುಗಳಿದ್ದರೆ, ನೀವು ಕೋಡ್ ಅನ್ನು ಸರಿಪಡಿಸಿ ಅದನ್ನು ಮತ್ತೆ ಪರಿಶೀಲಿಸಬೇಕಾಗುತ್ತದೆ. ಸಾಮಾನ್ಯವಾಗಿ ದೋಷ ಸಂದೇಶಗಳು ಯಾವ ಸಾಲಿನ ಕೋಡ್ ಅನ್ನು ಸರಿಪಡಿಸುವ ಅಗತ್ಯವಿದೆ ಎಂದು ನಿಮಗೆ ತಿಳಿಸುತ್ತದೆ. ತೋರಿಸಿರುವಂತೆ ನೀವು ಅದನ್ನು ಟೈಪ್ ಮಾಡಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ!
 
-+ Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then press the **Upload** button. When it's done, what happens?
++ Floraವನ್ನು ಪ್ಲಗ್ ಮಾಡಿ ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಚಲಾಯಿಸೋಣ! ಫ್ಲೋರಾದಲ್ಲಿ **reset** ಬಟನ್ ಒತ್ತಿರಿ ನಂತರ **Upload** ಬಟನ್ ಒತ್ತಿರಿ. ಅದು ಮುಗಿದ ನಂತರ, ಏನಾಗುತ್ತದೆ?
 
-You should see the first NeoPixel light up blue.
+ನೀವು ಮೊದಲ ನಿಯೋಪಿಕ್ಸೆಲ್ ಬೆಳಕನ್ನು ನೀಲಿ ಬಣ್ಣದಲ್ಲಿ ನೋಡಬೇಕು.
 
-+ Let's do another! **Above** the second `strip.show();`, type two more lines:
++ ಇನ್ನೊಂದನ್ನು ಮಾಡೋಣ! ಎರಡನೇ `strip.show();`ನ **ಮೇಲೆ**, ಇನ್ನೂ ಎರಡು ಸಾಲುಗಳನ್ನು ಬೆರಳಚ್ಚಿಸಿ:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
     strip.setPixelColor(2, strip.Color(0, 0, 255));
 ```
 
-The `setup` function should look like this now:
+`setup` ಫಂಕ್ಷನ್ ಈಗ ಈ ರೀತಿ ಇರಬೇಕು:
 
 ``` 
     void setup() {
@@ -94,11 +94,11 @@ The `setup` function should look like this now:
     }
 ```
 
-Can you work out what some of this code is doing?
+ಅದರಲ್ಲಿ ಕೆಲವು ಏನು ಮಾಡುತ್ತದೆ ಎಂದು ನೀವು ತಿಳಿಯಬಲ್ಲಿರಾ?
 
-+ Verify and upload your code once more. This time you should see the first three NeoPixels light up blue.
++ ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಮತ್ತೊಮ್ಮೆ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಅಪ್ ಲೋಡ್ ಮಾಡಿ. ನೀವು ಮೊದಲ ನಿಯೋಪಿಕ್ಸೆಲ್ ಬೆಳಕನ್ನು ನೀಲಿ ಬಣ್ಣದಲ್ಲಿ ನೋಡಬೇಕು.
 
-+ See if you can add more lines of code to make the rest of the pixels light up as well!
++ ಉಳಿದ ಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಸಹ ಬೆಳಗಿಸಲು ನೀವು ಹೆಚ್ಚಿನ ಸಾಲುಗಳನ್ನು ಸೇರಿಸಬಹುದೇ ಎಂದು ನೋಡಿ!
 
 ![](images/threeBlue.png)
 
