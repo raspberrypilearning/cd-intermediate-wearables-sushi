@@ -1,6 +1,6 @@
-## Rainbow fun
+## ಮಳೆಬಿಲ್ಲು ವಿನೋದ
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ ನಿಮ್ಮ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಕೊನೆಯಲ್ಲಿ ಈ ಕೆಳಗಿನ ಕೋಡ್ ಅನ್ನು ಸೇರಿಸಿ. ಚಿಂತಿಸಬೇಡಿ, ನೀವು ಇದೀಗ ಅದನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬೇಕಾಗಿಲ್ಲ! ನೀವು ಮೊದಲು ಓಡಿಸಿದ ಉದಾಹರಣೆ ಸ್ಕೆಚ್‌ನಿಂದ ಇದನ್ನು ಎರವಲು ಪಡೆಯಲಾಗಿದೆ.
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+ಈ ಫಂಕ್ಷನ್ ನಿಮಗೆ `0`ಯಿಂದ `255`ವರೆಗೆ ಯಾವುದೇ ಸಂಖ್ಯೆ ಆಯ್ಕೆ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ, ಮತ್ತು ಅದು ನಿಮಗೆ ಒಂದು ಬಣ್ಣವನ್ನು ಮಿಶ್ರಮಾಡುತ್ತದೆ.
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ ಈಗ ಮತ್ತೊಂದು ಹೊಸ ಫಂಕ್ಷನ್ ಸೇರಿಸಿ. ಇದರಲ್ಲಿ ನೀವು **for loop** ಅನ್ನು ಗುರುತಿಸಬಹುದೇ ನೋಡಿ!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+ಇಲ್ಲಿ ಸ್ವಲ್ಪ ಗಣಿತವಿದೆ! ಇಡೀ ಮಳೆಬಿಲ್ಲಿನಾದ್ಯಂತ ಉತ್ತಮ ಬಣ್ಣಗಳ ಆಯ್ಕೆಯನ್ನು ಸಮನಾಗಿ ತೆಗೆದುಕೊಳ್ಳಲು ಇದು ಇದೆ.
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ ಫಂಕ್ಷನ್ ಗೆ ಕರೆ ಮಾಡುವುದು ಮಾತ್ರ ಬಾಕಿ ಇದೆ. `loop` ಫಂಕ್ಷನ್ ಅನ್ನು ಅದರಲ್ಲಿ ಕೇವಲ ಈ ಕೋಡ್ ಸಾಲು ಮಾತ್ರ ಇರುವಂತೆ ಬದಲಿಸಿ. ನಂತರ ಬಣ್ಣಗಳ ಒಂದು ಸುಂದರ ಮಳೆಬಿಲ್ಲನ್ನು ನೋಡಲು ನಿಮ್ಮ ಸ್ಕೆಚ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+ಈ ಬಾರಿ ನೀವು ಯಾವುದೇ ನಿಯತಾಂಕಗಳನ್ನು ಕಳುಹಿಸುವ ಅಗತ್ಯವಿಲ್ಲ, ಏಕೆಂದರೆ ಹೊಸ ಫಂಕ್ಷನ್ ನಿಮಗಾಗಿ ಬಣ್ಣಗಳನ್ನು ತಾನೇ ತಿಳಿದುಕೊಳ್ಳುತ್ತದೆ!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ ಒಂದು ವಿಳಂಬವನ್ನು ಸೇರಿಸಿದರೆ ಹೇಗೆ? ಮೇಲಿನದೇ ರೀತಿಯ ಒಂದು ಹೊಸ ಫಂಕ್ಷನ್ ಬರೆಯೋಣ, ಆದರೆ ಅದು ನಿಮ್ಮ ನಿಯೋಪಿಕ್ಸೆಲ್ ಗಳನ್ನೂ ಆ್ಯನಿಮೇಟ್ ಮಾಡುವಂತೆ ಲೂಪ್ ಗೆ ಒಂದು ವಿಳಂಬವನ್ನು ಸೇರಿಸಿಕೊಳ್ಳುತ್ತಾ:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ `loop` ಫಂಕ್ಷನ್ ನಲ್ಲಿರುವ ಫಂಕ್ಷನ್ ಕರೆಯನ್ನು ಬದಲಾಯಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಇನ್ನೊಂದು `animate` ಫಂಕ್ಷನ್ ಅನ್ನು ಕೂಡ ಕರೆಯುವಂತೆ ಒಂದು ಹೊಸ ಕೋಡ್ ಸಾಲನ್ನು ಸೇರಿಸಿ:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+ಫ್ಲೋರಾದಲ್ಲಿ ಇದನ್ನು ಪ್ರಯತ್ನಿಸಿ!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## ಸವಾಲು: ನಿಮ್ಮ ಸ್ವಂತ ಅನುಕ್ರಮಗಳನ್ನು ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ `animateRainbow` ಫಂಕ್ಷನ್ ನ ಮತ್ತು ನಿಮ್ಮ ಇತರ ಫಂಕ್ಷನ್ ಗಳ ಬೇರೆಬೇರೆ ಕರೆಗಳನ್ನು ಒಟ್ಟುಮಾಡಲು ಒಂದು ಪ್ರಯತ್ನ ಮಾಡಿ. ನಿಮ್ಮ ಕಲ್ಪನೆಯೇ ಮಿತಿ!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ ನೀವು ಬಣ್ಣಗಳು, ಫಾರ್ ಲೂಪ್ ಗಳು, ಮತ್ತು ವಿಳಂಬಗಳಿಂದ ಕಲಿತ ತಂತ್ರಗಳನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ಬಹಳಷ್ಟು ಖುಷಿಕರ ಕೆಲಸಗಳನ್ನು ಮಾಡಬಹುದು. ನೀವು ಇನ್ನೂ ಕೆಲವು ಉದಾಹರಣೆಗಳನ್ನು ನೋಡಬೇಕೆಂದಿದ್ದರೆ, ನೀವು ನಿಯೋಪಿಕ್ಸೆಲ್ ಗಳನ್ನು ಪರೀಕ್ಷಿಸಲು ಬಳಸಿದ **strandtest** ಸ್ಕೆಚ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ.
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+title: ಕೊಂಡೊಯ್ಯಬಹುದಾದ ಶಕ್ತಿ
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್ ಅನ್ನು ಧರಿಸಲು ನೀವು ಯೋಜಿಸುತ್ತಿದ್ದರೆ, ಬ್ಯಾಟರಿ ಶಕ್ತಿಯನ್ನು ಬಳಸಿಕೊಂಡು ಅದನ್ನು ಹೆಚ್ಚು ಪೋರ್ಟಬಲ್ (ಕೊಂಡೊಯ್ಯಬಹುದಾದ) ಮಾಡಲು ನೀವು ಬಯಸುತ್ತೀರಿ.
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ ಫ್ಲೋರಾಕ್ಕಾಗಿ, 3 × ಎಎ ಅಥವಾ 3 × ಎಎಎ ಬ್ಯಾಟರಿ ಪ್ಯಾಕ್ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} ನೋಡಿ.
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ ನೀವು ಬೇರೆ ಬೋರ್ಡ್ ಬಳಸುತ್ತಿದ್ದರೆ, ಅದು ಹೊಂದಿರುವ ವಿದ್ಯುತ್ ಅವಶ್ಯಕತೆಗಳನ್ನು ನೀವು ಮರುಪರಿಶೀಲಿಸಬೇಕು.
 
 --- /collapse ---
