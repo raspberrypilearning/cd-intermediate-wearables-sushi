@@ -1,68 +1,68 @@
-## Test your LEDs
+## तुमचा एलईडीची चाचणी करा
 
-Before you start, it is a good idea to test each of your NeoPixels.
+आपण प्रारंभ करण्यापूर्वी, आपल्या प्रत्येक निओपिक्सलची चाचणी घेणे चांगले आहे.
 
-+ Open the Arduino IDE. Make sure the correct device is selected in the **Tools** menu. I'm using the Flora, so for me it's **Adafruit Flora**.
++ Arduino आयडीई चालू करा. **Tools** मेनूमध्ये बरोबर डिव्हाइस निवडलेले पहा. मी फ्लोरा वापरत आहे, अशा प्रकारे माझ्यासाठी ** Adafruit Flora** आहे.
 
-+ Go to the **File** menu, select **Examples**, then find **Adafruit NeoPixel** \(it may be at the very bottom!\) and choose **strandtest**.
++ मेनू मध्ये **File** वर जा, **Examples** निवडा, त्यानंतर **Adafruit NeoPixel** शोधा \ (ते अगदी तळाशी असू शकते! \) आणि **strandtest**निवडा.
 
-A code file will open. A code file is called a **sketch** in the Arduino IDE.
+एक कोड फाईल उघडेल. Arduino आयडीई मध्ये कोड फाईलला **sketch** म्हणतात.
 
-+ Find this line of code near the top:
++ शीर्षस्थानाजवळ ही कोडची ओळ शोधा:
 
 ```
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Change the first number to `1`. The line should look like this now:
++ प्रथम क्रमांक ` 1` ला बदला. ओळ आता असा दिसायला हवा:
 
   ```
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
   ```
 
-+ Click **File** and then **Save As...**. Type in a name for your sketch and click **Save**.
++ ** File** क्लिक करा आणि नंतर ** Save As... ** करा. आपल्या स्केचसाठी नाव टाइप करा आणि **Save** क्लिक करा.
 
-+ At the top of your sketch, click on the tick (the check mark) icon to **verify** the code. At the bottom of the window you should see the words "Done Compiling" which means the code **compiled** successfully \(if not, you will see errors printed here. To fix these, you will need to do some debugging and change your code!\).
++ आपल्या स्केचच्या शीर्षस्थानी, **verify** टिक आयकॉनवर (चेक मार्क) क्लिक करा. विंडोच्या खाली आपल्याला "Done Compiling" शब्द दिसेल ज्याचा अर्थ कोड यशस्वीरित्या ** compile ** झाले आहे \(नसल्यास, आपण येथे मुद्रित एर्रोर्स दिसेल. या निराकरणासाठी, आपल्याला काही डीबगिंग करण्याची आणि आपला कोड बदलण्याची आवश्यकता असेल! \).
 
 ![](images/verifyIcon.png)
 
-Ready to upload!
+अपलोड करण्यासाठी तयार!
 
-+ Plug in your Flora. Press the **reset** button on the Flora and then **straight away**, while the red light is pulsing, click on the arrow icon next to the tick/check mark to **upload** the code onto the board.
++ आपल्या फ्लोरा प्लग करा. फ्लोरावरील आहे**reset** बटण दाबा आणि नंतर **तत्क्षणी**, रेड लाइट चालू असताना, तेव्हा बोर्ड वर कोड **upload** करण्यासाठी टिक / चेक मार्कच्या पुढील बाण चिन्हावर क्लिक करा.
 
-+ You should see the red light flashing, followed by two orange lights on the board. When it's finished, you should see the words "Done uploading." at the bottom of your sketch.
++ आपल्याला रेड लाइट फ्लॅशिंग दिसले पाहिजे, त्यानंतर बोर्डवर दोन नारिंगी दिवे असतील. हे पूर्ण झाल्यावर आपण "Done uploading" शब्द आपल्या रेखाटनेच्या तळाशी अवश्य दिसणे.
 
 ![](images/upload3_120_800.png)
 
 --- collapse ---
 ---
-title: Problems with uploading
+title: अपलोड करण्यात समस्या
 ---
 
-At first it can be a bit tricky to get the upload to work. Make sure the correct board is selected and that you have a working USB cable that's plugged in properly on both ends. After that, it's all about timing! You'll get the hang of it.
+सुरुवातीला अपलोडवर काम करणे थोडे अवघड असू शकते. योग्य बोर्ड निवडलेले असल्याची आणि आपल्याकडे दोन्ही टोकांवर योग्यरित्या प्लग केलेले एक कार्यरत यूएसबी केबल असल्याचे सुनिश्चित करा. यानंतर, हे सर्व वेळेचे खेळ आहे! आपल्याला त्याची सवय होईल.
 
 --- /collapse ---
 
-+ Unplug the Flora from your computer \(You can use the power switch on a Flora to turn it off when you're using a battery pack, but it does not work when the board is plugged into a computer via USB\).
++ आपल्या कॉम्प्युटरवरून फ्लोरा अनप्लग करा \ (आपण बॅटरी पॅक वापरत असताना आपण फ्लोरावरील पॉवर स्विच बंद करण्यासाठी वापरू शकता, परंतु जेव्हा यूएसबी द्वारा बोर्ड कॉम्पुटरात प्लग इन केले आहे ते काम करत नाही\).
 
-**It's important to always unplug or switch off the board before connecting or disconnecting other components so that you don't damage them!**
+**इतर घटक कनेक्ट करण्यापूर्वी किंवा डिस्कनेक्ट करण्यापूर्वी बोर्ड नेहमीच अनप्लग करणे किंवा बोर्ड बंद करणे महत्वाचे आहे जेणेकरून आपण त्यांचे नुकसान होऊ नये!**
 
-+ Attach three crocodile clips to the board's **GND**, **\#6**, and **VBATT** pins.
++ तीन क्रोकोडैल क्लिप्स **GND**, **\#6** बोर्डस ला आणि **VBATT** पिन्स ला जोडा.
 
 ![](images/crocsFlora.png)
 
-+ Take a NeoPixel and connect the board's **GND** wire to its **-** pin. Connect the board's **\#6** pin to the **data in** pin: this is the pin with an arrow pointing **in towards** towards the LED in the centre. Finally, connect the board's **VBATT** to the **+** pin.
++ एक निओपिक्सल घ्या आणि **GND** बोर्डाच्या वायरला **-** पिन जोडा. **\#6** बोर्ड ची पिन **data in** पिन ला जोडा. हे एर्रोव सह पिन आहे जे दर्शवित आहे **in towards**मध्यभागी एलईडी दिशेने. शेवटी, **VBATT** बोर्ड **+** पिन ला जोडा.
 
 ![](images/crocsPixel.png)
 
-+ Ready? Plug in the Flora once more and watch your LED start to light up and flash a multicoloured sequence!
++ तयार? पुन्हा एकदा फ्लोरा प्लग इन करा आणि आपली एलईडी दिवे सुरू केलेला पहा आणि एक बहुरंगी क्रम फ्लॅश करा!
 
-+ Test each of your other NeoPixels one by one by connecting them up to the Flora as you've just done with your first one. Remember to **unplug the Flora** before connecting or disconnecting any wires!
++ जसे आपण नुकतेच आपल्या पहिल्यासह केले आहे त्यांना फ्लोराशी जोडून, आपल्या प्रत्येक निओपिक्सल्स चा एक एक करून त्याची चाचणी घ्या. तार जोडण्यापूर्वी किंवा डिस्कनेक्ट करण्यापूर्वी **फ्लोरा अनप्लग** करण्यासाठी लक्षात ठेवा !
 
-+ Once you're done with testing the NeoPixels, change the code again to the total number of NeoPixels you'll be using. Mine is eight:
++ एकदा आपण निओपिक्सल्सची चाचणी पूर्ण केल्यावर आपण वापरत असलेल्या एकूण निओपिक्सल्स च्या संख्येत कोड पुन्हा बदला. माझे आठ आहे:
 
 ```
   Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Click **Verify**, and then **upload** the new code onto the Flora. Next you're going to make your NeoPixel circuit!
++ **Verify** क्लिक करा आणि त्यानंतर **upload** वर क्लिक करुन नवीन कोड फ्लोरा वर अपलोड करा. पुढे आपण आपले निओपिक्सल सर्किट बनवणार आहात!
