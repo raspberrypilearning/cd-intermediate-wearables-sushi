@@ -1,6 +1,6 @@
-## Flashing lights
+## चमकणारे दिवे
 
-+ Create the following new function after your first one:
++ आपल्या पहिल्या फंक्शन नंतर खालील नवीन फंक्शन तयार करा:
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: गोल कंसात काय आहे?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+हे फंक्शन **पॅरामीटर** घेते: हे गोल कंसात आहे. ही काही अतिरिक्त माहिती आहे जी आपण कॉल करता तेव्हा आपण फंक्शनला देता.
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ या वेळी आपण ` setup` ऐवजी ` loop`मध्ये आपले फंक्शन कॉल करा. ` loop` फंक्शन च्या आत क्लिक करा आणि कोड जोडा जेणेकरुन हे असे दिसते:
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+title: पॅरामीटर कसे कार्य करते
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+`lightAllOneColour` फंक्शनला **पॅरामीटर** म्हणून रंग पास करा आणि पहा? हा रंग `c` च्या जागी वापरला जातो त्या फंक्शनच्या प्रत्येक ओळीवर. याचा अर्थ असा की आपण निओपिक्सलला कोणताही रंग बनविण्यासाठी समान फंक्शन वापरू शकता आणि आपण ते सर्व बंद देखील करू शकता!
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ `setup` फंक्शनच्या आतून `lightAll();` लाइन हटवा. कोड व्हेरिफाय करा आणि अपलोड करा.
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+title: सेटअप आणि लूप फंक्शन्स बद्दल
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+जेव्हा फ्लोरा चालू होतो, तेव्हा तो प्रथम ` setup`फंक्शन मधील सर्व कोड run करते आणि नंतर हे ` loop` फंक्शन पुन्हा पुन्हा run करते!
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ `delay` फंक्शन कार्य करते? त्याच्या **पॅरामीटर** साठी भिन्न मूल्ये ठेवण्याचा प्रयत्न करा, उदाहरणार्थ `delay(50)` किंवा `delay(1000); `. आपले बदल तपासण्यासाठी कोड व्हेरिफाय करणे आणि अपलोड करणे विसरू नका !
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ रंग ` (0, 0, 0)` पिक्सेल बंद करते . आपला लक्षात आला आहे का? फ्लोरा वर खालील कोड run करायला प्रयत्न करा:
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ आता “ऑफ” रंगाशिवाय ते कोड run करा:
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ आपण फरक पाहू शकता?
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ ` loop` फंक्शनमध्ये कोड बदलून स्वतःचा क्रम डिझाइन करून पहा </0>! आपल्या आवडीप्रमाणे, आपण आपल्या `lightAllOneColour` फंक्शन वर जास्तीत जास्त delay आणि बरेच कॉल जोडू शकता </0>. कलर पॅरामीटरसाठी जास्त आणि कमी विलंब आणि भिन्न मूल्यांसह प्रयोग करा.
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+लक्षात ठेवा, आपण आपला कोड ` लूप` फंक्शनमध्ये ठेवल्यास संपूर्ण अनुक्रम वारंवार पुनरावृत्ती होत राहील. 
