@@ -1,7 +1,7 @@
 ---
-title: Techno-shirt
+title: टेक्नो-शर्ट
 hero_image: images/banner.png
-description: Learn to control LEDs with code while making a wearable project
+description: घालण्यायोग्य प्रोजैक्ट बनवताना कोडसह एलईडी (LED) नियंत्रित करणे जाणून घ्या
 theme: violet
 version: 3.0.0
 listed: true
@@ -15,18 +15,18 @@ software: ""
 last_tested: "2018-06-12"
 steps:
   - 
-    title: Introduction
+    title: परिचय
   - 
-    title: Test your LEDs
+    title: तुमचा एलईडीची (LED) चाचणी करा
   - 
-    title: Stitch your circuit
+    title: आपला सर्किट टाका
   - 
-    title: Write your own code
+    title: तुमचा स्वतःचा कोड लिहा
   - 
-    title: Colour and light
+    title: रंग आणि प्रकाश
   - 
-    title: Flashing lights
+    title: चमकणारे दिवे
   - 
-    title: Animate!
+    title: एनिमेट !
   - 
-    title: Rainbow fun
+    title: इंद्रधनुष्याची मजा
