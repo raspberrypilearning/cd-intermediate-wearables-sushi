@@ -1,6 +1,6 @@
-## Flashing lights
+## चमकती रोशनी
 
-+ Create the following new function after your first one:
++ निम्नलिखित नया फंक्शन बनाएँ:
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: गोल कोष्ठक के अंदर क्या है?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+यह फ़ंक्शन ** पैरामीटर** लेता है: वह गोल कोष्ठक के भीतर थोड़ा होता है। यह कुछ अतिरिक्त जानकारी है जिसे आप कॉल करने पर फ़ंक्शन देते हैं।
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ इस बार आप अपने फ़ंक्शन कॉल ` लूप ` में लिखेंगे बजाय ` सेटअप `में । ` लूप ` फ़ंक्शन के अंदर क्लिक करें और कोड जोड़ें ताकि यह इस तरह दिखे:
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+title: पैरामीटर कैसे काम करता है
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+देखें कि आप **पैरामीटर** के रूप में एक रंग में कैसे भेज रहे हैं अपने `lightAllOneColour` फंक्शन मे? यह वह रंग है जिसका उपयोग `c`के स्थान पर किया जाता है उस फ़ंक्शन के अंदर प्रत्येक पंक्ति पर। इसका मतलब है कि आप NeoPixels को किसी भी रंग बनाने के लिए एक ही फ़ंक्शन का उपयोग कर सकते हैं, और आप उन सभी को बंद भी कर सकते हैं!
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ `lightAll();` लाइन हटाएं `setup` फंक्शन के अंदर से। कोड सत्यापित करें और अपलोड करें।
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+title: सेटअप और लूप फ़ंक्शन के बारे में
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+जब फ्लोरा चालू होता है, तो यह `setup` फंक्शन में सभी कोड चलाता है, और फिर यह `loop` चलाता है हमेशा के लिए!
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ आपको क्या लगता है ` delay ` फंक्शन क्या कार्य करता है? इसके ** पैरामीटर **के लिए अलग-अलग values डालने का प्रयास करें, उदाहरण के लिए ` delay(50); ` या ` delay(1000); `। अपने परिवर्तनों का परीक्षण करने के लिए कोड को सत्यापित और अपलोड करना न भूलें!
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ क्या आपने देखा है कि रंग ` (0, 0, 0) ` पिक्सल को बंद कर देता है? फ्लोरा पर निम्न कोड चलाने का प्रयास करें:
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ अब "off" रंग के बिना समान कोड चलाएं:
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ क्या तुम अंतर बता सकते हो।
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ ` लूप ` फंक्शन में कोड बदलकर अपने स्वयं के अनुक्रम को डिज़ाइन करने का प्रयास करें! आप अपने ` lightAllOneColour` में कई विलंब और उतने कॉल जोड़ सकते हैं जैसे आप चाहे। रंग पैरामीटर के लिए लंबे और छोटे देरी और विभिन्न मूल्यों के साथ प्रयोग।
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+याद रखें, यदि आप अपना कोड ` लूप ` फंक्शन के अंदर रखते हैं तो पूरा क्रम बार-बार दोहराता रहेगा । 
