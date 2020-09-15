@@ -1,6 +1,6 @@
-## Rainbow fun
+## इंद्रधनुष्याची मजा
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ आपल्या स्केचच्या शेवटी खालील नवीन फंक्शन जोडा. काळजी करू नका, आपल्याला आत्ता हे समजून घेण्याची गरज नाही! आपण पूर्वी चालवलेल्या स्केचवरून हे घेतले गेले आहे.
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+हे फंक्शन आपल्याला ` 0` ते `255` पर्यंतवरून कोणतीही संख्या निवडू देते, आणि हे आपल्यासाठी एक रंग मिसळते.
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ आता आणखी एक नवीन फंक्शन जोडा. आपण त्यात **for loop** शोधू शकता का ते पहा!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+इथे गणिताचे एक भाग आहे! संपूर्ण इंद्रधनुषातून रंगांची समान निवड निवडण्यासाठी तेथे आहे.
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ फंक्शन कॉल करणे बाकी आहे. ` loop` फंक्शन बदला जेणेकरून त्यात कोडची ही ओळ आहे. नंतर रंगांची सुंदर इंद्रधनुष्य पाहण्यासाठी आपले स्केच व्हेरिफाय करा आणि अपलोड करा.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+यावेळी आपल्याला कोणतेही पॅरामीटर्स पास करण्याची आवश्यकता नाही, कारण नवीन फंक्शन आपल्यासाठी रंग दर्शवित आहे!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ delay जोडण्याबद्दल कसे? वरच्यासारखेच एक नवीन फंक्शन लिहू या, परंतु लूपमध्ये delay वापरुन म्हणजे ते आपल्या निओपिक्सल्सला अ‍ॅनिमेट करेल:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ `loop` फंक्शनमध्ये कॉल फंक्शन बदला आणि आपल्या इतर ` एनिमेट` फंक्शनला कॉल करण्यासाठी कोडची एक दुसरी ओळ जोडा:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+फ्लोरा वर प्रयत्न करून पहा!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## आव्हान: आपले स्वतःचे क्रम बनवण्याचा प्रयत्न करा
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ विविध भिन्न कॉल `animateRainbow` फंक्शनला आणि आपली इतर कार्येला एकत्र करून पहा. आपली कल्पनाशक्ती लिमिट आहे!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ आपण रंगांसह, लूप आणि delayसह शिकलेल्या युक्त्यांचा वापर करून आपण बरीच छान काम करू शकता. आपण आणखी काही उदाहरणे पाहू इच्छित असल्यास, ** strandtest** पहा आपण निओपिक्सल्सची चाचणी घेण्यासाठी वापरलेले स्केच.
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+title: पोर्टेबल पवर
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+आपण आपला प्रोजेक्ट परिधान करण्याची योजना आखल्यास आपण कदाचित बॅटरी पवर चा वापर करून हे अधिक पोर्टेबल बनवू इच्छित असाल.
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ फ्लोरासाठी, 3 × AA किंवा 3 × AAA बॅटरी पॅक अगदी उत्कृष्ट करेल. अधिक माहितीसाठी [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} पहा.
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ आपण भिन्न बोर्ड वापरत असल्यास, आपल्याकडे असलेल्या पवर आवश्यकतांची आपण दोनदा तपासणी केली पाहिजे.
 
 --- /collapse ---
