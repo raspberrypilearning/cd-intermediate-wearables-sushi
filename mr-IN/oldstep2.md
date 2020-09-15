@@ -1,49 +1,49 @@
-## What you will need
+## आपल्याला काय लागेल
 
-### Hardware
+### हार्डवेअर
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ अ‍ॅडफ्रूट फ्लोरा किंवा जेम्मा
++ यूएसबी केबल
++ सुमारे आठ निओपिक्सल
++ प्रवाहकीय धागा
++ तीन जोडी क्रोकोडैल क्लिप \(त्याऐवजी आपण प्रवाहकीय धाग्याचे तुकडे देखील वापरू शकता, परंतु क्रोकोडैल क्लिप चाचणी करणे सोपे असू शकते\)
++ पर्यायी: एक बॅटरी पॅक, जो संगणकास जोडल्याशिवाय आपला तयार केलेला प्रकल्प वापरण्यास अनुमती देईल!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+एलईडीचे नियंत्रण अ‍ॅडफ्रूट फ्लोराद्वारे केले जाईल. आपण अ‍ॅडफ्रूट जेम्मा, लिलीपॅड Arduino किंवा लिलीपॅड Arduino यूएसबी देखील वापरू शकता; आपण असे केल्यास, Arduino IDE मधील आउटपुट पिनची संख्या आणि बोर्ड सेटअपसारखे काही छोटे कोड बदल आवश्यक असतील.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+नोट: जेम्मा Linux ऑपरेटिंग सिस्टमसह कार्य करत नाही. हे USB 3.0 पोर्टसह देखील कार्य करणार नाही, अशा प्रकारे आपल्याकडे यूएसबी 2.0 पोर्ट असणे आवश्यक आहे किंवा संगणकासह जेम्मा कनेक्ट करण्यासाठी हब.
 
-### Software
+### सॉफ्टवेअर
 
-+ The Arduino IDE
++ Arduino आयडीई
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+title: Arduino आयडीई इन्स्टॉल करणे आणि सेटिंग करणे
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ येथून अर्डिनो आयडीई डाउनलोड करा [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} आणि इन्स्टॉल करा.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ एकदा ते इन्स्टॉल झाल्यानंतर, अँप्लिकेशन चालू करा. या प्रोजेक्टसाठी हे कार्य करण्यासाठी तेथे काही अतिरिक्त गोष्टी आवश्यक आहेत.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ **Arduino** मेनूमधून **Preferences** उघडा. **Additional Board Manager URLs** बॉक्स मध्ये पेस्ट करा आणि ओके क्लिक करा.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ **Tools** मेनू मध्ये, **Boards **वर जा आणि **Boards Manager...** सेलेक्ट करा. **Contributed** ड्रॉप डाऊन मेन्यूमधून निवडा. **Adafruit AVR Boards by Adafruit** इन्स्टॉल करा. त्यानंतर **Close** क्लिक करा.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Arduino आयडीई सोडा आणि रीस्टार्ट करा. पुन्हा **Boards** मेनूवर जा आणि आपण सूचीबद्ध देखे **Adafruit Flora**, **Adafruit Gemma **, **LilyPad Arduino**, आणि **LilyPad Arduino USB**. आपण वापरत असलेले बोर्ड निवडा.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ **Sketch** मेनू मध्ये, **Include Library** वर जा आणि **Manage Libraries..** निवडा. सर्च बॉक्स मध्ये ` निओपिक्सल` टाइप करा. **Adafruit NeoPixel by Adafruit** इन्स्टॉल करा. नंतर **Close** क्लिक करा.
 
 --- /collapse ---
 
-### Additional materials
+### अतिरिक्त वस्तू
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ एम्ब्रॉयडरी सुई आणि कात्री
++ एक टी - शर्ट
++ स्वच्छ नेल पॉलिश
++ पर्यायी: एक एम्ब्रॉयडरी गोलाकार हूप (आपल्या सर्किटचे स्टिचिंग सुलभ करण्यासाठी सुचवले जाते)
 
