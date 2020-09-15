@@ -1,6 +1,6 @@
-## Flashing lights
+## ಮಿನುಗುವ ದೀಪಗಳು
 
-+ Create the following new function after your first one:
++ ನಿಮ್ಮ ಮೊದಲ ಫಂಕ್ಷನ್ ನಂತರ ಈ ಕೆಳಗಿನ ಹೊಸ ಫಂಕ್ಷನ್ ಅನ್ನು ರಚಿಸಿ:
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: ರೌಂಡ್ ಬ್ರಾಕೆಟ್ ಗಳ ಒಳಗೆ ಏನಿದೆ?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+ಈ ಫಂಕ್ಷನ್ ಒಂದು **ನಿಯತಾಂಕ** (parameter) ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ: ಇದು ಆವರಣದೊಳಗಿನ ಬಿಟ್ ಆಗಿದೆ. ಇದು ನೀವು ಫಂಕ್ಷನ್ ಅನ್ನು ಕರೆ ಮಾಡುವಾಗ ಅದಕ್ಕೆ ಕೊಡುವ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯಾಗಿದೆ.
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ ಈ ಸಲ ನೀವು ನಿಮ್ಮ ಫಂಕ್ಷನ್ ಕರೆಗಳನ್ನು `setup`ನ ಬದಲು `loop` ನೊಳಗೆ ಬರೆಯುತ್ತೀರಿ. `loop` ಫಂಕ್ಷನ್ ಒಳಗೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಅದು ಈ ರೀತಿ ಕಾಣುವಂತೆ ಕೋಡ್ ಸೇರಿಸಿ:
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+title: ನಿಯತಾಂಕ ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+ನೀವು ನಿಮ್ಮ `lightAllOneColour` ಫಂಕ್ಷನ್ ಗೆ ಹೇಗೆ ಒಂದು ಬಣ್ಣವನ್ನು ಒಂದು **ನಿಯತಾಂಕವಾಗಿ** (parameter) ಕಳುಹಿಸುತ್ತಿದೀರಿ ಎಂದು ನೋಡಿದಿರಾ? ಈ ಫಂಕ್ಷನ್ ನ ಒಳಗೆ ಪ್ರತಿ ಸಾಲಿನ ಮೇಲೆ `c` ಸ್ಥಾನದಲ್ಲಿ ಬಳಸಲಾಗುವ ಬಣ್ಣಇದಾಗಿದೆ. ಅಂದರೆ ನಿಯೋಪಿಕ್ಸೆಲ್ ಗಳನ್ನು ಯಾವುದೇ ಬಣ್ಣವನ್ನಾಗಿಸಲು ನೀವು ಅದೇ ಫಂಕ್ಷನ್ ಅನ್ನು ಬಳಸಬಹುದು, ಮತ್ತು ನೀವು ಅವೆಲ್ಲವನ್ನೂ ಆಫ್ ಕೂಡ ಮಾಡಬಹುದು!
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ `setup` ಫಂಕ್ಷನ್ ನ ಒಳಗಿನಿಂದ `lightAll();` ಸಾಲನ್ನು ಅಳಿಸಿ. ಕೋಡ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+title: setup ಮತ್ತು loop ಫಂಕ್ಷನ್ ಗಳ ಬಗ್ಗೆ
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+ಫ್ಲೋರಾ ಆನ್ ಮಾಡಿದಾಗ, ಅದು ಮೊದಲು `setup` ಫಂಕ್ಷನ್ ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಕೋಡ್ ಅನ್ನು ಚಲಾಯಿಸುತ್ತದೆ. ತದನಂತರ ಅದು `loop` ಫಂಕ್ಷನ್ ಅನ್ನು ಮತ್ತೆ ಮತ್ತೆ ಚಲಾಯಿಸುತ್ತದೆ!
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ `delay` ಫಂಕ್ಷನ್ ಏನು ಮಾಡುತ್ತದೆ ಎಂದು ನೀವು ಭಾವಿಸುತ್ತೀರಿ? ಅದರ **ನಿಯತಾಂಕ **ಕ್ಕೆ ವಿವಿಧ ಮೌಲ್ಯಗಳನ್ನು ಹಾಕಲು ಪ್ರಯತ್ನಿಸಿ, ಉದಾಹರಣೆಗೆ `delay(50);` ಅಥವಾ `delay(1000);`. ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಲು ಕೋಡ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಮರೆಯಬೇಡಿ!
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ `(0, 0, 0)` ಬಣ್ಣವು ಪಿಕ್ಸೆಲ್ ಗಳನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ ಎಂಬುದನ್ನು ನೀವು ಗಮನಿಸಿದ್ದೀರಾ? ಫ್ಲೋರಾದಲ್ಲಿ ಈ ಕೆಳಗಿನ ಕೋಡ್ ಅನ್ನು ಚಲಾಯಿಸಲು ಪ್ರಯತ್ನಿಸಿ:
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ ಈಗ "ಆಫ್" ಬಣ್ಣವಿಲ್ಲದೆ ಅದೇ ಕೋಡ್ ಅನ್ನು ಚಲಾಯಿಸಿ:
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ ನೀವು ವ್ಯತ್ಯಾಸವನ್ನು ಗುರುತಿಸಿದಿರಾ?
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ `loop` ಫಂಕ್ಷನ್ ಒಳಗಿರುವ ಕೋಡ್ ಅನ್ನು ಬದಲಿಸುವ ಮೂಲಕ ನಿಮ್ಮದೇ ಆದ ಅನುಕ್ರಮವನ್ನು ವಿನ್ಯಾಸ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ! ನೀವು ನಿಮ್ಮ `lightAllOneCollow` ಫಂಕ್ಷನ್ ಗೆ ಎಷ್ಟು ಬೇಕಾದರೂ ವಿಳಂಬಗಳನ್ನು (delay) ಮತ್ತು ಕರೆಗಳನ್ನು ಸೇರಿಸಬಹುದು. ಹೆಚ್ಚು ಮತ್ತು ಕಡಿಮೆ ವಿಳಂಬಗಳನ್ನು ಹಾಗೂ ಬಣ್ಣ ನಿಯತಾಂಕಕ್ಕೆ ಬೇರೆಬೇರೆ ಮೌಲ್ಯಗಳನ್ನು ಹಾಕಿ ಪ್ರಯೋಗ ನಡೆಸಿ.
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+ನೆನಪಿಡಿ, ನೀವು `loop` ಫಂಕ್ಷನ್ ಒಳಗೆ ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಇರಿಸಿದರೆ, ಇಡೀ ಸರಣಿಮತ್ತೆ ಮತ್ತೆ ಮತ್ತೆ ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ. 
