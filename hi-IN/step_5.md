@@ -1,8 +1,8 @@
-## Colour and light
+## रंग और रोशनी
 
-You're going to write your own **function** now. Functions keep your code tidy.
+आप अभी अपना स्वयं का **फ़ंक्शन** लिखने जा रहे हैं। फ़ंक्शंस आपके कोड को व्यवस्थित रखते हैं।
 
-+ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
++ स्केच के नीचे, **after** क्लिक करें जो इन `}` \ (इसलिए, `loop` के बाहर फ़ंक्शन \) और <kbd>Return</kbd> दबाएं दो तीन बार। निम्नलिखित कोड को टाइप करें:
 
 ``` 
     void lightAll() {
@@ -18,9 +18,9 @@ You're going to write your own **function** now. Functions keep your code tidy.
     }
 ```
 
-Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
+नोट: सभी कोड **फ़ंक्शन** में **curly braces** घुंघराले ब्रैकेट्स की एक जोड़ी के बीच में जाता है `{ }` ।
 
-+ Now change your `setup` code so that it looks like this:
++ अब अपना `सेटअप` कोड बदलें ताकि यह इस तरह दिखे:
 
 ``` 
     void setup() {
@@ -31,49 +31,49 @@ Note: All the code in a **function** goes in between a pair of **curly braces** 
     }
 ```
 
-The last line of code **calls** the function you made. That means it tells the function to run.
+आपके कोड की अंतिम पंक्ति या लाइन आपके बनाये हुए फंक्शन को **बुलाती** है I इसका मतलब है कि यह फ़ंक्शन को चलने के लिए कहता है।
 
-+ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
++ अपने स्केच को फ़्लोरा में सत्यापित (verify) करें और अपलोड (upload) करें। क्या सभी पिक्सेल नीले रंग में जल रहे हैं?
 
 --- collapse ---
 ---
-title: Counting out the pixels
+title: पिक्सल की गिनती करना
 ---
 
-You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up.
+आपको पता चल गया होगा कि लाइन में पहला नंबर `strip.setPixelColor(0, strip.Color(0, 0, 255));` कौन सा पिक्सेल पहले जलता हैं वो तय करता है।
 
-Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+क्या आपने देखा है कि पहला पिक्सेल `0 ` है `1` के बजाय? इसलिए यदि आपके पास आठ पिक्सेल हैं, तो अंतिम संख्या `7` होगी।
 
 --- /collapse ---
 
-+ Change the second line of the `lightAll` function from:
++ `lightAll` की दूसरी पंक्ति यहाँ से बदलें:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
 ```
 
-to:
+ये करें:
 
 ```
     strip.setPixelColor(1, strip.Color(255, 0, 0));
 ```
 
-+ Verify and upload the code to the Flora. Can you spot the difference?
++ अपने स्केच को फ़्लोरा में सत्यापित करें और अपलोड करें। क्या तुम अंतर बता सकते हो?
 
 --- collapse ---
 ---
-title: How do colours work in code?
+title: कोड में रंग कैसे काम करते हैं?
 ---
 
-On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
+कंप्यूटर पर, तीन **प्राथमिक रंगों** को मिलाकर रंग बनाए जाते हैं:**लाल**, **हरा**, और **नीला** ।
 
-You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`.
+आप `0` से `255` संख्याओं का उपयोग कर कंप्यूटर को यह बताने के लिए कि प्रत्येक रंग को कितना मिश्रण करना है। तो कोड `strip.Color(0, 0, 255)` बनाता है **नीला** क्योंकि लाल और हरे रंग का मूल्य दोनों `0` हैं।
 
-+ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
++ आपको क्या रंग लगता है `strip.Color(0, 255, 0)` देगा? इसे आज़माएँ!
 
 --- /collapse ---
 
-Here are a few more colours that are good to know:
+यहाँ कुछ और रंग दिए गए हैं जिन्हें जानना अच्छा है:
 
 ```
     void lightAll() {
@@ -89,19 +89,19 @@ Here are a few more colours that are good to know:
     }
 ```
 
-+ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`?
++ विभिन्न रंगों को प्राप्त करने के लिए संख्याओं के साथ प्रयोग करने का प्रयास करें। आपको क्या लगता है अगर हम तीनों रंगों के लिए यदि `0`, `strip.Color(0, 0, 0)` तो हमे क्या मिलेगा?
 
-Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they!
+क्या आप अभी तक तारे देख रहे हैं?! वो NeoPixels ऊज्ज्वल है ना!
 
-+ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
++ सौभाग्य से, यदि आप चाहते हैं, तो आप निर्देश के साथ उनकी चमक को बदल सकते हैं ` strip.setBrightness(10); ` । इसे ` setup ` फ़ंक्शन में जोड़ें, लाइनों के बीच में ` strip.begin(); ` और ` strip.show();`। रंगों की तरह, संख्या ` 0 ` से ` 255 ` कुछ भी हो सकती है को ।
 
 --- collapse ---
 ---
-title: Powering lots of NeoPixels
+title: NeoPixels की बहुत सारी शक्ति
 ---
 
-You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread.
+आप पा सकते हैं कि श्रृंखला के अंत की ओर रंग ठीक से दिखाई नहीं दे रहे हैं। ऐसा इसलिए है क्योंकि सर्किट **प्रतिरोध** (resistence) के कारण शक्ति खो रहा है।
 
-+ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
++ आप दोनों के साथ एक अतिरिक्त धागा सिलाई करके इसे सुलझा सकते हैं **negative** और **positive** अपने सर्किट में।
 
 --- /collapse ---
