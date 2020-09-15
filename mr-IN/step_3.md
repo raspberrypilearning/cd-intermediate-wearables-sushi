@@ -1,92 +1,92 @@
-## Stitch your circuit
+## आपला सर्किट टाका
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
++ आपली सर्व निओपिक्सल्स आणि काही खडू किंवा एक पेन्सिल गोळा करा. सपाट पृष्ठभागावर टी - शर्ट \(किंवा आपण आपला प्रोजैक्ट बनवित असलेला फॅब्रिकचा कोणताही तुकडा\) घाला.
 
-+ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
-  + A straight line
-  + A heart (eight NeoPixels are perfect for this)
-  + Pretend "buttons" down the front of the T-shirt
-  + A random pattern
++ आपल्या आवडीच्या आकारात पिक्सेलची व्यवस्था करा. मी एक हसरा चेहरा करणार आहे! काही इतर कल्पना आहेतः:
+  + एक सरळ ओळ
+  + हृदय (आठ निओपिक्सेल यासाठी परिपूर्ण आहेत)
+  + टी-शर्टच्या समोर खाली "बटणे" दर्शवा
+  + एक सहजगत्या नमुना
 
-+ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
++ आपल्याकडे फ्लोरा कोठे ठेवण्याची योजना आहे याचा निर्णय घ्या, आणि त्यास कनेक्ट होण्यासाठी एक निओपिक्सेल निवडा: आपण शिवणे हे प्रथम आहे. बाकीचे एक एक करून साखळीत एकमेकांशी जोडले जातील.
 
-+ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
++ आपण निओपिक्सेल्स ज्या क्रमाने शिवणार आहात त्या क्रियेवर कार्य करा: आपण आपल्या बोटाने मार्ग अनुसरण करण्यास सक्षम असणे आवश्यक आहे की ते स्वतःला ओलांडत नाही \(यामुळे शॉर्ट सर्किटमध्ये समस्या उद्भवू शकतात !\).
 
-+ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
++ प्रत्येक निओपिक्सल कोठे आहे हे चिन्हांकित करताना, या मार्गाच्या आसपास पेन्सिल किंवा खडूने काढा.
 
 ![](images/drawAroundShape.png)
 
-### Let's start sewing!
+### चला शिवणकाम सुरू करूया!
 
-+ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
++ एकदा आपल्याकडे सर्व काही चिन्हांकित झाल्यानंतर, सर्व तुकडे बाजूला ठेवा आणि सुई आणि संवाहकचा धागा घ्या. जर आपले पिक्सेल एकत्रितपणे जवळ असले तर सुमारे 20 cm सुरू होण्यास पुरेसे असावे. आपल्याकडे एम्ब्रॉयडरी हूप असल्यास, स्टिचिंग केल्यास खूप सुलभ होते.
 
-You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
+आपण ** डेटा ** ओळीला प्रथम टाके घाला. हा थ्रेड आहे ज्या सूचना (आपला कोड!) नेओपिक्सलला काय करावे हे सांगत असतात, जसे की कधी उजेडायचे.
 
-+ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
-
---- collapse ---
----
-title: Holes or pins?
----
-
-On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
-
-In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
-
---- /collapse ---
-
-+ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
-
-+ Sew a running stitch to the spot where the next NeoPixel will go.
-
-+ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
-
-+ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
++ आपला पहिला निओपिक्सल घ्या आणि त्या ठिकाणी ठेवा, तेथे लहान बाण पुढील दिशेने कोठे दिशेने आहेत. मध्यभागी असलेल्या एलईडीपासून **दूर** बिंदू असलेल्या बाणाने छिद्रातून शिवून त्यास फॅब्रिकला जोडा. हा भोक ** आउटपुट पिन ** आहे.
 
 --- collapse ---
 ---
-title: Protecting the ends
+title: छिद्र किंवा पिन?
 ---
 
-It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
+अ‍ॅडफ्रूट फ्लोरा, Arduino, किंवा Raspberry Pi बोर्डांवर, आपल्या विद्युतीय सर्किटशी जोडण्यासाठी आपण वापरत असलेल्या धातूचे थोडेसे तुकडे **पिन** म्हणतात.
+
+** घालण्यायोग्य ** इलेक्ट्रॉनिक्सच्या प्रकरणात, तरी: त्यांच्याकडे छिद्र आकार आहे, जेणेकरून आपण त्यांना संवाहकचा धाग्यासह कनेक्ट करू शकाल, ते पिन-आकाराचे पिन नाहीत. याचा अर्थ असा की अंगावर घालण्यास प्रोजैक्टमध्ये, 'पिन' आणि 'छिद्र' या शब्दाचा अर्थ समान असू शकतो.
 
 --- /collapse ---
 
-+ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
++ भोकातून दोन किंवा तीन टाके कसून शिवून सुरक्षित कनेक्शन बनवण्याची खात्री करा.
+
++ पुढचा निओपिक्सल जिथे जाईल त्या जागेवर रुंनिंग सिलाई शिवा.
+
++ मग पुढचा पिक्सेल घ्या आणि पहिल्या स्थानापासून आणि पुढच्या जागेच्या दिशेने एर्रोव वळवून त्याच्या जागेवर ठेवा. ** इनपुट ** भोक शिवून जोडा </strong> \ (लक्षात ठेवा **दिशेने मध्ये</0>असलेल्या एर्रोवच्या दिशेने हा छिद्र आहे </0> मध्यभागी एलईडी \).</p></li>
+
++ फॅब्रिकच्या मागील बाजूस काही टाके देऊन धागा सुरक्षित करा आणि जे काही कमी उरले आहे ते कट करा.</ul>
+
+--- collapse ---
+---
+title: टोकांचे रक्षण करणे
+---
+
+कापल्यानंतर धाग्याचे टोक निर्मळ नेल पॉलिशने कोट करणे चांगले आहे, घिस टाळण्यासाठी आणि भटक्यांचे थ्रेड शॉर्ट सर्किट होण्यापासून टाळण्यासाठी.
+
+--- /collapse ---
+
++ ** नवीन संवाहक चा धाग्याचा तुकडा **वापरणे, तिसर्‍या पिक्सेलचा ** इनपुट ** छिद्र दुसर्‍या निओपिक्सेलचा **आउटपुट** छिद्रला कनेक्ट करा. सर्व निओपिक्सेल त्यांच्या ** डेटा** सह एकत्र साखळ होईपर्यंत अशाप्रकारे सुरू ठेवा प्रत्येक जोड्या दरम्यान धाग्यांचा वेगळा तुकडा चालू आहे. साखळी शेवटच्या निओपिक्सलसह समाप्त होते: आपण त्याच्या ** आउटपुट** भोक मध्ये काहीही जोडत नाही </0>.
 
 ![](images/pixelSewing3_136_800.png)
 
-Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
+पुढे आपण सर्व साखळी मध्ये ** नकारात्मक** भोक आणि नंतर सर्व ** सकारात्मक ** भोक कनेक्ट करा.
 
-+ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
++ वाहक धाग्याचा एक लांब तुकडा, सुमारे 50-100 cm वापरुन प्रत्येक पिक्सेलचा ** - ** छिद्रातून काही घट्ट टाके शिवून घ्या, पहिल्यासह प्रारंभ होणारा आणि शेवटचा शेवट, आणि निओपिक्सल दरम्यान running सिलाई शिवणे.
 
-**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
+**नोट**: ** डेटा ** ओळीतील धागा कोणत्याही धाग्याला स्पर्श किंवा क्रॉस करीत नाही याची खात्री करा!
 
-+ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
++ संवाहकीय धाग्याच्या आणखी एक लांब तुकडासह, सर्व निओपिक्सलचे ** + ** भोक कनेक्ट करा त्याच प्रकारे आपण आत्ताच ** - ** छिद्रांना जोडले.
 
-+ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
++ शेवटी, टी-शर्टवर फ्लोरा बोर्ड ठेवा \(हे **प्लग इन केलेले नाही** याची खात्री करा !\).
 
-+ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other.
++ तीन **वेगळे** संवाहकीय थ्रेडचे तुकडे वापरुन, फॅब्रिक बाजूने running टाके शिवताना, प्रथम निओपिक्सलच्या ** इनपुट** छिद्रात बोर्ड च्या ** # 6** भोकला जोडा, प्रथम निओपिक्सलच्या ** - ** छिद्र **GND** बोर्ड च्या भोकला जोडा आणि बोर्डच्या ** VBATT **छिद्रात प्रथम निओपिक्सेलच्या ** + ** भोकला जोडा. कोणताही धागा एकमेकांना स्पर्श करत नाही याची खात्री करा.
 
-+ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
++ आपणास आवडत असल्यास, त्यास अधिक सुरक्षितपणे ठेवण्यासाठी आपण फ्लोराच्या काही न वापरलेल्या पिनला टी-शर्टवर काही साध्या धाग्यासह टाका शकता.
 
 ![](images/stitchedCircuit.png)
 
-+ Now, the moment of truth: plug in your Flora.
++ आता, सत्याचा क्षण: आपल्या फ्लोरा प्लग इन करा.
 
-You should see all your NeoPixels light up!
+आपण आपल्या सर्व निओपिक्सल्स दिवे दिसावा !
 
 --- collapse ---
 ---
-title: Something's not right
+title: काहीतरी बरोबर नाही
 ---
 
-If some of your NeoPixels didn't light up, don't panic. Some causes could be:
+आपल्यातील काही निओपिक्सेल प्रकाशात नसल्यास घाबरू नका. काही कारणे अशी असू शकतात:
 
-+ A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
++ शॉर्ट सर्किट: धागा स्पर्श करीत आहे का? फॅब्रिकवर धातूचे काही आहे किंवा ते सर्किटला स्पर्श करत आहे का? फॅब्रिक ओले आहे का?
 
-+ Loose connections: The stitches in every hole should be good and tight for a secure connection.
++ लूस कनेक्शन: सुरक्षित कनेक्शनसाठी प्रत्येक भोकातील टाके चांगले आणि घट्ट असावेत.
 
-+ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
++ बरोबर कोड अपलोड केलाः आपल्या कोडमध्ये निओपिक्सल्सची योग्य संख्या परिभाषित केली गेली आहे का ? हे कंपैल् केले आणि त्रुटींशिवाय अपलोड केले?
 
 --- /collapse --- 
