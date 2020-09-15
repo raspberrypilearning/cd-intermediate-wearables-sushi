@@ -1,8 +1,8 @@
-## Colour and light
+## Kleur en licht
 
-You're going to write your own **function** now. Functions keep your code tidy.
+Je gaat nu je eigen **functie** schrijven. Functies houden je code netjes.
 
-+ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
++ Klik onder aan de schets op **na** de `}` \(dus, buiten de `loop` functie\) en druk een paar keer op <kbd>Enter</kbd>. Typ vervolgens de volgende code:
 
 ``` 
     void lightAll() {
@@ -18,9 +18,9 @@ You're going to write your own **function** now. Functions keep your code tidy.
     }
 ```
 
-Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
+Opmerking: Alle code in een **functie** staat tussen een paar **accolades** `{ }`.
 
-+ Now change your `setup` code so that it looks like this:
++ Wijzig nu je `setup` code zodat het er als volgt uitziet:
 
 ``` 
     void setup() {
@@ -31,77 +31,77 @@ Note: All the code in a **function** goes in between a pair of **curly braces** 
     }
 ```
 
-The last line of code **calls** the function you made. That means it tells the function to run.
+De laatste regel code **roept** de functie die je hebt gemaakt aan. Dat betekent dat het de functie laat uitvoeren.
 
-+ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
++ Controleer en upload je schets naar de Flora. Zijn alle pixels blauw verlicht?
 
 --- collapse ---
 ---
-title: Counting out the pixels
+title: De pixels tellen
 ---
 
-You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up.
+Je hebt misschien ontdekt dat het eerste getal in de regel `strip.setPixelColor(0, strip.Color(0, 0, 255));` bepaalt welke pixel moet oplichten.
 
-Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+Heb je gemerkt dat de eerste pixel `0` is in plaats van `1`? Dus als je acht pixels hebt, is de laatste het getal `7`.
 
 --- /collapse ---
 
-+ Change the second line of the `lightAll` function from:
++ Wijzig de tweede regel van de `lightAll` functie van:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
 ```
 
-to:
+naar:
 
 ```
     strip.setPixelColor(1, strip.Color(255, 0, 0));
 ```
 
-+ Verify and upload the code to the Flora. Can you spot the difference?
++ Controleer en upload de code naar de Flora. Kun je het verschil zien?
 
 --- collapse ---
 ---
-title: How do colours work in code?
+title: Hoe werken kleuren in code?
 ---
 
-On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
+Op een computer worden kleuren gemaakt door de drie **primaire kleuren** te mengen: **rood**, **groen** en **blauw**.
 
-You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`.
+Je gebruikt getallen van `0` tot `255` om de computer te vertellen hoeveel van elke kleur moet worden gemengd. Dus de code `strip.Color(0, 0, 255)` maakt **blauw** omdat de waarde voor rood en groen beide `0` zijn.
 
-+ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
++ Welke kleur denk je dat `strip.Color(0, 255, 0)` je zal geven? Probeer het uit!
 
 --- /collapse ---
 
-Here are a few more colours that are good to know:
+Hier zijn nog een paar kleuren die goed zijn om te kennen:
 
 ```
     void lightAll() {
-        strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
-        strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
-        strip.setPixelColor(2, strip.Color(0, 255, 0)); // green
+        strip.setPixelColor(0, strip.Color(0, 0, 255)); // blauw
+        strip.setPixelColor(1, strip.Color(255, 0, 0)); // rood
+        strip.setPixelColor(2, strip.Color(0, 255, 0)); // groen
         strip.setPixelColor(3, strip.Color(255, 0, 255)); // magenta
-        strip.setPixelColor(4, strip.Color(255, 255, 255)); // white
-        strip.setPixelColor(5, strip.Color(255, 255, 0)); // yellow
-        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
-        strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
+        strip.setPixelColor(4, strip.Color(255, 255, 255)); // wit
+        strip.setPixelColor(5, strip.Color(255, 255, 0)); // geel
+        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyaan
+        strip.setPixelColor(7, strip.Color(255, 127, 0)); // oranje
         strip.show();
     }
 ```
 
-+ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`?
++ Probeer te experimenteren met de getallen om verschillende tinten te krijgen. Wat denk je dat je krijgt als je een waarde `0` instelt voor alle drie de kleuren, `strip.Color(0, 0, 0)`?
 
-Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they!
+Zie je al sterren?! Die NeoPixels zijn zeker HELDER, nietwaar!
 
-+ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
++ Gelukkig kun je, als je dat wilt, de helderheid aanpassen met de instructie `strip.setBrightness(10);`. Voeg het toe aan de `setup` functie, tussen de regels `strip.begin();` en `strip.show();`. Net als bij kleuren kan het getal alles zijn van `0` tot `255`.
 
 --- collapse ---
 ---
-title: Powering lots of NeoPixels
+title: Het aansturen van veel NeoPixels
 ---
 
-You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread.
+Het kan zijn dat de kleuren aan het einde van de ketting niet goed worden weergegeven. Dit komt omdat het circuit vermogen verliest als gevolg van **weerstand** in de draad.
 
-+ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
++ Je kunt dit oplossen door een extra draad te steken langs zowel de **negatieve** als de **positieve** sporen in je circuit.
 
 --- /collapse ---
