@@ -1,6 +1,6 @@
-## Animate!
+## Animeer!
 
-+ Create the following new function at the bottom of your sketch:
++ Maak de volgende nieuwe functie aan de onderkant van je schets:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -11,9 +11,9 @@
     }
 ```
 
-Can you see that this function takes **two** parameters in the round braces? Later on, you'll change the function's code so it uses the second one.
+Zie je dat deze functie **twee** parameters in de ronde haakjes heeft? Later zal je de code van de functie veranderen zodat deze de tweede gebruikt.
 
-+ Delete the code in the `loop` function and add in a call to your new function:
++ Verwijder de code in de `loop` functie en voeg een aanroep toe aan je nieuwe functie:
 
 ```
     void loop() {
@@ -21,13 +21,13 @@ Can you see that this function takes **two** parameters in the round braces? Lat
     }
 ```
 
-Notice how you're passing the `animateOneColour` function two parameters in the brackets? Even though the function doesn't use the second one just yet, but the code won't compile if you don't pass in values for all the parameters when you call the function.
+Merk op hoe je de `animateOneColour` functie twee parameters tussen haakjes doorgeeft? Ook al gebruikt de functie de tweede nog niet, maar de code zal niet compileren als je geen waarden voor alle parameters doorgeeft wanneer je de functie aanroept.
 
-+ Verify and upload your code. What do you notice?
++ Controleer en upload je code. Wat merk je op?
 
-This time you only needed to write **one line** of code that calls `strip.setPixelColor`, and all of the pixels turned on.
+Deze keer hoef je slechts **één regel** code te schrijven die `strip.setPixelColor` oproept, en alle pixels zijn ingeschakeld.
 
-+ Inside your new function, can you see that there is another pair of **curly braces** with some code in between? This pair belongs to something called a **for loop** \(but not the `loop` function!\). It looks like this:
++ Kun je in je nieuwe functie zien dat er nog een paar **accolades** met wat code ertussen zit? Dit paar hoort bij iets dat een **for-lus** \(maar niet de `loop` functie!\) wordt genoemd. Het ziet er zo uit:
 
 ``` 
     for(uint16_t i=0; i<strip.numPixels(); i++) {
@@ -37,22 +37,22 @@ This time you only needed to write **one line** of code that calls `strip.setPix
 
 --- collapse ---
 ---
-title: How does the code work?
+title: Hoe werkt de code?
 ---
 
-The above code checks how many NeoPixels are in your chain and then runs the code inside the curly braces that many times.
+De bovenstaande code controleert hoeveel NeoPixels in je keten zitten en voert dan de code dat aantal keer binnen de accolades uit.
 
-**Here's the clever bit:** The value of `i` starts off as `0` and changes by `1` each time, so every time the line `strip.setPixelColor(i, c);` runs, it's setting the colour of the **next** pixel!
+**Hier is de slimmigheid:** de waarde van `i` begint met `0` en verandert elke keer met `1`, dus telkens wanneer de regel `strip.setPixelColor(i, c);` wordt uitgevoerd, wordt de kleur van de **volgende** pixel ingesteld!
 
 --- /collapse ---
 
-+ Time to do somthing with that second parameter! In your `animateOneColour` function, add the following line below the line `strip.show();`:
++ Tijd om iets te doen met die tweede parameter! Voeg in je `animateOneColour` functie de volgende regel toe onder de regel `strip.show();`:
 
 ```
     delay(wait);
 ```
 
-Make sure the new line is **above** the first `}`, so that it's inside the for loop. Your function should look like this now:
+Zorg ervoor dat de nieuwe regel **boven** de eerste `}` is, zodat deze in de for-lus zit. Je functie zou er nu zo uit moeten zien:
 
 ``` 
     void animateOneColour(uint32_t c, uint8_t wait) {
@@ -64,9 +64,9 @@ Make sure the new line is **above** the first `}`, so that it's inside the for l
     }
 ```
 
-Instead of using a particular number for the `delay`, you are using the second parameter of your function. This means you can choose a different value for the `delay` each time you call the function.
+In plaats van een bepaald getal te gebruiken voor de `vertraging`, gebruik je de tweede parameter van de functie. Dit betekent dat je een andere waarde kunt kiezen voor de `vertraging` telkens wanneer je de functie oproept.
 
-+ Add another call to your function inside `loop` to turn the NeoPixels off as well as on:
++ Voeg nog een oproep toe aan je functie binnen `loop` om de NeoPixels zowel uit als aan te zetten:
 
     ```
         void loop() {
@@ -75,9 +75,9 @@ Instead of using a particular number for the `delay`, you are using the second p
         }
     ```
 
-+ Verify your code again and upload the sketch to the Flora. Now you have a cool animated sequence!
++ Controleer je code opnieuw en upload de schets naar de Flora. Nu heb je een coole geanimeerde reeks!
 
-Of course, you don't have to turn the NeoPixels off. How about making them all light up in a bunch of colours one after the other?
+Natuurlijk hoef je de NeoPixels niet uit te schakelen. Hoe zit het om ze allemaal in een stel kleuren een voor een te laten oplichten?
 
 ```
     void loop() {
@@ -87,4 +87,4 @@ Of course, you don't have to turn the NeoPixels off. How about making them all l
     }
 ```
 
-+ Add as many colours as you like. Try passing in different values other than `100` for the second parameter as well, and watch your animation speed up or slow down!
++ Voeg zoveel kleuren toe als je wilt. Probeer ook andere waarden dan `100` door te geven voor de tweede parameter, en kijk hoe je animatie versnelt of langzamer wordt!
