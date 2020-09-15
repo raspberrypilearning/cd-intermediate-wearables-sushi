@@ -1,49 +1,49 @@
-## What you will need
+## Wat heb je nodig
 
 ### Hardware
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora of Gemma
++ Een USB-kabel
++ Ongeveer acht NeoPixels
++ Geleidende draad
++ Drie paar krokodillenklemmen \(je kunt in plaats daarvan ook stukjes geleidende draad gebruiken, maar krokodillenklemmen zijn wellicht gemakkelijker te testen\)
++ Optioneel: Een accu-pack, waarmee je je voltooide project kunt dragen zonder dat het op een computer is aangesloten!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+De LED's worden bestuurd door de Adafruit Flora. Je zou ook een Adafruit Gemma, LilyPad Arduino of LilyPad Arduino USB kunnen gebruiken; als je dat doet, zijn er wat kleine codewijzigingen nodig, zoals het nummer van de uitvoerpin en de kaartinstellingen in de Arduino IDE.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+Opmerking: De Gemma werkt niet met het Linux besturingssysteem. Het werkt ook niet met een USB 3.0-poort, dus je moet een USB 2.0-poort of -hub hebben om de Gemma op de computer aan te sluiten.
 
 ### Software
 
-+ The Arduino IDE
++ De Arduino IDE
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+title: Het installeren en instellen van de Arduino IDE
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ Download de Arduino IDE van [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} en installeer deze.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ Open de toepassing zodra deze is geïnstalleerd. Er zijn een paar extra dingen nodig om het voor dit project te laten werken.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ Open het **Voorkeuren** vanuit het **Arduino** menu. Plak in het vak **Additionele Board Beheer URLs** het volgende en klik op OK.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ Ga in het menu **Hulpmiddelen** naar **Boards** en selecteer **Boards Beheer...**. Kies **Bijgedragen** in het vervolgkeuzemenu. Installeer **Adafruit AVR Boards by Adafruit**. Klik vervolgens op **Sluiten**.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Sluit de Arduino IDE af en start deze opnieuw. Ga opnieuw naar het **Boards** menu en je zou de **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino** en **LilyPad Arduino USB** moeten zien. Selecteer het bord dat je gaat gebruiken.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ Ga in het menu **Schets** naar **Bibliotheek gebruiken** en selecteer **Bibliotheken beheren...**. Typ `neopixel` in het zoekvak. Installeer **Adafruit NeoPixel van Adafruit**. Klik vervolgens op **Sluiten**.
 
 --- /collapse ---
 
-### Additional materials
+### Aanvullende materialen
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ Een borduurnaald en een schaar
++ Een T-shirt
++ Heldere nagellak
++ Optioneel: Een borduurhoepel (aanbevolen om het stikken van je circuit gemakkelijker te maken)
 
