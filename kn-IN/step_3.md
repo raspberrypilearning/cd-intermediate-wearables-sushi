@@ -1,92 +1,92 @@
-## Stitch your circuit
+## ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಹೊಲಿಯಿರಿ
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
++ ನಿಮ್ಮ ಎಲ್ಲಾ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು ಮತ್ತು ಕೆಲವು ಸೀಮೆಸುಣ್ಣ ಅಥವಾ ಒಂದು ಪೆನ್ಸಿಲ್ ಅನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ. ಟಿ-ಶರ್ಟ್ \ (ಅಥವಾ ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟನ್ನು ನೀವು ಯಾವ ಬಟ್ಟೆಯಲ್ಲಿ ತಯಾರಿಸುತ್ತಿದ್ದೀರೋ ಅದು \) ಅನ್ನು ಚಪ್ಪಟೆ ಮೇಲ್ಮೈಯಲ್ಲಿಇರಿಸಿ.
 
-+ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
-  + A straight line
-  + A heart (eight NeoPixels are perfect for this)
-  + Pretend "buttons" down the front of the T-shirt
-  + A random pattern
++ ನೀವು ಇಷ್ಟಪಡುವ ಆಕಾರಕ್ಕೆ ಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಜೋಡಿಸಿ. ನಾನು ನಗುತ್ತಿರುವ ಮುಖ ಮಾಡಲು ಹೊರಟಿದ್ದೇನೆ! ಇತರ ಕೆಲವು ಉಪಾಯಗಳು ಹೀಗಿವೆ:
+  + ನೇರ ರೇಖೆ
+  + ಹೃದಯ (ಎಂಟು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು ಇದಕ್ಕಾಗಿ ಸೂಕ್ತವಾಗಿವೆ)
+  + ಟಿ-ಶರ್ಟ್ ಮುಂಭಾಗದಲ್ಲಿ ನಟನಾ "ಗುಂಡಿಗಳು"
+  + ಯಾದೃಚ್ಛಿಕ ಮಾದರಿ
 
-+ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
++ ಫ್ಲೋರಾವನ್ನು ನೀವು ಎಲ್ಲಿ ಇಡಲು ಯೋಜಿಸುತ್ತೀರಿ ಎಂದು ಸ್ಥೂಲವಾಗಿ ನಿರ್ಧರಿಸಿ, ಮತ್ತು ಅದರೊಂದಿಗೆ ಸಂಪರ್ಕ ಹೊಂದಲು ಒಂದು ನಿಯೋಪಿಕ್ಸೆಲ್ ಅನ್ನು ಆರಿಸಿ: ಇದು ನೀವು ಹೊಲಿಯುವ ಮೊದಲನೆಯದು. ಉಳಿದವುಗಳನ್ನು ಒಂದರ ನಂತರ ಇನ್ನೊಂದರಂತೆ ಒಂದು ಸರಪಳಿಯ ರೀತಿಯಲ್ಲಿ ಒಂದಕ್ಕೊಂದು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ.
 
-+ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
++ ನೀವು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಹೊಲಿಯುವ ಕ್ರಮಾಂಕವನ್ನು ರೂಪಿಸಿ: ಮೊದಲನೆಯದರಿಂದ ಕೊನೆಯದರವರೆಗೆ ತನ್ನನ್ನೇ ತಾನು ದಾಟದಿರುವಂಥ \(ಇದು ಶಾರ್ಟ್ ಸರ್ಕ್ಯೂಟ್ ನಂತಹ ಸಮಸ್ಯೆಗಳನ್ನುಂಟುಮಾಡುತ್ತದೆ!\) ಒಂದು ನಿರಂತರ ಹಾದಿಯನ್ನು ನಿಮ್ಮ ಬೆರಳಿನ ಮೂಲಕ ಗುರುತಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗಬೇಕು.
 
-+ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
++ ಪ್ರತಿ ನಿಯೋಪಿಕ್ಸೆಲ್ ಇರುವ ಸ್ಥಳವನ್ನು ಗುರುತಿಸುತ್ತಾ, ಪೆನ್ಸಿಲ್ ಅಥವಾ ಸೀಮೆಸುಣ್ಣದಿಂದ ಈ ಮಾರ್ಗದ ಸುತ್ತಲೂ ಎಳೆಯಿರಿ.
 
 ![](images/drawAroundShape.png)
 
-### Let's start sewing!
+### ಹೊಲಿಗೆಯನ್ನು ಪ್ರಾರಂಭಿಸೋಣ!
 
-+ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
++ ನೀವು ಎಲ್ಲವನ್ನೂ ಗುರುತಿಸಿದ ನಂತರ, ಎಲ್ಲಾ ತುಣುಕುಗಳನ್ನು ಬದಿಗಿರಿಸಿ ಮತ್ತು ಒಂದು ಸೂಜಿ ಮತ್ತು ಸ್ವಲ್ಪ ವಾಹಕ ದಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ. ನಿಮ್ಮ ಪಿಕ್ಸೆಲ್ ಗಳು ಸಾಕಷ್ಟು ಹತ್ತಿರವಾಗಿದ್ದರೆ ಪ್ರಾರಂಭಿಸಲು ಸುಮಾರು 20cm ಸಾಕು. ನಿಮ್ಮಲ್ಲಿ ಕಸೂತಿ ಹೂಪ್ ಇದ್ದರೆ, ಅದನ್ನು ಬಳಸುವುದರಿಂದ ಹೊಲಿಗೆ ತುಂಬಾ ಸುಲಭವಾಗಬಹುದು.
 
-You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
+ನೀವು ಮೊದಲಿಗೆ **ಡಾಟಾ** (data) ಸಾಲನ್ನು ಹೊಲಿಯುತ್ತೀರಿ. ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಯಾವಾಗ ಬೆಳಗಿಸಬೇಕು ಎಂಬಂತಹ ಸೂಚನೆಗಳನ್ನು (ನಿಮ್ಮ ಕೋಡ್!) ಹೊಂದಿರುವ ಥ್ರೆಡ್ ಇದು.
 
-+ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
-
---- collapse ---
----
-title: Holes or pins?
----
-
-On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
-
-In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
-
---- /collapse ---
-
-+ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
-
-+ Sew a running stitch to the spot where the next NeoPixel will go.
-
-+ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
-
-+ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
++ ಮುಂದಿನದು ಎಲ್ಲಿ ಎಂದು ಸಣ್ಣ ಬಾಣಗಳು ತೋರಿಸುವ ರೀತಿಯಲ್ಲಿ, ನಿಮ್ಮ ಮೊದಲ ನಿಯೋಪಿಕ್ಸೆಲ್ ಅನ್ನು ಅದರ ಜಾಗದಲ್ಲಿರಿಸಿ. ಮಧ್ಯೆ ಇರುವ ಎಲ್ಇಡಿಯಿಂದ **ದೂರ**ಕ್ಕೆ ತೋರಿಸುವ ಬಾಣವು ಇರುವ ರಂಧ್ರದ ಮೂಲಕ ಹೊಲಿದು ಅದನ್ನು ಬಟ್ಟೆಗೆ ಲಗತ್ತಿಸಿ. ಈ ರಂಧ್ರವು **ಔಟ್‌ಪುಟ್ ಪಿನ್** (output pin) ಆಗಿದೆ.
 
 --- collapse ---
 ---
-title: Protecting the ends
+title: ರಂಧ್ರಗಳು ಅಥವಾ ಪಿನ್‌ಗಳು?
 ---
 
-It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
+Adafruit Flora, Arduino, ಅಥವಾ Raspberry Pi ನಂತಹ ಬೋರ್ಡ್‌ಗಳಲ್ಲಿ, ನಿಮ್ಮ ವಿದ್ಯುತ್ ಸರ್ಕ್ಯೂಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು ನೀವು ಬಳಸುವ ಲೋಹದ ಚಿಕ್ಕ ತುಣುಕುಗಳನ್ನು **ಪಿನ್‌ಗಳು** (pins) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.
+
+**ಧರಿಸಬಹುದಾದ** (wearable) ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ವಿಷಯದಲ್ಲಿ, ಪಿನ್‌ಗಳು ಪಿನ್ ಆಕಾರದಲ್ಲಿ ಇರುವುದಿಲ್ಲ: ಅವು ರಂಧ್ರದ ಆಕಾರವನ್ನು ಹೊಂದಿರುತ್ತವೆ. ಆದ್ದರಿಂದ ನೀವು ವಾಹಕ ದಾರದೊಂದಿಗೆ ಅವುಗಳನ್ನು ಸಂಪರ್ಕಿಸಬಹುದಾಗಿದೆ. ಇದರ ಅರ್ಥವೇನೆ೦ದರೆ, ಧರಿಸಬಹುದಾದ ಪಾಜೆಕ್ಟ್‌ಗಳಲ್ಲಿ 'ಪಿನ್' ಮತ್ತು 'ಹೋಲ್' ಗಳು ಸಮಾನಾರ್ಥಕವಾಗಿರಬಲ್ಲವು.
 
 --- /collapse ---
 
-+ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
++ ರಂಧ್ರದ ಮೂಲಕ ಎರಡು ಅಥವಾ ಮೂರು ಹೊಲಿಗೆಗಳನ್ನು ಬಿಗಿಯಾಗಿ ಹೊಲಿಯುವ ಮೂಲಕ ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ಮಾಡಲು ಮರೆಯದಿರಿ.
+
++ ಮುಂದಿನ ನಿಯೋಪಿಕ್ಸೆಲ್ ಇರುವ ಸ್ಥಳಕ್ಕೆ ರನ್ನಿಂಗ್ ಹೊಲಿಗೆಯನ್ನು (running stitch) ಹೊಲಿಯಿರಿ.
+
++ ನಂತರ ಮುಂದಿನ ಪಿಕ್ಸೆಲ್ ತೆಗೆದುಕೊಂಡು ಅದನ್ನು ಅದರ ಸ್ಥಳಕ್ಕೆ ಇರಿಸಿ. ಬಾಣಗಳು ಮೊದಲನೆಯದರಿಂದ ದೂರಕ್ಕೆ ಹಾಗೂ ಮುಂದಿನ ಸ್ಥಳದ ಕಡೆಗೆ ತೋರಿಸಬೇಕು. **ಇನ್‌ಪುಟ್** (input) ರಂಧ್ರದ ಮೂಲಕ ಹೊಲಿಗೆ ಹಾಕಿ ಅದನ್ನು ಜೋಡಿಸಿ \(ನೆನಪಿಡಿ, ಇದು ಮಧ್ಯದಲ್ಲಿರುವ ಎಲ್ಇಡಿಯ **ಕಡೆಗೆ** ಸೂಚಿಸುವ ಬಾಣವಿರುವ ರಂಧ್ರ\).
+
++ ಬಟ್ಟೆಯ ಹಿಂಭಾಗದಲ್ಲಿ ಕೆಲವು ಹೊಲಿಗೆಗಳನ್ನು ಹಾಕುವ ಮೂಲಕ ದಾರವನ್ನು ಸುರಕ್ಷಿತಗೊಳಿಸಿ ಮತ್ತು ಉಳಿದಿರುವದನ್ನು ಕತ್ತರಿಸಿ.
+
+--- collapse ---
+---
+title: ತುದಿಗಳನ್ನು ರಕ್ಷಿಸುವುದು
+---
+
+ಕತ್ತರಿಸಿದ ನಂತರ ದಾರವು ಕಿತ್ತುಬರದಂತೆ ಮತ್ತು ಶಾರ್ಟ್ ಸರ್ಕ್ಯೂಟ್ ಮಾಡದಂತೆ ಅದರ ತುದಿಗಳಿಗೆ ತಿಳಿ ಉಗುರು ಬಣ್ಣ (nail polish) ಸವರುವುದು ಉತ್ತಮ.
+
+--- /collapse ---
+
++ ಒಂದು **ಹೊಸ ವಾಹಕ ದಾರದ ತುಣುಕನ್ನು** ಉಪಯೋಗಿಸಿ, 2ನೇ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನ **ಔಟ್‌ಪುಟ್** ರಂಧ್ರವನ್ನು 3ನೇ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನ </strong>ಇನ್‌ಪುಟ್</0> ರಂಧ್ರಕ್ಕೆ ಸಂಪರ್ಕಿಸಿ. ಈ ರೀತಿಯಾಗಿ, ಎಲ್ಲಾ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು ಅವುಗಳ **ಡಾಟಾ** ರಂಧ್ರಗಳ ಮೂಲಕ ಒಂದಕ್ಕೊಂದು ಕೊಂಡಿಯಾಗುವ ರೀತಿಯಲ್ಲಿ ಮುಂದುವರೆಸಿ. ಪ್ರತಿ ಜೊತೆಯ ಮಧ್ಯೆಯೂ ಒಂದು ಹೊಸ ದಾರದ ತುಂಡನ್ನು ಉಪಯೋಗಿಸಿ. ಸರಪಳಿಯು ಕೊನೆಯ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನೊಂದಿಗೆ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ: ನೀವು ಅದರ **ಔಟ್‌ಪುಟ್** ರಂಧ್ರಕ್ಕೆ ಏನನ್ನೂ ಲಗತ್ತಿಸುವುದಿಲ್ಲ.
 
 ![](images/pixelSewing3_136_800.png)
 
-Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
+ನಂತರ ನೀವು ಸರಪಳಿಯಲ್ಲಿ ಎಲ್ಲಾ **ಋಣಾತ್ಮಕ** (negative) ರಂಧ್ರಗಳನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೀರಿ, ತದನಂತರ ಎಲ್ಲಾ **ಧನಾತ್ಮಕ** (positive) ರಂಧ್ರಗಳನ್ನು.
 
-+ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
++ ಸುಮಾರು 50-100 ಸೆ೦.ಮೀ. ಇರುವ ಒಂದು ಉದ್ದವಾದ ವಾಹಕ ದಾರದ ತುಣುಕನ್ನು ತೆಗೆದುಕೊಂಡು, ಮೊದಲ ಪಿಕ್ಸೆಲ್‌ನಿಂದ ಕೊನೆಯದರವರೆಗೆ, ಪ್ರತಿ ಪಿಕ್ಸೆಲ್‌ನ **-** ರಂಧ್ರದ ಮೂಲಕ ಕೆಲವು ಬಿಗಿ ಹೊಲಿಗೆಗಳನ್ನು ಹೊಲಿಯಿರಿ, ಮತ್ತು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳ ನಡುವೆ ರನ್ನಿಂಗ್ ಹೊಲಿಗೆಯನ್ನು ಹೊಲಿಯಿರಿ.
 
-**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
+**ಸೂಚನೆ**: ಈ ದಾರವು **ಡಾಟಾ** ಸಾಲಿನಲ್ಲಿರುವ ಯಾವುದೇ ದಾರಗಳನ್ನು ಮುಟ್ಟದಂತೆ ಮತ್ತು ದಾಟದಂತೆ ನೋಡಿಕೊಳ್ಳಿ!
 
-+ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
++ ಇನ್ನೊಂದು ಉದ್ದವಾದ ವಾಹಕ ದಾರದ ತುಂಡಿನೊಂದಿಗೆ, ನೀವು ಈಗಷ್ಟೆ **-** ರಂಧ್ರಗಳನ್ನು ಸಂಪರ್ಕಿಸಿದ ರೀತಿಯಲ್ಲೇ, ಎಲ್ಲಾ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳ **+** ರಂಧ್ರಗಳನ್ನು ಕೂಡಾ ಸಂಪರ್ಕಿಸಿ.
 
-+ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
++ ಕೊನೆಯದಾಗಿ, ಫ್ಲೋರಾ ಬೋರ್ಡ್ ಅನ್ನು ಅಂಗಿಯ ಮೇಲೆ ಇಡೀ \(ಅದು **ಸಂಪರ್ಕಿತವಾಗಿಲ್ಲ** ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಂಡ ನಂತರ!\).
 
-+ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other.
++ ಮೂರು **ಪ್ರತ್ಯೇಕ** ವಾಹಕ ದಾರದ ತುಣುಕುಗಳನ್ನು ತೆಗೆದುಕೊಂಡು, ಬೋರ್ಡ್‌ನ **\#6** ರಂಧ್ರವನ್ನು ಪ್ರಥಮ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನ **ಇನ್‌ಪುಟ್** ರಂಧ್ರಕ್ಕೆ, ಬೋರ್ಡ್‌ನ **ಜಿ‌ಎನ್‌ಡಿ** (GND) ರಂಧ್ರವನ್ನು ಪ್ರಥಮ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನ **-** ರಂಧ್ರಕ್ಕೆ, ಹಾಗೂ ಬೋರ್ಡ್‌ನ **ವಿ‌ಬಿ‌ಎ‌ಟಿ‌ಟಿ** (VBATT) ರಂಧ್ರವನ್ನು ಪ್ರಥಮ ನಿಯೋಪಿಕ್ಸೆಲ್‌ನ **+** ರಂಧ್ರಕ್ಕೆ ಸಂಪರ್ಕಿಸಿ. ಬಟ್ಟೆಯ ಉದ್ದಕ್ಕೂ ರನ್ನಿಂಗ್ ಹೊಲಿಗೆಯನ್ನು ಹೊಲಿಯಿರಿ. ಯಾವುದೇ ದಾರಗಳು ಪರಸ್ಪರ ಸ್ಪರ್ಶಿಸದಂತೆ ನೋಡಿಕೊಳ್ಳಿ.
 
-+ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
++ ನಿಮಗೆ ಇಷ್ಟವಿದ್ದರೆ, Flora ದಲ್ಲಿ ಬಳಸದ ಕೆಲವು ಪಿನ್ ಗಳನ್ನು ನೀವು ಟಿ-ಶರ್ಟ್ ಗೆ ಸ್ವಲ್ಪ ಸಾದಾ ದಾರದಿಂದ ಹೊಲಿಯಬಹುದು ಮತ್ತು ಅದನ್ನು ಹೆಚ್ಚು ಸುರಕ್ಷಿತವಾಗಿ ಇರಿಸಬಹುದು.
 
 ![](images/stitchedCircuit.png)
 
-+ Now, the moment of truth: plug in your Flora.
++ ಈಗ, ಸತ್ಯದ ಕ್ಷಣ: ನಿಮ್ಮ ಫ್ಲೋರಾವನ್ನು ಪ್ಲಗ್ ಇನ್ ಮಾಡಿ.
 
-You should see all your NeoPixels light up!
+ನಿಮ್ಮ ಎಲ್ಲಾ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು ಬೆಳಗುತ್ತಿರುವುದನ್ನು ನೀವು ನೋಡಬೇಕು!
 
 --- collapse ---
 ---
-title: Something's not right
+title: ಏನೋ ಸರಿಯಿಲ್ಲ
 ---
 
-If some of your NeoPixels didn't light up, don't panic. Some causes could be:
+ನಿಮ್ಮ ಕೆಲವು ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳು ಬೆಳಗದಿದ್ದರೆ ಕಳವಳಪಡಬೇಡಿ. ಕೆಲವು ಕಾರಣಗಳು ಹೀಗಿರಬಹುದು:
 
-+ A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
++ ಶಾರ್ಟ್ ಸರ್ಕ್ಯೂಟ್: ಯಾವುದಾದರೂ ದಾರ ಸ್ಪರ್ಷಿಸುತ್ತಿದೆಯೇ? ಬಟ್ಟೆಯ ಮೇಲೆ ಅಥವಾ ಸರ್ಕ್ಯೂಟ್ ಅನ್ನು ಮುಟ್ಟುವಂತೆ ಯಾವುದಾದರೂ ಲೋಹಪದಾರ್ಥ ಇದೆಯೇ? ಬಟ್ಟೆ ಒದ್ದೆಯಾಗಿದೆಯೇ?
 
-+ Loose connections: The stitches in every hole should be good and tight for a secure connection.
++ ಸಡಿಲವಾದ ಸಂಪರ್ಕಗಳು: ಸುರಕ್ಷಿತ ಸಂಪರ್ಕಕ್ಕಾಗಿ ಪ್ರತಿ ರಂಧ್ರದಲ್ಲಿನ ಹೊಲಿಗೆಗಳು ಉತ್ತಮ ಮತ್ತು ಬಿಗಿಯಾಗಿರಬೇಕು.
 
-+ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
++ ಸರಿಯಾದ ಕೋಡ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ: ನಿಮ್ಮ ಕೋಡ್ ಸರಿಯಾದ ಸಂಖ್ಯೆಯ ನಿಯೋಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಹೊಂದಿದೆಯೇ? ಅದು ದೋಷಗಳಿಲ್ಲದೆ ಕಂಪೈಲ್ ಆಗಿ ಅಪ್‌ಲೋಡ್ ಆಗಿದೆಯೇ?
 
 --- /collapse --- 
