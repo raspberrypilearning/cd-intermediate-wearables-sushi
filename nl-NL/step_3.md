@@ -1,92 +1,92 @@
-## Stitch your circuit
+## Stik je circuit
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
++ Verzamel al je NeoPixels en wat krijt of een potlood. Leg een T-shirt \(of welk ander stuk stof waar je je project op maakt\) op een vlakke ondergrond.
 
-+ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
-  + A straight line
-  + A heart (eight NeoPixels are perfect for this)
-  + Pretend "buttons" down the front of the T-shirt
-  + A random pattern
++ Rangschik de pixels in een vorm die je leuk vindt. Ik ga een smiley-gezicht doen! Andere ideeën zijn:
+  + Een rechte lijn
+  + Een hart (acht NeoPixels zijn hier perfect voor)
+  + Doe alsof "knopen" aan de voorkant van het T-shirt
+  + Een willekeurig patroon
 
-+ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
++ Bepaal ruwweg waar je de Flora wilt hebben en kies een NeoPixel waarmee je de Flora wilt verbinden: Dit is de eerste die je naait. De rest wordt een voor een in een keten met elkaar verbonden.
 
-+ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
++ Werk de volgorde uit waarin je de NeoPixels naait: Je zou een continu pad van de eerste naar de laatste met je vinger moeten kunnen volgen, zodat het zichzelf niet kruist \(dit zou problemen met een kortsluiting veroorzaken!\).
 
-+ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
++ Teken rond dit pad met het potlood of krijt en markeer de plek waar elke NeoPixel is.
 
 ![](images/drawAroundShape.png)
 
-### Let's start sewing!
+### Laten we beginnen met naaien!
 
-+ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
++ Als alles is gemarkeerd, leg je alle stukjes opzij en pak je een naald en wat geleidende draad. Ongeveer 20cm zou genoeg moeten zijn om mee te beginnen als je pixels vrij dicht bij elkaar liggen. Als je een borduurhoepel hebt, kan het gebruik ervan het stikken een stuk gemakkelijker maken.
 
-You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
+Je naait eerst de **data**-lijn. Dit is de draad die de instructies bevat (jouw code!) die de NeoPixels vertellen wat ze moeten doen, zoals wanneer ze moeten oplichten.
 
-+ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
-
---- collapse ---
----
-title: Holes or pins?
----
-
-On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
-
-In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
-
---- /collapse ---
-
-+ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
-
-+ Sew a running stitch to the spot where the next NeoPixel will go.
-
-+ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
-
-+ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
++ Neem je eerste NeoPixel en zet hem op zijn plaats, met de kleine pijlen die wijzen naar de plaats waar de volgende komt. Bevestig het aan de stof door het gat te naaien met de pijl die **weg** wijst van de LED in het midden. Dit gat is de **uitgangspen**.
 
 --- collapse ---
 ---
-title: Protecting the ends
+title: Gaten of spelden?
 ---
 
-It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
+Op borden zoals Adafruit Flora, Arduino of Raspberry Pi worden de kleine stukjes metaal die je gebruikt om ze aan te sluiten op je elektrische circuit **pinnen** genoemd.
+
+In het geval van **draagbare** elektronica, zijn de pinnen echter niet als pinnen gevormd: Ze hebben een gatenvorm, zodat je ze kunt verbinden met geleidende draad. Dit betekent dat in draagbare projecten de woorden 'pin' en 'hole' (gat) hetzelfde kunnen betekenen.
 
 --- /collapse ---
 
-+ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
++ Zorg ervoor dat je een veilige verbinding maakt door twee of drie steken strak door het gat te naaien.
+
++ Naai een rijgsteek naar de plek waar de volgende NeoPixel komt.
+
++ Neem vervolgens de volgende pixel en plaats deze op zijn plek, met de pijlen weg van de eerste en naar de volgende plek. Bevestig het door het door het **input**-gat te naaien \(vergeet niet dat dit het gat is met de pijl **in de rechting van** de LED in het midden).
+
++ Zet de draad vast met een paar steken aan de achterkant van de stof en knip wat er overblijft kort af.
+
+--- collapse ---
+---
+title: Het beschermen van de uiteinden
+---
+
+Het is een goed idee om de uiteinden van de draad na het afknippen met een heldere nagellak te bedekken, om rafelen te voorkomen en te voorkomen dat verdwaalde draden kortsluiting veroorzaken.
+
+--- /collapse ---
+
++ Gebruik een **nieuw stuk geleidende draad** om het **output** gat van de tweede NeoPixel aan te sluiten op het **input** gat van de derde pixel. Ga op deze manier door totdat alle NeoPixels aan elkaar gekoppeld zijn langs hun **data** gaten, met een apart stuk draad tussen elk paar. De keten eindigt met de laatste NeoPixel: Je hecht niets aan zijn **output** gat.
 
 ![](images/pixelSewing3_136_800.png)
 
-Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
+Vervolgens verbind je alle **negatieve** gaten in de keten, en vervolgens alle **positieve** gaten.
 
-+ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
++ Naai met een lang stuk geleidende draad, ongeveer 50–100cm, een paar nauwe steken door het **-** gat van elke pixel, te beginnen met de eerste en eindigend met de laatste, en naai een rijgsteek tussen de NeoPixels.
 
-**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
+**Opmerking**: Zorg ervoor dat de draad geen van de draden in de **data**-lijn raakt of kruist!
 
-+ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
++ Verbind met nog een lang stuk geleidende draad alle **+** gaten van de NeoPixels op dezelfde manier als de **-** gaten.
 
-+ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
++ Plaats ten slotte het Flora bord op het T-shirt \(zorg ervoor dat het **niet is aangesloten**!\).
 
-+ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other.
++ Gebruik drie **afzonderlijke** stukken geleidende draad om het **\#6** gat van het bord te verbinden met het **input** gat van de eerste NeoPixel, het **GND** gat van het bord met het **sterke> gat van de eerste Neox-id** En het **VBATT** gat van het bord met het **+** gat van de eerste NeoPixel, waarbij een rijgsteek langs de stof wordt genaaid. Zorg ervoor dat geen van de draden elkaar raken.
 
-+ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
++ Als je wilt, kun je een aantal van de ongebruikte pinnen van de Flora met wat gewone draad aan het T-shirt hechten om het beter op zijn plaats te houden.
 
 ![](images/stitchedCircuit.png)
 
-+ Now, the moment of truth: plug in your Flora.
++ Nu, het moment van de waarheid: Sluit je Flora aan.
 
-You should see all your NeoPixels light up!
+Je zou al je NeoPixels moeten zien oplichten!
 
 --- collapse ---
 ---
-title: Something's not right
+title: Er is iets niet goed
 ---
 
-If some of your NeoPixels didn't light up, don't panic. Some causes could be:
+Als sommige van je NeoPixels niet oplichtten, raak dan niet in paniek. Enkele oorzaken kunnen zijn:
 
-+ A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
++ Een kortsluiting: Raken draden elkaar? Zit er iets van metaal op de stof of raakt het het circuit? Is de stof nat?
 
-+ Loose connections: The stitches in every hole should be good and tight for a secure connection.
++ Losse verbindingen: De steken in elk gat moeten goed en strak zijn voor een veilige verbinding.
 
-+ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
++ Juiste code geüpload: Heeft je code het juiste aantal NeoPixels gedefinieerd? Is het zonder fouten gecompileerd en geüpload?
 
 --- /collapse --- 
