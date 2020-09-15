@@ -1,7 +1,7 @@
 ---
-title: Techno-shirt
+title: ತಾಂತ್ರಿಕ-ಅಂಗಿ
 hero_image: images/banner.png
-description: Learn to control LEDs with code while making a wearable project
+description: ಧರಿಸಬಹುದಾದ ಪ್ರಾಜೆಕ್ಟನ್ನು ಮಾಡುವಾಗ ಕೋಡ್‌ನಿಂದ ಎಲ್ಇಡಿಗಳನ್ನು ನಿಯಂತ್ರಿಸಲು ಕಲಿಯಿರಿ
 theme: violet
 version: 3.0.0
 listed: true
@@ -15,18 +15,18 @@ software: ""
 last_tested: "2018-06-12"
 steps:
   - 
-    title: Introduction
+    title: ಪರಿಚಯ
   - 
-    title: Test your LEDs
+    title: ನಿಮ್ಮ ಎಲ್ಇಡಿಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ
   - 
-    title: Stitch your circuit
+    title: ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಹೊಲಿಯಿರಿ
   - 
-    title: Write your own code
+    title: ನಿಮ್ಮ ಸ್ವಂತ ಕೋಡ್ ಬರೆಯಿರಿ
   - 
-    title: Colour and light
+    title: ಬಣ್ಣ ಮತ್ತು ಬೆಳಕು
   - 
-    title: Flashing lights
+    title: ಮಿನುಗುವ ದೀಪಗಳು
   - 
     title: Animate!
   - 
-    title: Rainbow fun
+    title: ಮಳೆಬಿಲ್ಲು ವಿನೋದ
