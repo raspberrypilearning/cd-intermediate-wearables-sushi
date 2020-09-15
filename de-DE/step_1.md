@@ -2,7 +2,7 @@
 
 Diese Sushi-Karten zeigen Dir, wie du tragbare, programmierbare LEDs verwendest und wie du sie mit einem Code steuern kannst.
 
-** WARNUNG ** : Dieses Projekt beinhaltet helle Blinklichter! Es ist möglicherweise nicht geeignet für Epilepsiepatienten.
+** WARNUNG ** : Dieses Projekt beinhaltet helle Blinklichter! It may not be suitable if there are people who have epilepsy present.
 
 ### Was du machen wirst
 
