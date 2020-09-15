@@ -1,7 +1,7 @@
 ---
 title: Techno-shirt
 hero_image: images/banner.png
-description: Learn to control LEDs with code while making a wearable project
+description: Leer LED's met code te besturen terwijl je een draagbaar project maakt
 theme: violet
 version: 3.0.0
 listed: true
@@ -15,18 +15,18 @@ software: ""
 last_tested: "2018-06-12"
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: Test your LEDs
+    title: Test de LED's
   - 
-    title: Stitch your circuit
+    title: Stik je circuit
   - 
-    title: Write your own code
+    title: Schrijf je eigen code
   - 
-    title: Colour and light
+    title: Kleur en licht
   - 
-    title: Flashing lights
+    title: Knipperende lampjes
   - 
-    title: Animate!
+    title: Animeer!
   - 
-    title: Rainbow fun
+    title: Regenboogplezier
