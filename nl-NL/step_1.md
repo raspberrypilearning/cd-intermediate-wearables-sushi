@@ -2,7 +2,7 @@
 
 Deze Sushi-kaarten laten je zien hoe je draagbare, programmeerbare LED's kunt gebruiken en hoe je ze met code kunt bedienen.
 
-**WAARSCHUWING**: Dit project omvat felle knipperende lichten! It may not be suitable if there are people who have epilepsy present.
+**WAARSCHUWING**: Dit project omvat felle knipperende lichten! Het is mogelijk niet geschikt als er patiënten met epilepsie aanwezig zijn.
 
 ### Wat ga je maken
 
