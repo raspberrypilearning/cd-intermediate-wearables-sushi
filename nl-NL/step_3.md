@@ -18,7 +18,7 @@
 
 ### Laten we beginnen met naaien!
 
-+ Als alles is gemarkeerd, leg je alle stukjes opzij en pak je een naald en wat geleidende draad. Ongeveer 20cm zou genoeg moeten zijn om mee te beginnen als je pixels vrij dicht bij elkaar liggen. Als je een borduurhoepel hebt, kan het gebruik ervan het stikken een stuk gemakkelijker maken.
++ Als alles is gemarkeerd, leg je alle stukjes opzij en pak je een naald en wat geleidende draad. Ongeveer 20 cm. zou genoeg moeten zijn om mee te beginnen als je pixels vrij dicht bij elkaar liggen. Als je een borduurhoepel hebt, kan het gebruik ervan het stikken een stuk gemakkelijker maken.
 
 Je naait eerst de **data**-lijn. Dit is de draad die de instructies bevat (jouw code!) die de NeoPixels vertellen wat ze moeten doen, zoals wanneer ze moeten oplichten.
 
@@ -39,7 +39,7 @@ In het geval van **draagbare** elektronica, zijn de pinnen echter niet als pinne
 
 + Naai een rijgsteek naar de plek waar de volgende NeoPixel komt.
 
-+ Neem vervolgens de volgende pixel en plaats deze op zijn plek, met de pijlen weg van de eerste en naar de volgende plek. Bevestig het door het door het **input**-gat te naaien \(vergeet niet dat dit het gat is met de pijl **in de rechting van** de LED in het midden).
++ Neem vervolgens de volgende pixel en plaats deze op zijn plek, met de pijlen weg van de eerste en naar de volgende plek. Bevestig het door het door het **input**-gat te naaien \(vergeet niet dat dit het gat is met de pijl **in de richting van** de LED in het midden).
 
 + Zet de draad vast met een paar steken aan de achterkant van de stof en knip wat er overblijft kort af.
 
@@ -58,7 +58,7 @@ Het is een goed idee om de uiteinden van de draad na het afknippen met een helde
 
 Vervolgens verbind je alle **negatieve** gaten in de keten, en vervolgens alle **positieve** gaten.
 
-+ Naai met een lang stuk geleidende draad, ongeveer 50–100cm, een paar nauwe steken door het **-** gat van elke pixel, te beginnen met de eerste en eindigend met de laatste, en naai een rijgsteek tussen de NeoPixels.
++ Naai met een lang stuk geleidende draad, ongeveer 50–100 cm, een paar nauwe steken door het **-** gat van elke pixel, te beginnen met de eerste en eindigend met de laatste, en naai een rijgsteek tussen de NeoPixels.
 
 **Opmerking**: Zorg ervoor dat de draad geen van de draden in de **data**-lijn raakt of kruist!
 
