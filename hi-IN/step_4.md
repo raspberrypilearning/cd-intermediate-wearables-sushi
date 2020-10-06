@@ -1,6 +1,6 @@
 ## अपना कोड (code) लिखें
 
-+ Arduino IDE में, **File** पर क्लिक करें और फिर **New** दबाएं । आपको एक रिक्त ** स्केच** (sketch) मिलेगा जो इस तरह दिखता है:
++ Arduino IDE में, **File** पर क्लिक करें और फिर **New** दबाएं । आपको एक रिक्त **स्केच** (sketch) मिलेगा जो इस तरह दिखता है:
 ```
     void setup() {
         // put your setup code here, to run once:
