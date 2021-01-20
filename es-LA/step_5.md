@@ -1,8 +1,8 @@
-## Colour and light
+## Color y luz
 
-You're going to write your own **function** now. Functions keep your code tidy.
+Ahora vas a escribir tu propia **función**. Las funciones mantienen tu código ordenado.
 
-+ At the bottom of the sketch, click **after** the `}` \(so, outside the `loop` function\) and press <kbd>Return</kbd> a couple of times. Then type the following code:
++ En la parte inferior del sketch, haz clic **después** del `}` \(por lo tanto, fuera de la función `bucle`\) y presiona <kbd>Enter</kbd> un par de veces. Luego escribe el siguiente código:
 
 ``` 
     void lightAll() {
@@ -18,90 +18,90 @@ You're going to write your own **function** now. Functions keep your code tidy.
     }
 ```
 
-Note: All the code in a **function** goes in between a pair of **curly braces** `{ }`.
+Nota: Todo el código en una **función** va entre un par de **llaves** `{ }`.
 
-+ Now change your `setup` code so that it looks like this:
++ Ahora cambie tu código `setup` para que se vea así:
 
 ``` 
     void setup() {
-        // put your setup code here, to run once:
+        // coloca tu código de configuración aquí, para que se ejecute una vez:
         strip.begin();
         strip.show();
         lightAll();
     }
 ```
 
-The last line of code **calls** the function you made. That means it tells the function to run.
+La última línea del código **llama** la función que creaste. Eso significa que le dice a la función que se ejecute.
 
-+ Verify and upload your sketch to the Flora. Did all the pixels light up blue?
++ Verifica y carga tu sketch en Flora. ¿Todos los píxeles se encendieron en azul?
 
 --- collapse ---
 ---
-title: Counting out the pixels
+title: Contando los píxeles
 ---
 
-You might have figured out that the first number in the line `strip.setPixelColor(0, strip.Color(0, 0, 255));` decides which pixel to light up.
+Es posible que ya hayas descubierto que el primer número de la línea `strip.setPixelColor (0, strip.Color (0, 0, 255));` decide qué píxel encender.
 
-Have you noticed that the first pixel is `0` instead of `1`? So if you have eight pixels, the last one is number `7`.
+¿Has notado que el primer píxel es `0` en lugar de `1`? Entonces, si tienes ocho píxeles, el último es el número `7`.
 
 --- /collapse ---
 
-+ Change the second line of the `lightAll` function from:
++ Cambia la segunda línea de la función `lightAll` de:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
 ```
 
-to:
+a:
 
 ```
     strip.setPixelColor(1, strip.Color(255, 0, 0));
 ```
 
-+ Verify and upload the code to the Flora. Can you spot the difference?
++ Verifica y carga tu código en el Flora. ¿Notas la diferencia?
 
 --- collapse ---
 ---
-title: How do colours work in code?
+title: ¿Cómo funcionan los colores en el código?
 ---
 
-On a computer, colours are made by mixing the three **primary colours**: **red**, **green**, and **blue**.
+En una computadora, los colores se generan mezclando los tres **colores primarios**: **rojo**, **verde** y **azul**.
 
-You use numbers from `0` to `255` to tell the computer how much of each colour to mix in. So the code `strip.Color(0, 0, 255)` makes **blue** because the value for red and green are both `0`.
+Se usan los números del `0` a `255` para indicar a la computadora cuánto de cada color debe mezclar. Entonces, el código `strip.Color (0, 0, 255)` genera ** azul** porque el valor para el rojo y el verde son ambos `0`.
 
-+ What colour do you think `strip.Color(0, 255, 0)` will give you? Try it out!
++ ¿Qué color crees que generará `strip.Color (0, 255, 0)`? ¡Pruébalo!
 
 --- /collapse ---
 
-Here are a few more colours that are good to know:
+Aquí hay algunos colores más que es bueno conocer:
 
 ```
     void lightAll() {
-        strip.setPixelColor(0, strip.Color(0, 0, 255)); // blue
-        strip.setPixelColor(1, strip.Color(255, 0, 0)); // red
-        strip.setPixelColor(2, strip.Color(0, 255, 0)); // green
+        strip.setPixelColor(0, strip.Color(0, 0, 255)); // azul
+        strip.setPixelColor(1, strip.Color(255, 0, 0)); // rojo
+        strip.setPixelColor(2, strip.Color(0, 255, 0)); // verde
         strip.setPixelColor(3, strip.Color(255, 0, 255)); // magenta
-        strip.setPixelColor(4, strip.Color(255, 255, 255)); // white
-        strip.setPixelColor(5, strip.Color(255, 255, 0)); // yellow
-        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cyan
-        strip.setPixelColor(7, strip.Color(255, 127, 0)); // orange
+        strip.setPixelColor(4, strip.Color(255, 255, 255)); // blanco
+        strip.setPixelColor(5, strip.Color(255, 255, 0)); // amarillo
+        strip.setPixelColor(6, strip.Color(0, 255, 255)); // cian
+        strip.setPixelColor(7, strip.Color(255, 127, 0)); // anaranjado
         strip.show();
     }
 ```
 
-+ Try experimenting with the numbers to get different shades. What do you think you will get if you set a value of `0` for all three colours, `strip.Color(0, 0, 0)`?
++ Experimenta con los números para obtener diferentes tonos. ¿Qué crees que obtendrás si estableces un valor de `0` para los tres colores, `strip.Color (0, 0, 0)`?
 
-Are you seeing stars yet?! Those NeoPixels sure are BRIGHT, aren't they!
+¡¿Ya estás viendo estrellas?! Esos NeoPixels seguro que son BRILLANTES, ¿no es así?
 
-+ Luckily, if you want to, you can change their brightness with the instruction `strip.setBrightness(10);`. Add it to the `setup` function, in between the lines `strip.begin();` and `strip.show();`. Just like with colours, the number can be anything from `0` to `255`.
++ Afortunadamente, si así lo quieres, puedes cambiar ese brillo con la instrucción `strip.setBrightness (10);`. Agrégalo a la función `setup`, entre las líneas `strip.begin ();` y `strip.show ();`. Al igual que con los colores, el número puede ser cualquier número desde `0` a `255`.
 
 --- collapse ---
 ---
-title: Powering lots of NeoPixels
+title: Encender muchos NeoPixels
 ---
 
-You may find that the colours are not showing up properly towards the end of the chain. This is because the circuit is losing power due to **resistance** in the thread.
+Puedes encontrar que los colores no se muestran correctamente hacia el final de la cadena. Esto se debe a que el circuito está perdiendo potencia debido a la resistencia **** en el hilo.
 
-+ You can sort this out by stitching an extra thread along both the **negative** and the **positive** tracks in your circuit.
++ Puedes solucionar esto cosiendo un hilo adicional a lo largo de la trayectoria de **negativo** y de **positivo** en tu circuito.
 
 --- /collapse ---
