@@ -1,6 +1,6 @@
-## Rainbow fun
+## Diversión colorida
 
-+ Add the following new function to the end of your sketch. Don't worry, you don't have to understand it just now! It's borrowed from the example sketch you ran earlier.
++ Agrega la siguiente función nueva al final de tu sketch. No te preocupes, ¡no tienes que entenderlo ahora! Se tomó prestado del sketch de ejemplo que ejecutaste anteriormente.
 
 
 ```
@@ -18,9 +18,9 @@
     }
 ```
 
-This function lets you choose any numer from `0` to `255`, and it mixes a colour for you.
+Esta función te permite elegir cualquier número entre `0` y `255`, y mezcla un color por ti.
 
-+ Now add another new function. See if you can spot the **for loop** in it!
++ Ahora agrega otra función nueva. ¡Ve si puedes detectar el **for loop** en él!
 
 ```
     void lightAllRainbow() {
@@ -31,9 +31,9 @@ This function lets you choose any numer from `0` to `255`, and it mixes a colour
     }
 ```
 
-There's a bit of math in here! It's there to pick a nice selection of colours evenly from across the whole rainbow.
+¡Hay un poco de matemáticas aquí! Está ahí para hacer una buena selección de colores uniformemente a lo largo de todo el arco iris.
 
-+ All that's left is to call the function. Change the `loop` function so that it has just this line of code in it. Then verify and upload your sketch to see a lovely rainbow of colours.
++ Todo lo que queda es llamar a la función. Cambia la función `loop` para que solo tenga esta línea de código. Luego verifica y carga tu sketch para ver un hermoso arco iris de colores.
 
 ```
     void loop() {
@@ -41,9 +41,9 @@ There's a bit of math in here! It's there to pick a nice selection of colours ev
     }
 ```
 
-You don't need to pass any parameters this time, because the new function figures out the colours for you!
+No necesitas pasar ningún parámetro esta vez, ¡porque la nueva función determina los colores por ti!
 
-+ How about adding a delay? Let's write a new function that's similar to the one above, but with a delay added to the loop so it animates your NeoPixels:
++ ¿Qué tal agregar un delay? Escribamos una nueva función que sea similar a la anterior, pero con un delay agregado al loop para que anime tus NeoPixels:
 
 ```
     void animateRainbow(uint8_t wait) {
@@ -55,7 +55,7 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-+ Change the function call in the `loop` function and add a second line of code to call your other `animate` function too:
++ Cambia la llamada a la función en la función `loop` y agrega una segunda línea de código para llamar a tu otra función `animate` también:
 
 ```
     void loop() {
@@ -64,27 +64,27 @@ You don't need to pass any parameters this time, because the new function figure
     }
 ```
 
-Try it out on the Flora!
+¡Pruébalo en Flora!
 
 --- challenge ---
 
-## Challenge: Try making your own sequences
+## Desafío: intenta crear tus propias secuencias
 
-+ Have a go at combining various different calls to the `animateRainbow` function and your other functions. Your imagination is the limit!
++ Intenta combinar varias llamadas diferentes a la función `animateRainbow` y tus otras funciones. ¡Tu imaginación pone el limite!
 
-+ You can do loads of cool things using the tricks you've learned with colours, for loops, and delays. If you want to see some more examples, check out the **strandtest** sketch that you used to test out the NeoPixels.
++ Puedes hacer un montón de cosas interesantes utilizando los trucos que haz aprendido con colores, bucles (loops) y retrasos (delays). Si quieres ver algunos ejemplos más, consulta el sketch **strandtest** que usaste para probar los NeoPixels.
 
 --- /challenge ---
 
 --- collapse ---
 ---
-title: Portable power
+title: Energía portátil
 ---
 
-If you plan on wearing your project, you will probably want to make it more portable using battery power.
+Si planeas llevar puesto tu proyecto, probablemente querrás hacerlo más portátil usando la energía de una batería.
 
-+ For the Flora, a 3×AA or 3×AAA battery pack will do just fine. See [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_blank"} for more information.
++ Para Flora, un paquete de baterías 3×AA o uno de 3×AAA funcionará bien. Consulta [dojo.soy/wear2-flora-power](http://dojo.soy/wear2-flora-power){:target="_ blank"} para más información.
 
-+ If you're using a different board, you should double-check the power requirements it has.
++ Si está utilizando un tablero diferente, debes verificar los requisitos de energía que tiene.
 
 --- /collapse ---
