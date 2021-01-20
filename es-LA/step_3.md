@@ -26,7 +26,7 @@ Primero coserás la línea **data**. Este es el hilo que lleva las instrucciones
 
 --- collapse ---
 ---
-title:¿Son los pines agujeros o alfileres?
+title: ¿Son los pines agujeros o alfileres?
 ---
 
 En tableros como Adafruit Flora, Arduino o Raspberry Pi, los pequeños pedazos de metal que usas para conectarlos a tu circuito eléctrico se llaman **pines**.

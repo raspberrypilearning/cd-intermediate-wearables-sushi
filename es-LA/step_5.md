@@ -100,7 +100,7 @@ Aquí hay algunos colores más que es bueno conocer:
 title: Encender muchos NeoPixels
 ---
 
-Puedes encontrar que los colores no se muestran correctamente hacia el final de la cadena. Esto se debe a que el circuito está perdiendo potencia debido a la resistencia **** en el hilo.
+Puedes encontrar que los colores no se muestran correctamente hacia el final de la cadena. Esto se debe a que el circuito está perdiendo potencia debido a **la resistencia** en el hilo.
 
 + Puedes solucionar esto cosiendo un hilo adicional a lo largo de la trayectoria de **negativo** y de **positivo** en tu circuito.
 
