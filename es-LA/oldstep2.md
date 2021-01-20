@@ -1,49 +1,49 @@
-## What you will need
+## Lo que necesitarás
 
 ### Hardware
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora o Gemma
++ Un cable USB
++ Alrededor de ocho NeoPixels
++ Cable conductor
++ Tres pares de pinzas cocodrilo \(también puedes usar trozos de cable conductor, pero las pinzas cocodrilo pueden ser más fáciles de usar\)
++ Opcional: una batería, ¡que le permitirá usar su proyecto terminado sin que esté conectado a una computadora!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+Los LED serán controlados por Adafruit Flora. También puedes usar un Adafruit Gemma, LilyPad Arduino o LilyPad Arduino USB; si lo haces, se necesitarán algunos pequeños cambios en el código, como el número del pin de salida y la configuración de la placa en el IDE de Arduino.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+Nota: Gemma no funciona con el sistema operativo Linux. Tampoco funcionará con un puerto USB 3.0, por lo que debe tener un puerto o concentrador USB 2.0 para conectar el Gemma a la computadora.
 
 ### Software
 
-+ The Arduino IDE
++ El IDE de Arduino
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+title: Instalando y configurando el IDE Arduino
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ Descarga el IDE de Arduino desde [ dojo.soy/wear2-arduino-ide ](http://dojo.soy/wear2-arduino-ide) {:target = "_ blank"} e instálalo.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ Una vez que esté instalado, abre la aplicación. Hay algunos ajustes adicionales necesarios para hacerlo funcionar para este proyecto.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ Abra **Preferences** en el menú de **Arduino**. En el recuadro **Additional Board Manager URLs**, pega lo siguiente y da click en OK.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ En el menú **Tools**, dirígete a **Boards** y selecciona **Boards Manager...**. Selecciona **Contributed** en el menú desplegable. Instala **Adafruit AVR Boards by Adafruit**. Luego haz click en **Close**.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Sal y reinicia el IDE de Arduino. Ve al menú **Boards** nuevamente, deberías ver el **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, y **LilyPad Arduino USB** en la lista. Selecciona el tablero que usarás.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ En el menú **Sketch**, ve a **Include Library** y selecciona **Manage Libraries...**. Escribe `neopixel` en el recuadro de búsqueda. Instala **Adafruit NeoPixel by Adafruit**. Luego haz click en **Close**.
 
 --- /collapse ---
 
-### Additional materials
+### Materiales adicionales
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ Una aguja de bordar y tijeras
++ Una camiseta
++ Esmalte de uñas transparente
++ Opcional: un aro de bordado (recomendado para facilitar la costura de tu circuito)
 
