@@ -1,49 +1,49 @@
-## Write your own code
+## Escribe tu propio código
 
-+ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
++ En el IDE de Arduino, haz clic en **File** y luego en **New**. Obtendrás un **sketch** en blanco que se ve así:
 ```
     void setup() {
-        // put your setup code here, to run once:
+        // coloca tu código de configuración aquí, para que se ejecute una vez:
 
     }
     void loop() {
-        // put your main code here, to run repeatedly:
+        //coloca tu código principal aquí, para que se ejecute repetidamente:
 
     }
 ```
 
 --- collapse ---
 ---
-title: Making notes in your code
+title: Tomando notas en tu código
 ---
 
-Any line that starts with `//` is a **comment**. Comments are ignored by the computer.
+Cualquier línea que comience con `//` es un **comentario**. La computadora ignora los comentarios.
 
-They're useful for making notes for yourself, or for other people who want to your code!
+¡Son útiles para tomar notas para ti mismo o para otros que quieran usar tu código!
 
 --- /collapse ---
 
-+ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
++ Ve al menú **Sketch**, luego a **Include Library** y selecciona **Adafruit NeoPixel**. Deberías ver que este código se agrega en la parte superior de tu sketch: `#include <Adafruit_NeoPixel.h>`.
 
-+ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
++ Haz clic al final de la línea y presiona la tecla <kbd>Enter</kbd> varias veces para agregar algunas líneas en blanco debajo.
 
-+ Below the new line of code, type the following: `#define PIXELS_PIN 6`
++ Debajo de la nueva línea de código, escribe lo siguiente: `#define PIXELS_PIN 6`
 
-With this code you are setting which pin (the same as a hole here, remember) of the Flora to use for **data** \(instructions\). So the pin you connect the **data** holes of the NeoPixels to is number **6**.
+Con este código estás configurando qué pin (recuerda que es lo mismo que un agujero aquí) de Flora usar para **datos** \(instrucciones\). Entonces, el pin que conectas a los agujeros de **datos** de los NeoPixels es el número **6**.
 
-+ Below that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than eight, type that number instead of `8`.
++ Debajo de eso, escribe `#define NUM_PIXELS 8`. Este es el número de NeoPixels que tienes. Si tuvieras un número diferente al ocho, escribe ese número en lugar de `8`.
 
-+ Finally, below that, type:
++ Por último, debajo de eso, escribe:
 
 ``` 
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Inside the `setup` function, add the following two lines:
++ Dentro de la función `setup`, agrega las siguientes dos líneas:
 
 ``` 
     void setup() {
-        // put your setup code here, to run once:
+        // coloca tu código de configuración aquí, para que se ejecute una vez:
         strip.begin();
         strip.show();
     }
@@ -51,40 +51,40 @@ With this code you are setting which pin (the same as a hole here, remember) of 
 
 --- collapse ---
 ---
-title: What is the setup function?
+title: ¿Qué es la función setup?
 ---
 
-The code `void setup ()` defines the `setup` function. This is a block of code that runs when the Flora is turned on.
+El código `void setup ()` define la función `setup`. Este es un bloque de código que se ejecuta cuando se enciende Flora.
 
-All the code in between the curly braces `{` and `}` is in the function and so will run when the Flora turns on.
+Todo el código entre las llaves `{` y `}` está en la función y se ejecutará cuando se encienda Flora.
 
 --- /collapse ---
 
-+ After `strip.show();`, press <kbd>Return</kbd> and type these two lines below:
++ Después de `strip.show ();`, presiona <kbd>Entrar</kbd> y escribe estas dos líneas a continuación:
 
 ``` 
     strip.setPixelColor(0, strip.Color(0, 0, 255));
     strip.show();
 ```
 
-+ Click **Verify** to compile your code and check for errors. If there are any mistakes, you will need to fix the code and check it again. Usually the error messages tell you which line of code needs fixing. Check that you typed it exactly as shown!
++ Haz clic en **Verify** para compilar tu código y comprobar si hay errores. Si hay algún error, deberás corregir el código y verificarlo nuevamente. Por lo general, los mensajes de error te indican qué línea de código necesita corregirse. ¡Comprueba que lo hayas escrito exactamente como se te mostró!
 
-+ Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then press the **Upload** button. When it's done, what happens?
++ ¡Conectemos Flora y ejecutemos tu código! Presiona el botón **reset** en Flora y luego el botón **Upload**. Cuando lo hiciste, ¿qué pasa?
 
-You should see the first NeoPixel light up blue.
+Deberías ver el primer NeoPixel encenderse en azul.
 
-+ Let's do another! **Above** the second `strip.show();`, type two more lines:
++ ¡Hagamos otro! **Por encima** del segundo `strip.show ();`, escribe dos líneas más:
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
     strip.setPixelColor(2, strip.Color(0, 0, 255));
 ```
 
-The `setup` function should look like this now:
+La función `setup` debería verse así ahora:
 
 ``` 
     void setup() {
-        // put your setup code here, to run once:
+        // coloca tu código de configuración aquí, para que se ejecute una vez:
         strip.begin();
         strip.show();
         strip.setPixelColor(0, strip.Color(0, 0, 255));
@@ -94,11 +94,11 @@ The `setup` function should look like this now:
     }
 ```
 
-Can you work out what some of this code is doing?
+¿Puedes descubrir qué está haciendo parte de este código?
 
-+ Verify and upload your code once more. This time you should see the first three NeoPixels light up blue.
++ Verifica y carga tu código una vez más. Esta vez deberías ver que los primeros tres NeoPixels se encenderse en azul.
 
-+ See if you can add more lines of code to make the rest of the pixels light up as well!
++ ¡Ve si puedes agregar más líneas de código para que el resto de los píxeles se enciendan también!
 
 ![](images/threeBlue.png)
 
