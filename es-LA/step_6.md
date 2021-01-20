@@ -1,6 +1,6 @@
-## Flashing lights
+## Luces parpadeantes
 
-+ Create the following new function after your first one:
++ Crea la siguiente función nueva después de tu primera:
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: ¿Qué hay entre paréntesis?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+Esta función toma un **parámetro**: esto es lo que está dentro de los paréntesis. Es información adicional que le das a la función cuando la llamas.
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ Esta vez escribirás las llamadas de tu función en `loop` en lugar de en `setup`. Haz clic dentro de la función `loop` y agrega código para que se vea así:
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+title: Cómo funciona el parámetro
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+¿Ves cómo estás pasando un color como **parámetro** a tu función `lightAllOneColour`? Este es el color que se usa en lugar de `c` en cada línea dentro de esa función. Significa que puedes usar la misma función para hacer los NeoPixels de cualquier color, ¡e incluso puedes apagarlos todos!
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ Elimina la línea `lightAll ();` desde el interior de la función `setup`. Verifica y carga el código.
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+title: Acerca de las funciones setup y loop
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+Cuando Flora se enciende, primero ejecuta todo el código en la función `setup`, y luego ejecuta la función `loop` ¡una y otra vez por siempre!
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ ¿Qué crees que hace la función `delay`? Intenta usar diferentes valores para tu **parámetro**, por ejemplo `delay (50);` o `(1000);`. ¡No olvides verificar y cargar el código para probar tus cambios!
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ ¿Ha notado que el color `(0, 0, 0)` apaga los píxeles? Intenta ejecutar el siguiente código en Flora:
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ Ahora ejecuta el mismo código sin el color "apagado":
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ ¿Notas la diferencia?
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ ¡Intenta diseñar tu propia secuencia cambiando el código en la función `loop`! Puedes agregar tantos delay (retrasos) y llamadas (calls) a tu función `lightAllOneColour` como quieras. Experimenta con retrasos más largos y más cortos y diferentes valores para el parámetro de color.
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+Recuerda, toda la secuencia se repetirá una y otra vez si colocas tu código dentro de la función `loop`. 
