@@ -1,77 +1,77 @@
-## Introduction
+## Introducción
 
-These Sushi Cards will show you how to use wearable, programmable LEDs and how to control them with code.
+Estas 'Sushi Cards' te mostrarán cómo usar LED (luces) programables y portátiles, y también cómo controlarlas con código.
 
-**WARNING**: this project involves bright flashing lights! It may not be suitable if there are people who have epilepsy present.
+**ADVERTENCIA**: este proyecto involucra luces brillantes parpadeantes! Que podría no ser adecuado si es que hubiera personas con epilepsia presentes.
 
-### What you will make
+### Lo que harás
 
-In this project, you will sew LED lights to a T-shirt and write code to make them flash and change colour!
+¡En este proyecto, coserás LED a una camiseta y escribirás código para que parpadeen y cambien de color!
 
-![A colourful smiley face made from LEDs sewn on a tshirt](images/rainbowSmile.png)
+![Una colorida carita sonriente hecha de LED cosidos en una camiseta](images/rainbowSmile.png)
 
 --- collapse ---
 ---
-title: What you will learn
+title: Lo que vas a aprender
 ---
 
-+ Testing NeoPixels
-+ Stitching a NeoPixel circuit with positive, negative, and data flow
-+ The flow of a Flora program (setup and loop functions)
-+ Turning NeoPixels on and off
-+ Addressing individual NeoPixels
-+ RGB colour mixing
-+ Functions and parameters
-+ Using for loops
-+ Exploring more advanced examples
++ Probar NeoPixels
++ Coser un circuito NeoPixel con flujo de datos positivo y negativo
++ El flujo de un programa Flora (funciones de configuración y bucle)
++ Encender y apagar NeoPixels
++ Comunicándose con NeoPixels individuales
++ Mezcla de colores RGB
++ Funciones y parámetros
++ Uso para bucles
++ Explorar ejemplos más avanzados
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: Lo que necesitarás
 ---
 
 ### Hardware
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora o Gemma
++ Un cable USB
++ Alrededor de ocho NeoPixels
++ Cable conductor
++ Tres pares de pinzas cocodrilo \(también puedes usar trozos de cable conductor, pero las pinzas cocodrilo pueden ser más fáciles de usar\)
++ Opcional: una batería, ¡que te permitirá vestir tu proyecto terminado sin que esté conectado a una computadora!
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+Las luces LED serán controladas por el Adafruit Flora. También puedes usar un Adafruit Gemma, LilyPad Arduino o LilyPad Arduino USB; si lo haces, se necesitarán algunos pequeños cambios en el código, como el número del pin de salida y la configuración de la placa en el IDE de Arduino.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+Nota: Gemma no funciona con el sistema operativo Linux. Tampoco funcionará con un puerto USB 3.0, por lo que deberás tener un puerto USB 2.0 o un concentrador para conectar el Gemma a la computadora.
 
 ### Software
 
-+ The Arduino IDE
++ El IDE de Arduino
 
-### Installing and setting up the Arduino IDE
+### Instalación y configuración del IDE de Arduino
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ Descarga el IDE de Arduino desde [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide) e instálalo.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ Una vez que esté instalado, abre la aplicación. Hay algunos ajustes adicionales necesarios para hacerlo funcionar para este proyecto.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ Abre ** Preferences ** en el menú de ** Arduino **. En el recuadro **Additional Board Manager URLs**, pega lo siguiente y da click en OK.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ En el menú **Tools**, dirígete a **Boards** y selecciona **Boards Manager...**. Selecciona **Contributed** en el menú desplegable. Instala **Adafruit AVR Boards by Adafruit**. Luego haz click en **Close**.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Sal y reinicia el IDE de Arduino. Ve al menú **Boards** nuevamente, deberías ver el **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, y **LilyPad Arduino USB** en la lista. Selecciona el tablero que usarás.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ En el menú **Sketch**, ve a **Include Library** y selecciona **Manage Libraries...**. Escribe `neopixel` en el recuadro de búsqueda. Instala **Adafruit NeoPixel by Adafruit**. Luego haz click en **Close**.
 
-### Additional materials
+### Materiales adicionales
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ Una aguja de bordar y tijeras
++ Una camiseta
++ Esmalte de uñas transparente
++ Opcional: un aro de bordado (recomendado para facilitar la costura de tu circuito)
 
 --- /collapse ---
