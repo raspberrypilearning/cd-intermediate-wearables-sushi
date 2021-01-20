@@ -1,7 +1,7 @@
 ---
 title: Camiseta tecnológica
 hero_image: images/banner.png
-description: Learn to control LEDs with code while making a wearable project
+description: Aprende a controlar los LED con código mientras realizas un proyecto portátil
 theme: violet
 version: 3.0.0
 listed: true
@@ -15,18 +15,18 @@ software: ""
 last_tested: "2018-06-12"
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: Test your LEDs
+    title: Prueba tus LED
   - 
-    title: Stitch your circuit
+    title: Cose tu circuito
   - 
-    title: Write your own code
+    title: Escribe tu propio código
   - 
-    title: Colour and light
+    title: Color y luz
   - 
-    title: Flashing lights
+    title: Luces parpadeantes
   - 
-    title: Animate!
+    title: Anima!
   - 
-    title: Rainbow fun
+    title: Diversión colorida
