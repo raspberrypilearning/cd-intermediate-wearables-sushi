@@ -1,49 +1,49 @@
-## What you will need
+## Ce dont tu auras besoin
 
-### Hardware
+### Matériel informatique
 
-+ Adafruit Flora or Gemma
-+ A USB cable
-+ Around eight NeoPixels
-+ Conductive thread
-+ Three pairs of crocodile clips \(you can also use pieces of conductive thread instead, but crocodile clips may be easier to test with\)
-+ Optional: a battery pack, which will allow you to wear your finished project without it being attached to a computer!
++ Adafruit Flora ou Gemma
++ Un câble USB
++ Environ huit NeoPixels
++ Fil conducteur
++ Trois paires de pinces crocodiles \ (tu peux également utiliser des morceaux de fil conducteur à la place, mais les pinces crocodiles peuvent être plus faciles pour tester \)
++ En option : une batterie, qui te permettra de porter ton projet fini sans qu'il soit attaché à un ordinateur !
 
-The LEDs will be controlled by the Adafruit Flora. You could also use an Adafruit Gemma, LilyPad Arduino, or LilyPad Arduino USB; if you do, some small code changes will be needed, such as the number of the output pin and the board setup in the Arduino IDE.
+Les LED seront contrôlées par l'Adafruit Flora. Tu peux également utiliser un Adafruit Gemma, LilyPad Arduino ou LilyPad Arduino USB ; si te le fais, de petits changements de code seront nécessaires, tels que le numéro de la broche de sortie et la configuration de la carte dans Arduino IDE.
 
-Note: the Gemma does not work with the Linux operating system. It also won't work with a USB 3.0 port, so you must have a USB 2.0 port or hub to connect the Gemma to the computer.
+Remarque : le Gemma ne fonctionne pas avec le système d'exploitation Linux. Il ne fonctionnera pas non plus avec un port USB 3.0, tu dois donc disposer d'un port ou d'un hub USB 2.0 pour connecter la Gemma à l'ordinateur.
 
-### Software
+### Logiciel
 
-+ The Arduino IDE
++ Arduino IDE
 
 --- collapse ---
 ---
-title: Installing and setting up the Arduino IDE
+title: Installation et configuration de Arduino IDE
 ---
 
-+ Download the Arduino IDE from [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_blank"} and install it.
++ Télécharge Arduino IDE à partir de [dojo.soy/wear2-arduino-ide](http://dojo.soy/wear2-arduino-ide){:target="_ blank"} et installe-le.
 
-+ Once it's installed, open the application. There a few extra things needed to make it work for this project.
++ Une fois installée, ouvre l'application. Il y a quelques éléments supplémentaires nécessaires pour que cela fonctionne pour ce projet.
 
-+ Open the **Preferences** from the **Arduino** menu. In the **Additional Board Manager URLs** box, paste the following and click OK.
++ Ouvre **Préférences** à partir du menu d'**Arduino**. Dans la zone **URL de gestionnaire de cartes supplémentaires**, colle ce qui suit et clique sur OK.
 
 ```
     https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
-+ In the **Tools** menu, go to **Boards** and select **Boards Manager...**. Choose **Contributed** from the drop-down menu. Install **Adafruit AVR Boards by Adafruit**. Then click **Close**.
++ Dans le menu **Outils**, va dans **Type de carte** et sélectionne **Gestionnaire de carte**. Choisis **Contribué** dans le menu déroulant. Installe **Adafruit AVR Boards by Adafruit**. Ensuite, clique sur **Fermer**.
 
-+ Quit and restart the Arduino IDE. Go to the **Boards** menu again and you should see the **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**, and **LilyPad Arduino USB** listed. Select the board you will be using.
++ Quitte et redémarre Arduino IDE. Va à nouveau au menu **Type de carte** et tu devrais voir **Adafruit Flora**, **Adafruit Gemma**, **LilyPad Arduino**et **LilyPad Arduino USB** répertoriés. Sélectionne la carte que tu utiliseras.
 
-+ In the **Sketch** menu, go to **Include Library** and select **Manage Libraries...**. Type `neopixel` into the search box. Install **Adafruit NeoPixel by Adafruit**. Then click **Close**.
++ Dans le menu **Croquis** , va à **Inclure une bibliothèque** et sélectionne **Gérer les bibliothèques**. Tape `neopixel` dans la barre de recherche. Installe **Adafruit NeoPixel by Adafruit**. Clique ensuite sur **Fermer**.
 
 --- /collapse ---
 
-### Additional materials
+### Matériels additionnels
 
-+ An embroidery needle and scissors
-+ A T-shirt
-+ Clear nail polish
-+ Optional: an embroidery hoop (recommended to make stitching up your circuit easier)
++ Une aiguille à broder et des ciseaux
++ Un t-shirt
++ Vernis à ongles transparent
++ En option : un cercle de broderie (recommandé pour faciliter la couture de ton circuit)
 
