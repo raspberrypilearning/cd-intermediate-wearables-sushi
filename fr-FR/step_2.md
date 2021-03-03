@@ -47,7 +47,7 @@ Au début, il peut être un peu difficile de faire fonctionner le téléchargeme
 
 **Il est important de toujours débrancher ou éteindre la carte avant de connecter ou de déconnecter d'autres composants afin de ne pas les endommager !**
 
-+ Fixe trois pinces crocodiles aux broches **GND**, **\#6**et **VBATT** de la carte.
++ Fixe trois pinces crocodiles aux broches **GND**, **\#6** et **VBATT** de la carte.
 
 ![](images/crocsFlora.png)
 

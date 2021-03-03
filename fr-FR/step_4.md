@@ -17,7 +17,7 @@
 title: Commenter ton code
 ---
 
-Toute ligne commençant par `//` est un commentaire ****. Les commentaires sont ignorés par l'ordinateur.
+Toute ligne commençant par `//` est un **commentaire**. Les commentaires sont ignorés par l'ordinateur.
 
 Ils sont utiles pour prendre des notes pour toi ou pour d'autres personnes qui veulent ton code !
 
