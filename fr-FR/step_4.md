@@ -1,6 +1,6 @@
-## Write your own code
+## Écrire ton propre code
 
-+ In Arduino IDE, click on **File** and then **New**. You will get a blank **sketch** that looks like this:
++ Dans Arduino IDE, clique sur **Fichier** puis sur **Nouveau**. Tu obtiendras un **croquis** vierge qui ressemble à ceci :
 ```
     void setup() {
         // put your setup code here, to run once:
@@ -14,32 +14,32 @@
 
 --- collapse ---
 ---
-title: Making notes in your code
+title: Commenter ton code
 ---
 
-Any line that starts with `//` is a **comment**. Comments are ignored by the computer.
+Toute ligne commençant par `//` est un commentaire ****. Les commentaires sont ignorés par l'ordinateur.
 
-They're useful for making notes for yourself, or for other people who want to your code!
+Ils sont utiles pour prendre des notes pour toi ou pour d'autres personnes qui veulent ton code !
 
 --- /collapse ---
 
-+ Go to **Sketch** and then **Include Library**, and select **Adafruit NeoPixel**. You should see this code get added to the top of your sketch: `#include <Adafruit_NeoPixel.h>`.
++ Va sur **croquis** , puis **Inclure une bibliothèque**, et sélectionne **Adafruit NeoPixel**. Tu devrais voir ce code s'ajouter en haut de ton croquis : `#include <Adafruit_NeoPixel.h>`.
 
-+ Click at the end of the line and hit the <kbd>Return</kbd> key a few times to add some blank lines below it.
++ Clique à la fin de la ligne et appuie plusieurs fois sur la touche <kbd>Retour</kbd> pour ajouter des lignes vides en dessous.
 
-+ Below the new line of code, type the following: `#define PIXELS_PIN 6`
++ Sous la nouvelle ligne de code, tape ce qui suit : `#define PIXELS_PIN 6`
 
-With this code you are setting which pin (the same as a hole here, remember) of the Flora to use for **data** \(instructions\). So the pin you connect the **data** holes of the NeoPixels to is number **6**.
+Avec ce code, tu définis la broche (identique à un trou ici, rappelle-toi) du Flora à utiliser pour **data** \ (instructions\). Ainsi, la broche à laquelle tu connectes les trous **data** des NeoPixels est le numéro **6**.
 
-+ Below that, type `#define NUM_PIXELS 8`. This is the number of NeoPixels you have. If you have a different number than eight, type that number instead of `8`.
++ En dessous, tape `#define NUM_PIXELS 8`. C'est le nombre de NeoPixels dont tu disposes. Si tu as un nombre différent de huit, tape ce nombre au lieu de `8`.
 
-+ Finally, below that, type:
++ Enfin, en dessous, tape :
 
 ``` 
     Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, PIXELS_PIN, NEO_GRB + NEO_KHZ800);
 ```
 
-+ Inside the `setup` function, add the following two lines:
++ Dans la fonction `setup` , ajoute les deux lignes suivantes :
 
 ``` 
     void setup() {
@@ -51,36 +51,36 @@ With this code you are setting which pin (the same as a hole here, remember) of 
 
 --- collapse ---
 ---
-title: What is the setup function?
+title: Qu'est-ce que la fonction setup ?
 ---
 
-The code `void setup ()` defines the `setup` function. This is a block of code that runs when the Flora is turned on.
+Le code `void setup ()` définit la fonction `setup`. Il s'agit d'un bloc de code qui s'exécute lorsque le Flora est activé.
 
-All the code in between the curly braces `{` and `}` is in the function and so will run when the Flora turns on.
+Tout le code entre les accolades `{` et `}` se trouve dans la fonction et sera donc exécuté lorsque le Flora sera activé.
 
 --- /collapse ---
 
-+ After `strip.show();`, press <kbd>Return</kbd> and type these two lines below:
++ Après `strip.show();`, appuie sur <kbd>Retour</kbd> et tape ces deux lignes ci-dessous :
 
 ``` 
     strip.setPixelColor(0, strip.Color(0, 0, 255));
     strip.show();
 ```
 
-+ Click **Verify** to compile your code and check for errors. If there are any mistakes, you will need to fix the code and check it again. Usually the error messages tell you which line of code needs fixing. Check that you typed it exactly as shown!
++ Clique sur **Vérifier** pour compiler ton code et rechercher les erreurs. S'il y a des erreurs, tu devras corriger le code et le vérifier à nouveau. Habituellement, les messages d'erreur t'indiquent quelle ligne de code doit être corrigée. Vérifie que tu l'as tapé exactement comme indiqué !
 
-+ Let's plug in the Flora and run your code! Press the **reset** button on the Flora and then press the **Upload** button. When it's done, what happens?
++ Branche le Flora et exécute ton code ! Appuie sur le bouton **reset** du Flora, puis sur le bouton **Télécharger**. Quand c'est fait, que se passe-t-il ?
 
-You should see the first NeoPixel light up blue.
+Tu devrais voir le premier NeoPixel s'allumer en bleu.
 
-+ Let's do another! **Above** the second `strip.show();`, type two more lines:
++ Faisons un autre ! **Au-dessus du** deuxième `show();`, tape deux autres lignes :
 
 ```
     strip.setPixelColor(1, strip.Color(0, 0, 255));
     strip.setPixelColor(2, strip.Color(0, 0, 255));
 ```
 
-The `setup` function should look like this now:
+La fonction `setup` devrait ressembler à ceci maintenant :
 
 ``` 
     void setup() {
@@ -94,11 +94,11 @@ The `setup` function should look like this now:
     }
 ```
 
-Can you work out what some of this code is doing?
+Peux-tu déterminer ce que fait une partie de ce code ?
 
-+ Verify and upload your code once more. This time you should see the first three NeoPixels light up blue.
++ Vérifie et télécharge à nouveau ton code. Cette fois, tu devrais voir les trois premiers NeoPixels s'allumer en bleu.
 
-+ See if you can add more lines of code to make the rest of the pixels light up as well!
++ Vois si tu peux ajouter plus de lignes de code pour que le reste des pixels s'allume également !
 
 ![](images/threeBlue.png)
 
