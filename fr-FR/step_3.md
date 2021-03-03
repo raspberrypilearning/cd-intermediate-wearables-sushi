@@ -1,92 +1,92 @@
-## Stitch your circuit
+## Coudre ton circuit
 
-+ Gather all your NeoPixels and some chalk or a pencil. Lay a T-shirt \(or whatever piece of fabric you're making your project on\) out on a flat surface.
++ Rassemble tous tes NeoPixels et de la craie ou un crayon. Pose un t-shirt \ (ou tout autre morceau de tissu sur lequel tu crées ton projet \) sur une surface plane.
 
-+ Arrange the pixels into a shape that you like. I'm going to do a smiley face! Some other ideas are:
-  + A straight line
-  + A heart (eight NeoPixels are perfect for this)
-  + Pretend "buttons" down the front of the T-shirt
-  + A random pattern
++ Dispose les pixels dans une forme que tu aimes. Je vais faire un visage souriant ! Quelques autres idées :
+  + Une ligne droite
+  + Un cœur (huit NeoPixels sont parfaits pour cela)
+  + Faire semblant d'avoir des « boutons » sur le devant du t-shirt
+  + Un motif aléatoire
 
-+ Decide roughly where you plan to have the Flora, and choose one NeoPixel for it to be connected to: this will be the first one you sew on. The rest will be connected to each other one by one in a chain.
++ Décide à peu près où tu prévois d'avoir le Flora, et choisis un NeoPixel auquel il sera connecté : ce sera le premier que tu couds. Le reste sera connecté les uns aux autres dans une chaîne.
 
-+ Work out the order in which you will sew the NeoPixels: you should be able to trace a continuous path from the first to the last with your finger in such a way that it does not cross over itself \(this would cause problems with a short circuit!\).
++ Détermine l'ordre dans lequel tu vas coudre les NeoPixels : tu devrais pouvoir tracer un chemin continu du premier au dernier avec ton doigt de manière à ce qu'il ne se croise pas \ (cela poserait des problèmes avec un court circuit !\).
 
-+ Draw around this path with the pencil or chalk, marking the spot where each NeoPixel is.
++ Dessine environ ce chemin avec le crayon ou la craie, en marquant l'endroit où se trouve chaque NeoPixel.
 
 ![](images/drawAroundShape.png)
 
-### Let's start sewing!
+### Commençons à coudre !
 
-+ Once you have everything marked out, set aside all the pieces and grab a needle and some conductive thread. About 20cm should be enough to begin with if your pixels are fairly close together. If you have an embroidery hoop, using it can make the stitching a lot easier.
++ Une fois que tu as tout marqué, mets de côté toutes les pièces et prends une aiguille et du fil conducteur. Environ 20 cm devraient suffire pour commencer si tes pixels sont assez rapprochés. Si tu as un cercle à broder, son utilisation peut rendre la couture beaucoup plus facile.
 
-You will sew the **data** line first. This is the thread that carries the instructions (your code!) telling the NeoPixels what to do, such as when to light up.
+Tu couds d'abord la ligne **data**. C'est le fil qui contient les instructions (ton code !) Indiquant aux NeoPixels quoi faire, comme quand s'allumer.
 
-+ Take your first NeoPixel and put it in place, with the little arrows pointing towards where the next one will be. Attach it to the fabric by sewing through the hole with the arrow that points **away** from the LED in the centre. This hole is the **output pin**.
-
---- collapse ---
----
-title: Holes or pins?
----
-
-On boards like Adafruit Flora, Arduino, or Raspberry Pi, the little bits of metal you use to connect them to your electrical circuit are called **pins**.
-
-In the case of **wearable** electronics, the pins are not shaped like pins though: they have a hole shape, so that you can connect them with conductive thread. This means that in wearables projects, the words 'pin' and 'hole' can mean the same thing.
-
---- /collapse ---
-
-+ Be sure to make a secure connection by sewing two or three stitches tightly through the hole.
-
-+ Sew a running stitch to the spot where the next NeoPixel will go.
-
-+ Then take the next pixel and place it onto its spot, with the arrows pointing away from the first one and towards the next spot. Attach it by sewing through the **input** hole \(remember, this is the hole with the arrow pointing **in towards** the LED in the centre\).
-
-+ Secure the thread with a few stitches at the back of the fabric and cut what's left over short.
++ Prends ton premier NeoPixel et mets-le en place, avec les petites flèches pointant vers l'endroit où sera le prochain. Fixe-le au tissu en cousant à travers le trou avec la flèche qui pointe **à l'opposé** de la LED au centre. Ce trou est la **broche output**.
 
 --- collapse ---
 ---
-title: Protecting the ends
+title: Trous ou broches ?
 ---
 
-It's a good idea to coat the ends of the thread with clear nail polish after cutting, to prevent fraying and avoid stray threads from causing a short circuit.
+Sur des cartes comme Adafruit Flora, Arduino ou Raspberry Pi, les petits morceaux de métal que tu utilises pour les connecter à ton circuit électrique sont appelés **broches**.
+
+Dans le cas d'objets **portables**, les broches ne sont pas comme des broches : ils ont une forme de trou, de sorte que tu peux les connecter avec un fil conducteur. Cela signifie que dans les projets de dispositifs portables, les mots « broche » et « trou » peuvent signifier la même chose.
 
 --- /collapse ---
 
-+ Using a **new piece of conductive thread**, connect the **output** hole of the second NeoPixel to the **input** hole of the third pixel. Continue in this way until all the NeoPixels are chained together along their **data** holes, with a separate piece of thread running in between each pair. The chain ends with the last NeoPixel: you don't attach anything to its **ouptut** hole.
++ Assure-toi d'établir une connexion sécurisée en cousant deux ou trois points étroitement à travers le trou.
+
++ Couds un point coulé à l'endroit où ira le prochain NeoPixel.
+
++ Prends ensuite le pixel suivant et place-le sur son emplacement, les flèches pointant vers l'extérieur du premier et vers l'emplacement suivant. Fixe-le en le cousant à travers le trou **input** \(rappelle-toi, c'est le trou avec la flèche pointant **vers** la LED au centre\).
+
++ Fixe le fil avec quelques points de couture à l'arrière du tissu et coupe court ce qui reste.
+
+--- collapse ---
+---
+title: Protéger les extrémités
+---
+
+C'est une bonne idée de recouvrir les extrémités du fil de vernis à ongles transparent après la coupe, pour éviter l'effilochage et éviter que les fils parasites ne provoquent un court-circuit.
+
+--- /collapse ---
+
++ À l'aide d'un **nouveau morceau de fil conducteur**, connecte le trou **output** du deuxième NeoPixel au trou **input** du troisième pixel. Continue de cette manière jusqu'à ce que tous les NeoPixels soient enchaînés le long de leurs trous **data** , avec un morceau de fil séparé entre chaque paire. La chaîne se termine par le dernier NeoPixel : tu ne fixes rien à son trou **output**.
 
 ![](images/pixelSewing3_136_800.png)
 
-Next you will connect up all the **negative** holes in the chain, and then all the **positive** ones.
+Ensuite, tu connecteras tous les trous **négatifs** de la chaîne, puis tous les trous **positifs**.
 
-+ Using one long piece of conductive thread, about 50–100cm, sew a few tight stitches through the **-** hole of each pixel, starting with the first one and ending with the last, and sewing a running stitch in between NeoPixels.
++ À l'aide d'un long morceau de fil conducteur, d'environ 50 à 100 cm, couds quelques points serrés à travers le trou **-** de chaque pixel, en commençant par le premier et en terminant par le dernier, puis en cousant un point coulé entre les NeoPixels.
 
-**Note**: Make sure the thread does not touch or cross any of the threads in the **data** line!
+**Remarque** : assure-toi que le fil ne touche ni ne croise aucun des fils de la ligne **data** !
 
-+ With one more long piece of conductive thread, connect all the **+** holes of the NeoPixels in the same way you just connected the **-** holes.
++ Avec une pièce plus longue de fil conducteur, connecter tous les trous **+** des NeoPixels de la même manière que tu viens de connecter les trous **-**.
 
-+ Finally, place the Flora board on the T-shirt \(make sure it is **not plugged in**!\).
++ Enfin, place la carte Flora sur le t-shirt \ (assure-toi qu'elle est **débranchée** ! \).
 
-+ Using three **separate** pieces of conductive thread, connect the board's **\#6** hole to the **input** hole of the first NeoPixel, the board's **GND** hole to the **-** hole of the first NeoPixel, and the board's **VBATT** hole to the **+** hole of the first NeoPixel, sewing a running stitch along the fabric. Make sure none of the threads touch each other.
++ En utilisant trois morceaux **séparés** de fil conducteur, connecte le trou **\#6** de la carte au trou **input** du premier NeoPixel, le trou **GND** de la carte au trou **-** du premier NeoPixel, et les trous **VBATT** de la carte dans le trou **+** du premier NeoPixel, en cousant un point coulé le long du tissu. Assure-toi qu'aucun des fils ne se touche.
 
-+ If you like, you can stitch some of the unused pins of the Flora to the T-shirt with some plain thread to keep it more securely in place.
++ Si tu le souhaites, tu peux coudre certaines des broches inutilisées du Flora au t-shirt avec du fil uni pour le maintenir plus solidement en place.
 
 ![](images/stitchedCircuit.png)
 
-+ Now, the moment of truth: plug in your Flora.
++ Maintenant, le moment de vérité : branche ton Flora.
 
-You should see all your NeoPixels light up!
+Tu devrais voir tous tes NeoPixels s'allumer !
 
 --- collapse ---
 ---
-title: Something's not right
+title: Quelque chose ne va pas
 ---
 
-If some of your NeoPixels didn't light up, don't panic. Some causes could be:
+Si certains de tes NeoPixels ne s'allument pas, ne panique pas. Cela pourrait être dû :
 
-+ A short circuit: are any of the threads touching? Is there anything metallic on the fabric or touching the circuit? Is the fabric wet?
++ Un court-circuit : l'un des fils se touche-t-il ? Y a-t-il quelque chose de métallique sur le tissu ou en contact avec le circuit ? Le tissu est-il mouillé ?
 
-+ Loose connections: The stitches in every hole should be good and tight for a secure connection.
++ Connexions desserrées : les points de chaque trou doivent être correctement serrés pour assurer une connexion sûre.
 
-+ Correct code uploaded: Does your code have the right number of NeoPixels defined? Did it compile and upload without errors?
++ Code correct téléchargé : ton code a-t-il défini le bon nombre de NeoPixels ? A-t-il compilé et téléchargé sans erreurs ?
 
 --- /collapse --- 
