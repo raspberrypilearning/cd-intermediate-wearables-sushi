@@ -1,6 +1,6 @@
-## Flashing lights
+## Lumières clignotantes
 
-+ Create the following new function after your first one:
++ Crée la nouvelle fonction suivante après la première :
 
 ``` 
     void lightAllOneColour(uint32_t c) {
@@ -18,14 +18,14 @@
 
 --- collapse ---
 ---
-title: What's inside the round brackets?
+title: Que contiennent les parenthèses ?
 ---
 
-This function takes a **parameter**: that's the bit inside the round brackets. It's some extra information that you give the function when you call it.
+Cette fonction prend un **paramètre** : c'est le bit entre les parenthèses. Ce sont des informations supplémentaires que tu donnes à la fonction lorsque tu l’appelles.
 
 --- /collapse ---
 
-+ This time you will write your function calls in `loop` instead of in `setup`. Click inside the `loop` function and add code so that it looks like this:
++ Cette fois, tu écriras tes appels de fonction dans `loop` au lieu de `setup`. Clique à l'intérieur de la fonction `loop` et ajoute du code pour qu'il ressemble à ceci :
 
 ```
     void loop() {
@@ -38,27 +38,27 @@ This function takes a **parameter**: that's the bit inside the round brackets. I
 
 --- collapse ---
 ---
-title: How the parameter works
+title: Fonctionnement du paramètre
 ---
 
-See how you're passing in a colour as a **parameter** to your `lightAllOneColour` function? This is the colour that gets used in place of `c` on each line inside that function. It means you can use the same function to make the NeoPixels any colour, and you can even turn them all off!
+Tu vois comment tu passes une couleur comme **paramètre** à ta fonction `lightAllOneColour` ? C'est la couleur qui est utilisée à la place de `c` sur chaque ligne à l'intérieur de cette fonction. Cela signifie que tu peux utiliser la même fonction pour rendre les NeoPixels de n'importe quelle couleur, et tu peux même tous les désactiver !
 
 --- /collapse ---
 
-+ Delete the line `lightAll();` from inside the `setup` function. Verify and upload the code.
++ Supprime la ligne `lightAll();` depuis l'intérieur de la fonction `setup`. Vérifie et télécharge le code.
 
 --- collapse ---
 ---
-title: About the setup and loop functions
+title: À propos des fonctions setup et loop
 ---
 
-When the Flora turns on, it runs all the code in the `setup` function first, and then it runs the `loop` function over and over again forever!
+Lorsque le Flora s'allume, il exécute d'abord tout le code de la fonction `setup` , puis il exécute la fonction `loop` encore et encore indéfiniment !
 
 --- /collapse ---
 
-+ What do you think the `delay` function does? Try putting in different values for its **parameter**, for example `delay(50);` or `delay(1000);`. Don't forget to verify and upload the code to test out your changes!
++ À ton avis, que fait la fonction `delay` ? Essaie de mettre différentes valeurs pour son **paramètre**, par exemple `delay(50);` ou `delay(1000);`. N'oublie pas de vérifier et de télécharger le code pour tester tes modifications !
 
-+ Have you noticed that the colour `(0, 0, 0)` turns the pixels off? Try running the following code on the Flora:
++ As-tu remarqué que la couleur `(0, 0, 0)` désactive les pixels ? Essaie d'exécuter le code suivant sur le Flora :
 
 ```
     void loop() {
@@ -73,7 +73,7 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Now run the same code without the "off" colour:
++ Maintenant, exécute le même code sans la couleur « off » :
 
 ```
     void loop() {
@@ -84,8 +84,8 @@ When the Flora turns on, it runs all the code in the `setup` function first, and
     }
 ```
 
-+ Do you see the difference?
++ Vois-tu la différence ?
 
-+ Try designing your own sequence by changing the code in the `loop` function! You can add as many delays and as many calls to your `lightAllOneColour` function as you like. Experiment with longer and shorter delays and different values for the colour parameter.
++ Essaie de concevoir ta propre séquence en modifiant le code dans la fonction `loop` ! Tu peux ajouter autant de « delay » et d'appels à ta fonction `lightAllOneColour` que tu le souhaites. Expérimente avec des « delay » de plus en plus courts et des valeurs différentes pour le paramètre de couleur.
 
-Remember, the whole sequence will keep repeating over and over if you put your code inside the `loop` function. 
+N'oublie pas que toute la séquence continuera à se répéter encore et encore si tu mets ton code dans la fonction `loop`. 
