@@ -6,19 +6,21 @@ theme: violet
 version: 3.0.0
 listed: true
 copyedit: true
-interests: "wearable-technology"
-curriculum: "1, design-0, programming-1, phys-comp-1, manufacture-1, community-0"
-technologies: "electronic-components"
-site_areas: "coderdojo, projects"
-hardware: "electronic-components"
-software: ""
-last_tested: "2018-06-12"
+interests: wearable-technology
+curriculum: 1, design-0, programming-1, phys-comp-1, manufacture-1, community-0
+technologies: electronic-components
+site_areas: coderdojo, projects
+hardware: electronic-components
+software: ''
+last_tested: '2018-06-12'
 steps:
-  - title: ಪರಿಚಯ
-  - title: ನಿಮ್ಮ ಎಲ್ಇಡಿಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ
-  - title: ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಹೊಲಿಯಿರಿ
-  - title: ನಿಮ್ಮ ಸ್ವಂತ ಕೋಡ್ ಬರೆಯಿರಿ
-  - title: ಬಣ್ಣ ಮತ್ತು ಬೆಳಕು
-  - title: ಮಿನುಗುವ ದೀಪಗಳು
-  - title: ಅನಿಮೇಟ್!
-  - title: ಮಳೆಬಿಲ್ಲು ವಿನೋದ
+- title: ಪರಿಚಯ
+  completion: engaged
+- title: ನಿಮ್ಮ ಎಲ್ಇಡಿಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ
+- title: ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಹೊಲಿಯಿರಿ
+- title: ನಿಮ್ಮ ಸ್ವಂತ ಕೋಡ್ ಬರೆಯಿರಿ
+- title: ಬಣ್ಣ ಮತ್ತು ಬೆಳಕು
+- title: ಮಿನುಗುವ ದೀಪಗಳು
+- title: ಅನಿಮೇಟ್!
+  completion: internal
+- title: ಮಳೆಬಿಲ್ಲು ವಿನೋದ
