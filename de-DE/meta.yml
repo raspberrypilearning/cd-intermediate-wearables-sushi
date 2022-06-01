@@ -1,24 +1,29 @@
 ---
 title: Techno-T-Shirt
 hero_image: images/banner.png
-description: Lerne, wie du LED's mit einem Code steuerst, während du ein tragbares Projekt erstellst
+description: Lerne, wie du LED's mit einem Code steuerst, während du ein tragbares
+  Projekt erstellst
 theme: violet
 version: 3.0.0
 listed: true
 copyedit: true
-interests: "wearable-technology"
-curriculum: "1, design-0, programming-1, phys-comp-1, manufacture-1, community-0"
-technologies: "electronic-components"
-site_areas: "coderdojo, projects"
-hardware: "electronic-components"
-software: ""
-last_tested: "2018-06-12"
+interests: wearable-technology
+curriculum: 1, design-0, programming-1, phys-comp-1, manufacture-1, community-0
+technologies: electronic-components
+site_areas: coderdojo, projects
+hardware: electronic-components
+software: ''
+last_tested: '2018-06-12'
 steps:
-  - title: Einleitung
-  - title: Teste deine LED's
-  - title: Nähe deine Schaltung
-  - title: Schreibe deinen eigenen Code
-  - title: Farbe und Licht
-  - title: Blinkende Lichter
-  - title: Animieren!
-  - title: Regenbogenspaß
+- title: Einleitung
+- title: Teste deine LED's
+- title: Nähe deine Schaltung
+  completion:
+  - engaged
+- title: Schreibe deinen eigenen Code
+- title: Farbe und Licht
+- title: Blinkende Lichter
+- title: Animieren!
+- title: Regenbogenspaß
+  completion:
+  - internal

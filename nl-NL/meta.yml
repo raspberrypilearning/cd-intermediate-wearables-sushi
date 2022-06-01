@@ -14,11 +14,15 @@ hardware: electronic-components
 software: ''
 last_tested: '2018-06-12'
 steps:
-  - title: Inleiding
-  - title: Test de LED's
-  - title: Stik je circuit
-  - title: Schrijf je eigen code
-  - title: Kleur en licht
-  - title: Knipperende lampjes
-  - title: Animeer!
-  - title: Regenboogplezier
+- title: Inleiding
+- title: Test de LED's
+- title: Stik je circuit
+  completion:
+  - engaged
+- title: Schrijf je eigen code
+- title: Kleur en licht
+- title: Knipperende lampjes
+- title: Animeer!
+- title: Regenboogplezier
+  completion:
+  - internal
