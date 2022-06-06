@@ -15,12 +15,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: ಪರಿಚಯ
-  completion: engaged
 - title: ನಿಮ್ಮ ಎಲ್ಇಡಿಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ
 - title: ನಿಮ್ಮ ಸರ್ಕ್ಯೂಟ್ ಹೊಲಿಯಿರಿ
+  completion:
+  - engaged
 - title: ನಿಮ್ಮ ಸ್ವಂತ ಕೋಡ್ ಬರೆಯಿರಿ
 - title: ಬಣ್ಣ ಮತ್ತು ಬೆಳಕು
 - title: ಮಿನುಗುವ ದೀಪಗಳು
 - title: ಅನಿಮೇಟ್!
-  completion: internal
 - title: ಮಳೆಬಿಲ್ಲು ವಿನೋದ
+  completion:
+  - internal

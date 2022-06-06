@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Tester tes LED
 - title: Coudre ton circuit
+  completion:
+  - engaged
 - title: Écrire ton propre code
 - title: Couleur et lumière
 - title: Lumières clignotantes
 - title: Animer !
-  completion: internal
 - title: Arc-en-ciel amusant
+  completion:
+  - internal

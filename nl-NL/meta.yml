@@ -15,12 +15,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: Inleiding
-  completion: engaged
 - title: Test de LED's
 - title: Stik je circuit
+  completion:
+  - engaged
 - title: Schrijf je eigen code
 - title: Kleur en licht
 - title: Knipperende lampjes
 - title: Animeer!
-  completion: internal
 - title: Regenboogplezier
+  completion:
+  - internal

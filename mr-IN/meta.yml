@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: परिचय
-  completion: engaged
 - title: तुमचा एलईडीची (LED) चाचणी करा
 - title: आपला सर्किट टाका
+  completion:
+  - engaged
 - title: तुमचा स्वतःचा कोड लिहा
 - title: रंग आणि प्रकाश
 - title: चमकणारे दिवे
 - title: एनिमेट !
-  completion: internal
 - title: इंद्रधनुष्याची मजा
+  completion:
+  - internal

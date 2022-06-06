@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: المقدمة
-  completion: engaged
 - title: فحص مصابيح LED الخاصة بك
 - title: خياطة دائرتك
+  completion:
+  - engaged
 - title: اكتب التعليمات البرمجية الخاصة بك
 - title: اللون والضوء
 - title: الأضواء الساطعة
 - title: تحريك (حركة حيوية)!
-  completion: internal
 - title: قوس قزح مضاء
+  completion:
+  - internal

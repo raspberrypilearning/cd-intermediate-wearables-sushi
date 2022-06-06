@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: Einleitung
-  completion: engaged
 - title: Teste deine LED's
 - title: Nähe deine Schaltung
+  completion:
+  - engaged
 - title: Schreibe deinen eigenen Code
 - title: Farbe und Licht
 - title: Blinkende Lichter
 - title: Animieren!
-  completion: internal
 - title: Regenbogenspaß
+  completion:
+  - internal

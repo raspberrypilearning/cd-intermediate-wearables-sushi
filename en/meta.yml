@@ -15,12 +15,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Test your LEDs
 - title: Stitch your circuit
+  completion:
+  - engaged
 - title: Write your own code
 - title: Colour and light
 - title: Flashing lights
 - title: Animate!
-  completion: internal
 - title: Rainbow fun
+  completion:
+  - internal

@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: परिचय
-  completion: engaged
 - title: अपने LEDs का परीक्षण करें
 - title: अपने सर्किट की सिलाई करें
+  completion:
+  - engaged
 - title: अपना कोड (code) लिखें
 - title: रंग और रोशनी
 - title: चमकती रोशनी
 - title: एनिमेट! (Animate)
-  completion: internal
 - title: इन्द्रधनुष मनोरंजन
+  completion:
+  - internal

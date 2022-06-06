@@ -16,12 +16,14 @@ software: ''
 last_tested: '2018-06-12'
 steps:
 - title: Introducción
-  completion: engaged
 - title: Prueba tus LED
 - title: Cose tu circuito
+  completion:
+  - engaged
 - title: Escribe tu propio código
 - title: Color y luz
 - title: Luces parpadeantes
 - title: Anima!
-  completion: internal
 - title: Diversión colorida
+  completion:
+  - internal
